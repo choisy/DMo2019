@@ -1,7 +1,7 @@
 name: "my-website-name"
 output_dir: "."
 navbar:
-  title: "Website title"
+  title: "DMo2019 workshop"
   left:
     - text: "Overview"
       href: index.html
