@@ -306,6 +306,7 @@ $(document).ready(function () {
 <li><a href="#variables">Variables</a><ul>
 <li><a href="#vectors">Vectors</a></li>
 </ul></li>
+<li><a href="#scripts">Scripts</a></li>
 </ul>
 </div>
 
@@ -373,6 +374,21 @@ b[-3]</code></pre>
 b[c(1:2)]</code></pre>
 <pre><code>## [1] &quot;a&quot; &quot;b&quot;</code></pre>
 </div>
+</div>
+<div id="scripts" class="section level2">
+<h2>Scripts</h2>
+<p>Open a new script file and write:</p>
+<pre class="r"><code># step 1: make a vector of 20 random values,
+# normally distributed:
+myvar &lt;- rnorm(25)
+
+# step 2: select the first 5 and the last 5 values:
+myvar &lt;- myvar[-(6:15)]
+
+# step 3: replace the third value by 3:
+myvar[3] &lt;- 3</code></pre>
+<p>Save the script in <code>vector selection.R</code> and source it:</p>
+<pre class="r"><code>source(&#39;vector selection.R&#39;)</code></pre>
 </div>
 
 

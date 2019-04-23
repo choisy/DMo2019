@@ -121,3 +121,25 @@ b[-3]
 b[c(1:2)]
 ```
 
+## Scripts
+
+Open a new script file and write:
+
+```{r}
+# step 1: make a vector of 20 random values,
+# normally distributed:
+myvar <- rnorm(25)
+
+# step 2: select the first 5 and the last 5 values:
+myvar <- myvar[-(6:15)]
+
+# step 3: replace the third value by 3:
+myvar[3] <- 3
+```
+
+Save the script in `vector selection.R` and source it:
+
+```{r, eval = FALSE}
+source('vector selection.R')
+```
+
