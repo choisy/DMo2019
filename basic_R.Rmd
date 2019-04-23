@@ -143,3 +143,12 @@ Save the script in `vector selection.R` and source it:
 source('vector selection.R')
 ```
 
+## Additional useful functions
+
+```{r, eval = FALSE}
+length()
+head()
+tail()
+seq()
+```
+
