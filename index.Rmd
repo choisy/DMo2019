@@ -11,4 +11,3 @@ editor_options:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## First title

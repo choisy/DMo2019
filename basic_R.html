@@ -11,7 +11,7 @@
 
 
 
-<title>Overview</title>
+<title>Basic R</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -296,12 +296,59 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Overview</h1>
+<h1 class="title toc-ignore">Basic R</h1>
 
 </div>
 
+<div id="TOC">
+<ul>
+<li><a href="#r-as-a-calculator">R as a calculator</a></li>
+<li><a href="#variables">Variables</a></li>
+</ul>
+</div>
 
+<!--
+IMAGES:
+Insert them with: ![alt text](image.png)
+You can also resize them if needed: convert image.png -resize 50% image.png
+If you want to center the image, go through HTML code:
+<div style="text-align:center"><img src ="image.png"/></div>
 
+REFERENCES:
+For references: Put all the bibTeX references in the file "references.bib"
+in the current folder and cite the references as @key or [@key] in the text.
+Uncomment the bibliography field in the above header and put a "References"
+title wherever you want to display the reference list.
+-->
+<div id="r-as-a-calculator" class="section level2">
+<h2>R as a calculator</h2>
+<pre class="r"><code>1 + 2</code></pre>
+<pre><code>## [1] 3</code></pre>
+<pre class="r"><code>3 * 4</code></pre>
+<pre><code>## [1] 12</code></pre>
+<pre class="r"><code>5 / 6</code></pre>
+<pre><code>## [1] 0.8333333</code></pre>
+<pre class="r"><code>7 - 8</code></pre>
+<pre><code>## [1] -1</code></pre>
+</div>
+<div id="variables" class="section level2">
+<h2>Variables</h2>
+<p>Creating variables:</p>
+<pre class="r"><code>a &lt;- 1
+b &lt;- 2
+c &lt;- 3</code></pre>
+<p>Listing the variables in the environment:</p>
+<pre class="r"><code>ls()</code></pre>
+<pre><code>## [1] &quot;a&quot; &quot;b&quot; &quot;c&quot;</code></pre>
+<p>Seeing the content of a variable:</p>
+<pre class="r"><code>a</code></pre>
+<pre><code>## [1] 1</code></pre>
+<p>Removing a variable:</p>
+<pre class="r"><code>rm(a)</code></pre>
+<p>Checking that variable <code>a</code> has been removed:</p>
+<pre class="r"><code>ls()</code></pre>
+<pre><code>## [1] &quot;b&quot; &quot;c&quot;</code></pre>
+</div>
 
 
 
