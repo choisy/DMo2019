@@ -11,7 +11,7 @@
 
 
 
-<title>Basic R</title>
+<title>SIR models in R</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -299,18 +299,20 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Basic R</h1>
+<h1 class="title toc-ignore">SIR models in R</h1>
 
 </div>
 
 <div id="TOC">
 <ul>
-<li><a href="#r-as-a-calculator">R as a calculator</a></li>
-<li><a href="#variables">Variables</a><ul>
-<li><a href="#vectors">Vectors</a></li>
-<li><a href="#data-frames">Data frames</a></li>
+<li><a href="#three-representations-of-an-sir-model">Three representations of an SIR model</a><ul>
+<li><a href="#a-verbal-description">A verbal description</a></li>
+<li><a href="#a-graphical-description">A graphical description</a></li>
+<li><a href="#a-mathematical-description">A mathematical description</a></li>
 </ul></li>
-<li><a href="#scripts">Scripts</a></li>
+<li><a href="#solving-differential-equations-in-r">Solving differential equations in R</a><ul>
+<li><a href="#step-1-writing-the-differential-equations-in-r">Step 1: writing the differential equations in R</a></li>
+</ul></li>
 </ul>
 </div>
 
@@ -327,124 +329,43 @@ in the current folder and cite the references as @key or [@key] in the text.
 Uncomment the bibliography field in the above header and put a "References"
 title wherever you want to display the reference list.
 -->
-<div id="r-as-a-calculator" class="section level2">
-<h2>R as a calculator</h2>
-<pre class="r"><code>1 + 2</code></pre>
-<pre><code>## [1] 3</code></pre>
-<pre class="r"><code>3 * 4</code></pre>
-<pre><code>## [1] 12</code></pre>
-<pre class="r"><code>5 / 6</code></pre>
-<pre><code>## [1] 0.8333333</code></pre>
-<pre class="r"><code>7 - 8</code></pre>
-<pre><code>## [1] -1</code></pre>
+<div id="three-representations-of-an-sir-model" class="section level2">
+<h2>Three representations of an SIR model</h2>
+<div id="a-verbal-description" class="section level3">
+<h3>A verbal description</h3>
+<p>Let’s consider <span class="math inline">\(S\)</span> susceptibles, <span class="math inline">\(I\)</span> infectious and <span class="math inline">\(R\)</span> recovered. Susceptibles become infected at a rate equal to the product of an infectious contact rate <span class="math inline">\(\beta\)</span> and the number of infectious <span class="math inline">\(I\)</span>. Infectious people recover at a rate <span class="math inline">\(\gamma\)</span>.</p>
 </div>
-<div id="variables" class="section level2">
-<h2>Variables</h2>
-<p>Creating variables:</p>
-<pre class="r"><code>a &lt;- 1
-b &lt;- 2
-c &lt;- 3</code></pre>
-<p>Listing the variables in the environment:</p>
-<pre class="r"><code>ls()</code></pre>
-<pre><code>## [1] &quot;a&quot; &quot;b&quot; &quot;c&quot;</code></pre>
-<p>Seeing the content of a variable:</p>
-<pre class="r"><code>a</code></pre>
-<pre><code>## [1] 1</code></pre>
-<p>Removing a variable:</p>
-<pre class="r"><code>rm(a)</code></pre>
-<p>Checking that variable <code>a</code> has been removed:</p>
-<pre class="r"><code>ls()</code></pre>
-<pre><code>## [1] &quot;b&quot; &quot;c&quot;</code></pre>
-<p>Removing several variables at once:</p>
-<pre class="r"><code>rm(b, c)</code></pre>
-<p>Checking:</p>
-<pre class="r"><code>ls()</code></pre>
-<pre><code>## character(0)</code></pre>
-<div id="vectors" class="section level3">
-<h3>Vectors</h3>
-<p>Basic data structure in R is vector with is and <strong>ordered</strong> collection of elements, all the same nature:</p>
-<pre class="r"><code>a &lt;- c(1, 2, 3)
-b &lt;- c(&quot;a&quot;, &quot;b&quot;, &quot;c&quot;)</code></pre>
-<p>Selecting elements:</p>
-<pre class="r"><code>a[1]</code></pre>
-<pre><code>## [1] 1</code></pre>
-<pre class="r"><code>b[2]</code></pre>
-<pre><code>## [1] &quot;b&quot;</code></pre>
-<p>Negative selection:</p>
-<pre class="r"><code>a[-2]</code></pre>
-<pre><code>## [1] 1 3</code></pre>
-<pre class="r"><code># is the same as
-a[c(1, 3)]</code></pre>
-<pre><code>## [1] 1 3</code></pre>
-<pre class="r"><code># and
-b[-3]</code></pre>
-<pre><code>## [1] &quot;a&quot; &quot;b&quot;</code></pre>
-<pre class="r"><code># is the same as
-b[c(1:2)]</code></pre>
-<pre><code>## [1] &quot;a&quot; &quot;b&quot;</code></pre>
-<p>Additional function to use on vectors:</p>
-<pre class="r"><code>length()
-head()
-tail()
-seq()</code></pre>
+<div id="a-graphical-description" class="section level3">
+<h3>A graphical description</h3>
+<p>We could sketch the above verbal description as follows:</p>
+<div style="text-align:center">
+<img src ="SIR.png" width="250"/>
 </div>
-<div id="data-frames" class="section level3">
-<h3>Data frames</h3>
-<p>Whereas vectors are 1-dimension structure, data frames are 2-dimension structures (they have rows and columns). A data frame is basically a collection of vectors (organized in columns), all of the same length (the number of rows). To create a data frame:</p>
-<pre class="r"><code>mydf &lt;- data.frame(name   = c(&quot;george&quot;, &quot;bob&quot; , &quot;edwin&quot;, &quot;richard&quot;, &quot;lisa&quot;),
-                   gender = c(&quot;male&quot;  , &quot;male&quot;, &quot;male&quot; , &quot;male&quot;   , &quot;female&quot;),
-                   age    = c(23      , 18    , 43     , 21       , 50),
-                   stringsAsFactors = FALSE)</code></pre>
-<p>It looks like this:</p>
-<pre class="r"><code>mydf</code></pre>
-<pre><code>##      name gender age
-## 1  george   male  23
-## 2     bob   male  18
-## 3   edwin   male  43
-## 4 richard   male  21
-## 5    lisa female  50</code></pre>
-<p>To positively and negatively select values from a data frame, it’s the same as for vector (i.e. square brackets), except that here we have to provide indexes for rows and columns separated by a common. Rows are always first. Examples:</p>
-<pre class="r"><code>mydf[, 2]</code></pre>
-<pre><code>## [1] &quot;male&quot;   &quot;male&quot;   &quot;male&quot;   &quot;male&quot;   &quot;female&quot;</code></pre>
-<pre class="r"><code>mydf[3, ]</code></pre>
-<pre><code>##    name gender age
-## 3 edwin   male  43</code></pre>
-<pre class="r"><code>mydf[-3, ]</code></pre>
-<pre><code>##      name gender age
-## 1  george   male  23
-## 2     bob   male  18
-## 4 richard   male  21
-## 5    lisa female  50</code></pre>
-<pre class="r"><code>mydf[2, 3]</code></pre>
-<pre><code>## [1] 18</code></pre>
-<pre class="r"><code>mydf[2:4, c(1, 3)]</code></pre>
-<pre><code>##      name age
-## 2     bob  18
-## 3   edwin  43
-## 4 richard  21</code></pre>
-<pre class="r"><code>mydf[2:4, -1]</code></pre>
-<pre><code>##   gender age
-## 2   male  18
-## 3   male  43
-## 4   male  21</code></pre>
-<p>Reading an excel file:</p>
-<pre class="r"><code>readxl::dengue2010 &lt;- read_excel(&quot;name_of_the_excel_file.xls&quot;)</code></pre>
+<p>We have 3 <strong>variables</strong> <span class="math inline">\(S\)</span>, <span class="math inline">\(I\)</span> and <span class="math inline">\(R\)</span> which are respectively the numbers of susceptibles, infectious and recovered, and we have 2 <strong>parameters</strong> <span class="math inline">\(\beta\)</span> and <span class="math inline">\(\gamma\)</span> which are respectively the infectious contact rate and the recovery rate.</p>
+</div>
+<div id="a-mathematical-description" class="section level3">
+<h3>A mathematical description</h3>
+<p>A mathematical description of the above SIR model using the differential equations formalism looks like:</p>
+<p><span class="math display">\[
+\frac{dS}{dt} = -\beta \times I \times S\\
+\frac{dI}{dt} =  \beta \times I \times S - \gamma\times I\\
+\frac{dR}{dt} = \gamma\times I
+\]</span></p>
+<p>The basic reproductive ratio R<span class="math inline">\(_0\)</span> for this system is</p>
+<p><span class="math display">\[
+\mbox{R}_0 = \frac{\beta}{\gamma}N
+\]</span></p>
 </div>
 </div>
-<div id="scripts" class="section level2">
-<h2>Scripts</h2>
-<p>Open a new script file and write:</p>
-<pre class="r"><code># step 1: make a vector of 20 random values,
-# normally distributed:
-myvar &lt;- rnorm(25)
-
-# step 2: select the first 5 and the last 5 values:
-myvar &lt;- myvar[-(6:15)]
-
-# step 3: replace the third value by 3:
-myvar[3] &lt;- 3</code></pre>
-<p>Save the script in <code>vector selection.R</code> and source it:</p>
-<pre class="r"><code>source(&#39;vector selection.R&#39;)</code></pre>
+<div id="solving-differential-equations-in-r" class="section level2">
+<h2>Solving differential equations in R</h2>
+<p>Solving a system of differential equations means finding the values of the variables (here <span class="math inline">\(S\)</span>, <span class="math inline">\(I\)</span> and <span class="math inline">\(R\)</span>) at a number of points in time. These values will depend on the parameters’ values. We can numerically solve differential equations in R thanks to the <code>ode()</code> function of the <code>deSolve</code> package. If this package is not installed on your system, you need to install it:</p>
+<pre class="r"><code>install.packages(&quot;deSolve&quot;)</code></pre>
+<p>To be able to use the <code>deSolve</code> package, you need to load it:</p>
+<pre class="r"><code>library(deSolve) # using the &quot;ode&quot; function</code></pre>
+<div id="step-1-writing-the-differential-equations-in-r" class="section level3">
+<h3>Step 1: writing the differential equations in R</h3>
+</div>
 </div>
 
 

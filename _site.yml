@@ -7,3 +7,5 @@ navbar:
       href: index.html
     - text: "Basic R"
       href: basic_R.html
+    - text: "SIR models"
+      href: sir.html

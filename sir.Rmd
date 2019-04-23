@@ -1,0 +1,110 @@
+---
+title: "SIR models in R"
+output:
+  html_document:
+    theme: cosmo
+    toc: yes
+  pdf_document:
+    toc: yes
+editor_options: 
+  chunk_output_type: console
+---
+
+<!--
+IMAGES:
+Insert them with: ![alt text](image.png)
+You can also resize them if needed: convert image.png -resize 50% image.png
+If you want to center the image, go through HTML code:
+<div style="text-align:center"><img src ="image.png"/></div>
+
+REFERENCES:
+For references: Put all the bibTeX references in the file "references.bib"
+in the current folder and cite the references as @key or [@key] in the text.
+Uncomment the bibliography field in the above header and put a "References"
+title wherever you want to display the reference list.
+-->
+
+```{r general_options, include = FALSE}
+knitr::knit_hooks$set(margin = function(before, options, envir) {
+  if (before) par(mgp = c(1.5, .5, 0), bty = "n", plt = c(.105, .97, .13, .97))
+  else NULL
+})
+
+knitr::opts_chunk$set(margin = TRUE, prompt = FALSE, comment = "##",
+                      collapse = FALSE, cache = FALSE, autodep = TRUE,
+                      dev.args = list(pointsize = 11), fig.height = 3.5,
+                      fig.width = 4.24725, fig.retina = 2, fig.align = "center")
+
+l <- "en_US.UTF-8"
+Sys.setenv(LANGAGE = l)
+Sys.setlocale(locale = l)
+Sys.setlocale("LC_MESSAGES", l)
+
+# cleaning the packages space:
+search_path <- search()
+pkgs <- c("stats", "graphics", "grDevices", "utils", "datasets", "methods", "base")
+tdet <- grep("package", search_path[!(search_path %in% paste0("package:", pkgs))],
+             value = TRUE)
+for(i in tdet) detach(i, unload = TRUE, character.only = TRUE)
+
+rm(list = ls())
+```
+
+## Three representations of an SIR model
+
+### A verbal description
+Let's consider $S$ susceptibles, $I$ infectious and $R$ recovered. Susceptibles
+become infected at a rate equal to the product of an infectious contact rate
+$\beta$ and the number of infectious $I$. Infectious people recover at a rate 
+$\gamma$.
+
+### A graphical description
+
+We could sketch the above verbal description as follows:
+
+<div style="text-align:center"><img src ="SIR.png" width="250"/></div>
+
+We have 3 **variables** $S$, $I$ and $R$ which are respectively the numbers of
+susceptibles, infectious and recovered, and we have 2 **parameters** $\beta$ and
+$\gamma$ which are respectively the infectious contact rate and the recovery
+rate.
+
+### A mathematical description
+
+A mathematical description of the above SIR model using the differential
+equations formalism looks like:
+
+$$
+\frac{dS}{dt} = -\beta \times I \times S\\
+\frac{dI}{dt} =  \beta \times I \times S - \gamma\times I\\
+\frac{dR}{dt} = \gamma\times I
+$$
+
+The basic reproductive ratio R$_0$ for this system is
+
+$$
+\mbox{R}_0 = \frac{\beta}{\gamma}N
+$$
+
+
+## Solving differential equations in R
+
+Solving a system of differential equations means finding the values of the
+variables (here $S$, $I$ and $R$) at a number of points in time. These values
+will depend on the parameters' values. We can numerically solve differential
+equations in R thanks to the `ode()` function of the `deSolve` package. If this
+package is not installed  on your system, you need to install it:
+
+```{r eval = FALSE}
+install.packages("deSolve")
+```
+
+To be able to use the `deSolve` package, you need to load it:
+
+```{r}
+library(deSolve) # using the "ode" function
+```
+
+### Step 1: writing the differential equations in R
+
+
