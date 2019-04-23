@@ -305,9 +305,9 @@ $(document).ready(function () {
 <li><a href="#r-as-a-calculator">R as a calculator</a></li>
 <li><a href="#variables">Variables</a><ul>
 <li><a href="#vectors">Vectors</a></li>
+<li><a href="#data-frames">Data frames</a></li>
 </ul></li>
 <li><a href="#scripts">Scripts</a></li>
-<li><a href="#additional-useful-functions">Additional useful functions</a></li>
 </ul>
 </div>
 
@@ -352,6 +352,11 @@ c &lt;- 3</code></pre>
 <p>Checking that variable <code>a</code> has been removed:</p>
 <pre class="r"><code>ls()</code></pre>
 <pre><code>## [1] &quot;b&quot; &quot;c&quot;</code></pre>
+<p>Removing several variables at once:</p>
+<pre class="r"><code>rm(b, c)</code></pre>
+<p>Checking:</p>
+<pre class="r"><code>ls()</code></pre>
+<pre><code>## character(0)</code></pre>
 <div id="vectors" class="section level3">
 <h3>Vectors</h3>
 <p>Basic data structure in R is vector with is and <strong>ordered</strong> collection of elements, all the same nature:</p>
@@ -374,6 +379,53 @@ b[-3]</code></pre>
 <pre class="r"><code># is the same as
 b[c(1:2)]</code></pre>
 <pre><code>## [1] &quot;a&quot; &quot;b&quot;</code></pre>
+<p>Additional function to use on vectors:</p>
+<pre class="r"><code>length()
+head()
+tail()
+seq()</code></pre>
+</div>
+<div id="data-frames" class="section level3">
+<h3>Data frames</h3>
+<p>Whereas vectors are 1-dimension structure, data frames are 2-dimension structures (they have rows and columns). A data frame is basically a collection of vectors (organized in columns), all of the same length (the number of rows). To create a data frame:</p>
+<pre class="r"><code>mydf &lt;- data.frame(name   = c(&quot;george&quot;, &quot;bob&quot; , &quot;edwin&quot;, &quot;richard&quot;, &quot;lisa&quot;),
+                   gender = c(&quot;male&quot;  , &quot;male&quot;, &quot;male&quot; , &quot;male&quot;   , &quot;female&quot;),
+                   age    = c(23      , 18    , 43     , 21       , 50),
+                   stringsAsFactors = FALSE)</code></pre>
+<p>It looks like this:</p>
+<pre class="r"><code>mydf</code></pre>
+<pre><code>##      name gender age
+## 1  george   male  23
+## 2     bob   male  18
+## 3   edwin   male  43
+## 4 richard   male  21
+## 5    lisa female  50</code></pre>
+<p>To positively and negatively select values from a data frame, it’s the same as for vector (i.e. square brackets), except that here we have to provide indexes for rows and columns separated by a common. Rows are always first. Examples:</p>
+<pre class="r"><code>mydf[, 2]</code></pre>
+<pre><code>## [1] &quot;male&quot;   &quot;male&quot;   &quot;male&quot;   &quot;male&quot;   &quot;female&quot;</code></pre>
+<pre class="r"><code>mydf[3, ]</code></pre>
+<pre><code>##    name gender age
+## 3 edwin   male  43</code></pre>
+<pre class="r"><code>mydf[-3, ]</code></pre>
+<pre><code>##      name gender age
+## 1  george   male  23
+## 2     bob   male  18
+## 4 richard   male  21
+## 5    lisa female  50</code></pre>
+<pre class="r"><code>mydf[2, 3]</code></pre>
+<pre><code>## [1] 18</code></pre>
+<pre class="r"><code>mydf[2:4, c(1, 3)]</code></pre>
+<pre><code>##      name age
+## 2     bob  18
+## 3   edwin  43
+## 4 richard  21</code></pre>
+<pre class="r"><code>mydf[2:4, -1]</code></pre>
+<pre><code>##   gender age
+## 2   male  18
+## 3   male  43
+## 4   male  21</code></pre>
+<p>Reading an excel file:</p>
+<pre class="r"><code>readxl::dengue2010 &lt;- read_excel(&quot;name_of_the_excel_file.xls&quot;)</code></pre>
 </div>
 </div>
 <div id="scripts" class="section level2">
@@ -390,13 +442,6 @@ myvar &lt;- myvar[-(6:15)]
 myvar[3] &lt;- 3</code></pre>
 <p>Save the script in <code>vector selection.R</code> and source it:</p>
 <pre class="r"><code>source(&#39;vector selection.R&#39;)</code></pre>
-</div>
-<div id="additional-useful-functions" class="section level2">
-<h2>Additional useful functions</h2>
-<pre class="r"><code>length()
-head()
-tail()
-seq()</code></pre>
 </div>
 
 

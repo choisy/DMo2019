@@ -93,6 +93,19 @@ Checking that variable `a` has been removed:
 ls()
 ```
 
+Removing several variables at once:
+
+```{r}
+rm(b, c)
+```
+
+Checking:
+
+```{r}
+ls()
+```
+
+
 ### Vectors
 
 Basic data structure in R is vector with is and **ordered** collection of 
@@ -121,6 +134,54 @@ b[-3]
 b[c(1:2)]
 ```
 
+Additional function to use on vectors:
+
+```{r, eval = FALSE}
+length()
+head()
+tail()
+seq()
+```
+
+### Data frames
+
+Whereas vectors are 1-dimension structure, data frames are 2-dimension 
+structures (they have rows and columns). A data frame is basically a collection
+of vectors (organized in columns), all of the same length (the number of rows).
+To create a data frame:
+
+```{r}
+mydf <- data.frame(name   = c("george", "bob" , "edwin", "richard", "lisa"),
+                   gender = c("male"  , "male", "male" , "male"   , "female"),
+                   age    = c(23      , 18    , 43     , 21       , 50),
+                   stringsAsFactors = FALSE)
+```
+
+It looks like this:
+
+```{r}
+mydf
+```
+
+To positively and negatively select values from a data frame, it's the same as
+for vector (i.e. square brackets), except that here we have to provide indexes
+for rows and columns separated by a common. Rows are always first. Examples:
+
+```{r}
+mydf[, 2]
+mydf[3, ]
+mydf[-3, ]
+mydf[2, 3]
+mydf[2:4, c(1, 3)]
+mydf[2:4, -1]
+```
+
+Reading an excel file:
+
+```{r eval = FALSE}
+readxl::dengue2010 <- read_excel("name_of_the_excel_file.xls")
+```
+
 ## Scripts
 
 Open a new script file and write:
@@ -143,12 +204,6 @@ Save the script in `vector selection.R` and source it:
 source('vector selection.R')
 ```
 
-## Additional useful functions
 
-```{r, eval = FALSE}
-length()
-head()
-tail()
-seq()
-```
+
 
