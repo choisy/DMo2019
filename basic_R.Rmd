@@ -93,3 +93,31 @@ Checking that variable `a` has been removed:
 ls()
 ```
 
+### Vectors
+
+Basic data structure in R is vector with is and **ordered** collection of 
+elements, all the same nature:
+
+```{r}
+a <- c(1, 2, 3)
+b <- c("a", "b", "c")
+```
+
+Selecting elements:
+```{r}
+a[1]
+b[2]
+```
+
+Negative selection:
+
+```{r}
+a[-2]
+# is the same as
+a[c(1, 3)]
+# and
+b[-3]
+# is the same as
+b[c(1:2)]
+```
+
