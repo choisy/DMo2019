@@ -51,8 +51,8 @@ rm(list = ls())
 ```
 
 
-Presenter            | Affiliation                 | Title                                        | File
--------------------- | --------------------------- | -------------------------------------------- | ----
-[Marc Choisy](http://marcchoisy.free.fr)          | [IRD](http://marcchoisy.free.fr) / [OUCRU](http://www.oucru.org), Hanoi, Vietnam | Infectious diseases: time, space and control | [PDF](http://choisy.github.io/DMo2019/presentations/time_space_control.pdf)
-Balvinder Singh Gill | IMR, Kuala Lumpur, Malaysia | Early warning communicable disease surveillance in Malaysia | PDF
-Jane Labadin      | UNIMAS, Kuching, Malaysia | Disease Modeling using Bipartite Network | PDF
+Presenter            | Affiliation                 | Title
+-------------------- | --------------------------- | --------------------------------------------
+[Marc Choisy](http://marcchoisy.free.fr)          | [IRD](http://marcchoisy.free.fr) / [OUCRU](http://www.oucru.org), Hanoi, Vietnam | [Infectious diseases: time, space and control](http://choisy.github.io/DMo2019/presentations/time_space_control.pdf)
+[Balvinder Singh Gill](https://www.researchgate.net/profile/Balvinder_Gill2) | [IMR](https://www.imr.gov.my), Kuala Lumpur, Malaysia | Early warning communicable disease surveillance in Malaysia
+[Jane Labadin](http://www.archive.unimas.my/faculties/fcsit/jane-labadin.html)      | [UNIMAS](http://www.unimas.my), Kuching, Malaysia | Disease Modeling using Bipartite Network
