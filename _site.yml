@@ -5,11 +5,13 @@ navbar:
   left:
     - text: "Overview"
       href: index.html
+    - text: "Participants"
+      href: participants.html
     - text: "Basic R"
       href: basic_R.html
     - text: "SIR models"
       href: sir.html
-    - text: "Mdel calibration"
+    - text: "Model calibration"
       href: calibration.html
     - text: "Presentations"
       href: presentations.html

@@ -1,0 +1,91 @@
+---
+title: "Models calibration"
+output:
+  html_document:
+    theme: cosmo
+    toc: yes
+  pdf_document:
+    toc: yes
+editor_options: 
+  chunk_output_type: console
+---
+
+<!--
+IMAGES:
+Insert them with: ![alt text](image.png)
+You can also resize them if needed: convert image.png -resize 50% image.png
+If you want to center the image, go through HTML code:
+<div style="text-align:center"><img src ="image.png"/></div>
+
+REFERENCES:
+For references: Put all the bibTeX references in the file "references.bib"
+in the current folder and cite the references as @key or [@key] in the text.
+Uncomment the bibliography field in the above header and put a "References"
+title wherever you want to display the reference list.
+-->
+
+```{r general_options, include = FALSE}
+knitr::knit_hooks$set(margin = function(before, options, envir) {
+  if (before) par(mgp = c(1.5, .5, 0), bty = "n", plt = c(.105, .97, .13, .97))
+  else NULL
+})
+
+knitr::opts_chunk$set(margin = TRUE, prompt = FALSE, comment = "##",
+                      collapse = FALSE, cache = FALSE, autodep = TRUE,
+                      dev.args = list(pointsize = 11), fig.height = 3.5,
+                      fig.width = 4.24725, fig.retina = 2, fig.align = "center")
+
+l <- "en_US.UTF-8"
+Sys.setenv(LANGAGE = l)
+Sys.setlocale(locale = l)
+Sys.setlocale("LC_MESSAGES", l)
+
+# cleaning the packages space:
+search_path <- search()
+pkgs <- c("stats", "graphics", "grDevices", "utils", "datasets", "methods", "base")
+tdet <- grep("package", search_path[!(search_path %in% paste0("package:", pkgs))],
+             value = TRUE)
+for(i in tdet) detach(i, unload = TRUE, character.only = TRUE)
+
+rm(list = ls())
+```
+
+## Instructors
+
+Name | email | affiliation
+---- | ----- | -----------
+Dr Marc Choisy | marc.choisy@ird.fr | [IRD](http://marcchoisy.free.fr) / [OUCRU](http://www.oucru.org)
+Dr Balvinder Singh Gill | drbsgill@imr.gov.my | Institute of Medical Resources Center
+Assoc Prof Dr Jane Labadin | ljane@unimas.my | FCSIT, UNIMAS
+
+## Attendees
+
+### Hand-foot-and-month group
+
+Name | email | affiliation
+---- | ----- | -----------
+Associate Professor Dr Noorzilawati binti Sahak | snoorzilawati@unimas.my | FMHS, UNIMAS
+Dr A.L. Liza Binti Abd Latip | liza_emily@yahoo.com | Pejabat Kesihatan Kawasan Beaufort
+Dr Nur Ezzah Bt Abd Rahim | noin85ezzah@gmail.com | DrPH Student, FMHS, UNIMAS
+Dr Neilson Richard Seling | neilsonrs@yahoo.com | DrPH Student, FMHS, UNIMAS
+Dr Cynthia Kon Mui Lian | ckon@swinburne.edu.my | Swinburne University
+
+### Tuberculosis group
+
+Name | email | affiliation
+---- | ----- | -----------
+Prof Dr Md Mizanur Rahman | rmmizanur@unimas.my | FMHS, UNIMAS
+Dr Gregory A/L Joseph Xavier | gregshc@yahoo.co.uk | DrPH Student, FMHS, UNIMAS
+Dr Lim Siong Hee | limsionghee86@gmail.com | DrPH Student, FMHS, UNIMAS
+Dr Mohd Fahmi Bin Ismail | shaifulsharizal@gmail.com | DrPH Student, FMHS, UNIMAS
+Nur Asheila binti Abdul Taib | ellataib@ymail.com | FCSIT, UNIMAS
+
+### Dengue group
+
+Name | email | affiliation
+---- | ----- | -----------
+Dr Mariana Bt Tumin |  marianatumin@gmail.com | DrPH Student, FMHS, UNIMAS
+Dr Shaiful Sharizal Bin Othman | shaifulsharizal@gmail.com | DrPH Student, FMHS, UNIMAS
+Teoh Shian Li | shianli90@gmail.com | FCSIT, UNIMAS
+Dr Mohd Fahmi Bin Ismail | shaifulsharizal@gmail.com |DrPH Student, FMHS, UNIMAS
+Dr Hasazli Bin Hasan | hasazli@hotmail.com | DrPH Student, FMHS, UNIMAS
