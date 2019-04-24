@@ -53,6 +53,6 @@ rm(list = ls())
 
 Presenter            | Affiliation                 | Title                                        | File
 -------------------- | --------------------------- | -------------------------------------------- | ----
-[Marc Choisy](http://marcchoisy.free.fr)          | [IRD](http://marcchoisy.free.fr) / [OUCRU](http://www.oucru.org), Hanoi, Vietnam | Infectious diseases: time, space and control | [PDF](presentations/time_space_control.pdf)
+[Marc Choisy](http://marcchoisy.free.fr)          | [IRD](http://marcchoisy.free.fr) / [OUCRU](http://www.oucru.org), Hanoi, Vietnam | Infectious diseases: time, space and control | [PDF](https://www.dropbox.com/s/7snmrmth5hluesv/time_space_control.pdf?dl=0)
 Balvinder Singh Gill | IMR, Kuala Lumpur, Malaysia | Early warning communicable disease surveillance in Malaysia | PDF
 Jane Labadin      | UNIMAS, Kuching, Malaysia | Disease Modeling using Bipartite Network | PDF
