@@ -182,6 +182,111 @@ Reading an excel file:
 readxl::dengue2010 <- read_excel("name_of_the_excel_file.xls")
 ```
 
+### Lists
+
+Lists are a collection of elements which, unlike vectors, do not need to be all
+of the same nature. Furthermore elements of a list can themselves be lists,
+which give lists the property to be structured objects.
+
+```{r}
+my_list <- list(1, 2, 3)
+my_list
+```
+
+Same as for vector, if you want to select elements of a list, use the single
+square brackets `[]`:
+
+```{r}
+my_list[2:3]
+my_list[-1]
+my_list[1]
+```
+
+In case you select only one element of the list, you may want to drop the list
+structure that you may not need any more. For that, use the double square
+brackets `[[]]` instead of single square brackets `[]`:
+
+```{r}
+my_list[2]
+my_list[[2]]
+```
+
+Same as for vectors, you can name the elements of a list:
+
+```{r}
+my_list <- list(first = 1, second = 2, third = 3)
+my_list
+```
+
+And you can use these names instead of indexes to select the elements of a list:
+
+```{r}
+my_list[1]
+my_list["first"]
+my_list[c(1, 3)]
+my_list[c("first", "third")]
+```
+
+Finally, a very useful function to use on list is the `with()` function: it 
+tells, in what list R should be looking for the elements you are talking about.
+Exammple:
+
+```{r eval = FALSE}
+first + 1
+```
+
+returns an error because by default R look for objects in the global 
+environment, and there is no such object named `first` in the global 
+environment:
+
+```{r}
+ls()
+```
+
+If you meant the element of the list `my_list` named `first`, then, you can
+specify it this way:
+
+```{r}
+my_list[["first"]] + 1
+```
+
+Note here that we dropped the list structure by the use of the double square
+brackets `[[]]`. An alternative to the above command is to use the `with()`
+function:
+
+```{r}
+with(my_list, first + 1)
+```
+
+Here, `with()` tells R to look for an element named `first` in the list named
+`my_list`.
+
+#### Advanced
+
+Two advanced points:
+
+* Use of the dollar sign `$`
+
+If you are selecting only one element of a list, then, the tree commands below
+are equivalent:
+
+```{r}
+my_list[[2]]
+my_list[["second"]]
+my_list$second
+```
+
+* Data frame are lists where all the elements (columns) are all vectors of the 
+same length. In consequence, you can also make use of `[[]]` and `$` to select
+elements of a data frame as you would do for any regular list:
+
+```{r}
+mydf[[2]]
+mydf[["gender"]]
+mydf$gender
+```
+
+
 ## Scripts
 
 Open a new script file and write:

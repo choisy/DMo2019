@@ -312,6 +312,7 @@ $(document).ready(function () {
 <li><a href="#variables">Variables</a><ul>
 <li><a href="#vectors">Vectors</a></li>
 <li><a href="#data-frames">Data frames</a></li>
+<li><a href="#lists">Lists</a></li>
 </ul></li>
 <li><a href="#scripts">Scripts</a></li>
 </ul>
@@ -432,6 +433,107 @@ seq()</code></pre>
 ## 4   male  21</code></pre>
 <p>Reading an excel file:</p>
 <pre class="r"><code>readxl::dengue2010 &lt;- read_excel(&quot;name_of_the_excel_file.xls&quot;)</code></pre>
+</div>
+<div id="lists" class="section level3">
+<h3>Lists</h3>
+<p>Lists are a collection of elements which, unlike vectors, do not need to be all of the same nature. Furthermore elements of a list can themselves be lists, which give lists the property to be structured objects.</p>
+<pre class="r"><code>my_list &lt;- list(1, 2, 3)
+my_list</code></pre>
+<pre><code>## [[1]]
+## [1] 1
+## 
+## [[2]]
+## [1] 2
+## 
+## [[3]]
+## [1] 3</code></pre>
+<p>Same as for vector, if you want to select elements of a list, use the single square brackets <code>[]</code>:</p>
+<pre class="r"><code>my_list[2:3]</code></pre>
+<pre><code>## [[1]]
+## [1] 2
+## 
+## [[2]]
+## [1] 3</code></pre>
+<pre class="r"><code>my_list[-1]</code></pre>
+<pre><code>## [[1]]
+## [1] 2
+## 
+## [[2]]
+## [1] 3</code></pre>
+<pre class="r"><code>my_list[1]</code></pre>
+<pre><code>## [[1]]
+## [1] 1</code></pre>
+<p>In case you select only one element of the list, you may want to drop the list structure that you may not need any more. For that, use the double square brackets <code>[[]]</code> instead of single square brackets <code>[]</code>:</p>
+<pre class="r"><code>my_list[2]</code></pre>
+<pre><code>## [[1]]
+## [1] 2</code></pre>
+<pre class="r"><code>my_list[[2]]</code></pre>
+<pre><code>## [1] 2</code></pre>
+<p>Same as for vectors, you can name the elements of a list:</p>
+<pre class="r"><code>my_list &lt;- list(first = 1, second = 2, third = 3)
+my_list</code></pre>
+<pre><code>## $first
+## [1] 1
+## 
+## $second
+## [1] 2
+## 
+## $third
+## [1] 3</code></pre>
+<p>And you can use these names instead of indexes to select the elements of a list:</p>
+<pre class="r"><code>my_list[1]</code></pre>
+<pre><code>## $first
+## [1] 1</code></pre>
+<pre class="r"><code>my_list[&quot;first&quot;]</code></pre>
+<pre><code>## $first
+## [1] 1</code></pre>
+<pre class="r"><code>my_list[c(1, 3)]</code></pre>
+<pre><code>## $first
+## [1] 1
+## 
+## $third
+## [1] 3</code></pre>
+<pre class="r"><code>my_list[c(&quot;first&quot;, &quot;third&quot;)]</code></pre>
+<pre><code>## $first
+## [1] 1
+## 
+## $third
+## [1] 3</code></pre>
+<p>Finally, a very useful function to use on list is the <code>with()</code> function: it tells, in what list R should be looking for the elements you are talking about. Exammple:</p>
+<pre class="r"><code>first + 1</code></pre>
+<p>returns an error because by default R look for objects in the global environment, and there is no such object named <code>first</code> in the global environment:</p>
+<pre class="r"><code>ls()</code></pre>
+<pre><code>## [1] &quot;a&quot;       &quot;b&quot;       &quot;my_list&quot; &quot;mydf&quot;</code></pre>
+<p>If you meant the element of the list <code>my_list</code> named <code>first</code>, then, you can specify it this way:</p>
+<pre class="r"><code>my_list[[&quot;first&quot;]] + 1</code></pre>
+<pre><code>## [1] 2</code></pre>
+<p>Note here that we dropped the list structure by the use of the double square brackets <code>[[]]</code>. An alternative to the above command is to use the <code>with()</code> function:</p>
+<pre class="r"><code>with(my_list, first + 1)</code></pre>
+<pre><code>## [1] 2</code></pre>
+<p>Here, <code>with()</code> tells R to look for an element named <code>first</code> in the list named <code>my_list</code>.</p>
+<div id="advanced" class="section level4">
+<h4>Advanced</h4>
+<p>Two advanced points:</p>
+<ul>
+<li>Use of the dollar sign <code>$</code></li>
+</ul>
+<p>If you are selecting only one element of a list, then, the tree commands below are equivalent:</p>
+<pre class="r"><code>my_list[[2]]</code></pre>
+<pre><code>## [1] 2</code></pre>
+<pre class="r"><code>my_list[[&quot;second&quot;]]</code></pre>
+<pre><code>## [1] 2</code></pre>
+<pre class="r"><code>my_list$second</code></pre>
+<pre><code>## [1] 2</code></pre>
+<ul>
+<li>Data frame are lists where all the elements (columns) are all vectors of the same length. In consequence, you can also make use of <code>[[]]</code> and <code>$</code> to select elements of a data frame as you would do for any regular list:</li>
+</ul>
+<pre class="r"><code>mydf[[2]]</code></pre>
+<pre><code>## [1] &quot;male&quot;   &quot;male&quot;   &quot;male&quot;   &quot;male&quot;   &quot;female&quot;</code></pre>
+<pre class="r"><code>mydf[[&quot;gender&quot;]]</code></pre>
+<pre><code>## [1] &quot;male&quot;   &quot;male&quot;   &quot;male&quot;   &quot;male&quot;   &quot;female&quot;</code></pre>
+<pre class="r"><code>mydf$gender</code></pre>
+<pre><code>## [1] &quot;male&quot;   &quot;male&quot;   &quot;male&quot;   &quot;male&quot;   &quot;female&quot;</code></pre>
+</div>
 </div>
 </div>
 <div id="scripts" class="section level2">
