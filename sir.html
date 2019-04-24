@@ -282,13 +282,16 @@ $(document).ready(function () {
   <a href="index.html">Overview</a>
 </li>
 <li>
+  <a href="participants.html">Participants</a>
+</li>
+<li>
   <a href="basic_R.html">Basic R</a>
 </li>
 <li>
   <a href="sir.html">SIR models</a>
 </li>
 <li>
-  <a href="calibration.html">Mdel calibration</a>
+  <a href="calibration.html">Model calibration</a>
 </li>
 <li>
   <a href="presentations.html">Presentations</a>
@@ -318,6 +321,13 @@ $(document).ready(function () {
 </ul></li>
 <li><a href="#solving-differential-equations-in-r">Solving differential equations in R</a><ul>
 <li><a href="#step-1-writing-the-differential-equations-in-r">Step 1: writing the differential equations in R</a></li>
+<li><a href="#step-2-defining-some-values-for-the-parameters">Step 2: defining some values for the parameters</a></li>
+<li><a href="#step-3-defining-initial-values-for-the-variables">Step 3: defining initial values for the variables</a></li>
+<li><a href="#step-4-the-points-in-time-where-to-calculate-variables-values">Step 4: the points in time where to calculate variables values</a></li>
+<li><a href="#step-5-numerically-solving-the-sir-model">Step 5: numerically solving the SIR model</a></li>
+</ul></li>
+<li><a href="#exercises">Exercises</a><ul>
+<li><a href="#writing-a-simulator">Writing a simulator</a></li>
 </ul></li>
 </ul>
 </div>
@@ -371,6 +381,144 @@ title wherever you want to display the reference list.
 <pre class="r"><code>library(deSolve) # using the &quot;ode&quot; function</code></pre>
 <div id="step-1-writing-the-differential-equations-in-r" class="section level3">
 <h3>Step 1: writing the differential equations in R</h3>
+<p>Note the use of the <code>with()</code> function in the function below:</p>
+<pre class="r"><code>sir_equations &lt;- function(time, variables, parameters) {
+  with(as.list(c(variables, parameters)), {
+    dS &lt;- -beta * I * S
+    dI &lt;-  beta * I * S - gamma * I
+    dR &lt;-  gamma * I
+    return(list(c(dS, dI, dR)))
+  })
+}</code></pre>
+<p><code>with()</code> works on lists only, not on vectors.</p>
+</div>
+<div id="step-2-defining-some-values-for-the-parameters" class="section level3">
+<h3>Step 2: defining some values for the parameters</h3>
+<p>Parameters values need to be defined in a named vector:</p>
+<pre class="r"><code>parameters_values &lt;- c(
+  beta  = 0.004, # infectious contact rate (/person/day)
+  gamma = 0.5    # recovery rate (/day)
+)</code></pre>
+<p>Don’t forget to document your code. Important information is the units of your parameters!</p>
+</div>
+<div id="step-3-defining-initial-values-for-the-variables" class="section level3">
+<h3>Step 3: defining initial values for the variables</h3>
+<p>The initial values of the variables need to be defined in a named vector:</p>
+<pre class="r"><code>initial_values &lt;- c(
+  S = 999,  # number of susceptibles at time = 0
+  I =   1,  # number of infectious at time = 0
+  R =   0   # number of recovered (and immune) at time = 0
+)</code></pre>
+</div>
+<div id="step-4-the-points-in-time-where-to-calculate-variables-values" class="section level3">
+<h3>Step 4: the points in time where to calculate variables values</h3>
+<p>We want to know the values of our SIR model variables at these time points:</p>
+<pre class="r"><code>time_values &lt;- seq(0, 10) # days</code></pre>
+</div>
+<div id="step-5-numerically-solving-the-sir-model" class="section level3">
+<h3>Step 5: numerically solving the SIR model</h3>
+<p>We have defined all the needed ingredients:</p>
+<pre class="r"><code>ls()</code></pre>
+<pre><code>## [1] &quot;initial_values&quot;    &quot;parameters_values&quot; &quot;sir_equations&quot;    
+## [4] &quot;time_values&quot;</code></pre>
+<p>You can have a look at what is in these objects by typing their names at the command line:</p>
+<pre class="r"><code>sir_equations</code></pre>
+<pre><code>## function(time, variables, parameters) {
+##   with(as.list(c(variables, parameters)), {
+##     dS &lt;- -beta * I * S
+##     dI &lt;-  beta * I * S - gamma * I
+##     dR &lt;-  gamma * I
+##     return(list(c(dS, dI, dR)))
+##   })
+## }</code></pre>
+<pre class="r"><code>parameters_values</code></pre>
+<pre><code>##  beta gamma 
+## 0.004 0.500</code></pre>
+<pre class="r"><code>initial_values</code></pre>
+<pre><code>##   S   I   R 
+## 999   1   0</code></pre>
+<pre class="r"><code>time_values</code></pre>
+<pre><code>##  [1]  0  1  2  3  4  5  6  7  8  9 10</code></pre>
+<p>Everything looks OK, so now we can use the <code>ode()</code> function of the <code>deSolve</code> package to numerically solve our model:</p>
+<pre class="r"><code>sir_values_1 &lt;- ode(
+  y = initial_values,
+  times = time_values,
+  func = sir_equations,
+  parms = parameters_values 
+)</code></pre>
+<p>We can have a look at the calculated values:</p>
+<pre class="r"><code>sir_values_1</code></pre>
+<pre><code>##    time           S         I          R
+## 1     0 999.0000000   1.00000   0.000000
+## 2     1 963.7055761  31.79830   4.496125
+## 3     2 461.5687749 441.91575  96.515480
+## 4     3  46.1563480 569.50418 384.339476
+## 5     4   7.0358807 373.49831 619.465807
+## 6     5   2.1489407 230.12934 767.721720
+## 7     6   1.0390927 140.41085 858.550058
+## 8     7   0.6674074  85.44479 913.887801
+## 9     8   0.5098627  51.94498 947.545162
+## 10    9   0.4328913  31.56515 968.001960
+## 11   10   0.3919173  19.17668 980.431400</code></pre>
+<p>and you can use these values for further analytical steps, for examples making a figure of the time series. To make our life easier, let’s just first convert <code>sir_values_1</code> into a data frame so that can then use it within the <code>with()</code> function:</p>
+<pre class="r"><code>sir_values_1 &lt;- as.data.frame(sir_values_1)
+sir_values_1</code></pre>
+<pre><code>##    time           S         I          R
+## 1     0 999.0000000   1.00000   0.000000
+## 2     1 963.7055761  31.79830   4.496125
+## 3     2 461.5687749 441.91575  96.515480
+## 4     3  46.1563480 569.50418 384.339476
+## 5     4   7.0358807 373.49831 619.465807
+## 6     5   2.1489407 230.12934 767.721720
+## 7     6   1.0390927 140.41085 858.550058
+## 8     7   0.6674074  85.44479 913.887801
+## 9     8   0.5098627  51.94498 947.545162
+## 10    9   0.4328913  31.56515 968.001960
+## 11   10   0.3919173  19.17668 980.431400</code></pre>
+<p>Same, same (almost). One handy difference is that now we can use the <code>with()</code> function, which makes the code simpler:</p>
+<pre class="r"><code>with(sir_values_1, {
+# plotting the time series of susceptibles:
+  plot(time, S, type = &quot;l&quot;, col = &quot;blue&quot;,
+       xlab = &quot;time (days)&quot;, ylab = &quot;number of people&quot;)
+# adding the time series of infectious:
+  lines(time, I, col = &quot;red&quot;)
+# adding the time series of recovered:
+  lines(time, R, col = &quot;green&quot;)
+})
+
+# adding a legend:
+legend(&quot;right&quot;, c(&quot;susceptibles&quot;, &quot;infectious&quot;, &quot;recovered&quot;),
+       col = c(&quot;blue&quot;, &quot;red&quot;, &quot;green&quot;), lty = 1, bty = &quot;n&quot;)</code></pre>
+<p><img src="sir_files/figure-html/unnamed-chunk-12-1.png" width="407.736" style="display: block; margin: auto;" /></p>
+<p>The value of the <span class="math inline">\(R_0\)</span> is</p>
+<pre class="r"><code>(999 + 1) * parameters_values[&quot;beta&quot;] / parameters_values[&quot;gamma&quot;]</code></pre>
+<pre><code>## [1] 8</code></pre>
+</div>
+</div>
+<div id="exercises" class="section level2">
+<h2>Exercises</h2>
+<div id="writing-a-simulator" class="section level3">
+<h3>Writing a simulator</h3>
+<p>Use some of the above code to write a <code>sir_1()</code> function that takes</p>
+<ul>
+<li>parameters values,</li>
+<li>intial values of the variables and</li>
+<li>a vector of time points</li>
+</ul>
+<p>as inputs and run the SIR model and returns a data frame of time series as an output as below:</p>
+<pre class="r"><code>sir_1(beta = 0.004, gamma = 0.5, S0 = 999, I0 = 1, R0 = 0, times = seq(0, 10))</code></pre>
+<pre><code>##    time           S         I          R
+## 1     0 999.0000000   1.00000   0.000000
+## 2     1 963.7055761  31.79830   4.496125
+## 3     2 461.5687749 441.91575  96.515480
+## 4     3  46.1563480 569.50418 384.339476
+## 5     4   7.0358807 373.49831 619.465807
+## 6     5   2.1489407 230.12934 767.721720
+## 7     6   1.0390927 140.41085 858.550058
+## 8     7   0.6674074  85.44479 913.887801
+## 9     8   0.5098627  51.94498 947.545162
+## 10    9   0.4328913  31.56515 968.001960
+## 11   10   0.3919173  19.17668 980.431400</code></pre>
 </div>
 </div>
 
