@@ -1,0 +1,6256 @@
+state,year,week,incidence
+Johor,2010,1,2
+Johor,2010,2,5
+Johor,2010,3,4
+Johor,2010,4,6
+Johor,2010,5,7
+Johor,2010,6,4
+Johor,2010,7,7
+Johor,2010,8,5
+Johor,2010,9,4
+Johor,2010,10,5
+Johor,2010,11,14
+Johor,2010,12,6
+Johor,2010,13,7
+Johor,2010,14,8
+Johor,2010,15,7
+Johor,2010,16,10
+Johor,2010,17,10
+Johor,2010,18,14
+Johor,2010,19,10
+Johor,2010,20,8
+Johor,2010,21,16
+Johor,2010,22,9
+Johor,2010,23,9
+Johor,2010,24,16
+Johor,2010,25,12
+Johor,2010,26,19
+Johor,2010,27,9
+Johor,2010,28,20
+Johor,2010,29,19
+Johor,2010,30,16
+Johor,2010,31,18
+Johor,2010,32,17
+Johor,2010,33,18
+Johor,2010,34,22
+Johor,2010,35,21
+Johor,2010,36,19
+Johor,2010,37,14
+Johor,2010,38,24
+Johor,2010,39,22
+Johor,2010,40,19
+Johor,2010,41,16
+Johor,2010,42,15
+Johor,2010,43,16
+Johor,2010,44,8
+Johor,2010,45,11
+Johor,2010,46,11
+Johor,2010,47,16
+Johor,2010,48,15
+Johor,2010,49,10
+Johor,2010,50,8
+Johor,2010,51,9
+Johor,2010,52,13
+Johor,2011,1,8
+Johor,2011,2,6
+Johor,2011,3,9
+Johor,2011,4,6
+Johor,2011,5,11
+Johor,2011,6,8
+Johor,2011,7,11
+Johor,2011,8,12
+Johor,2011,9,4
+Johor,2011,10,3
+Johor,2011,11,6
+Johor,2011,12,4
+Johor,2011,13,3
+Johor,2011,14,4
+Johor,2011,15,7
+Johor,2011,16,3
+Johor,2011,17,6
+Johor,2011,18,1
+Johor,2011,19,6
+Johor,2011,20,3
+Johor,2011,21,3
+Johor,2011,22,3
+Johor,2011,23,4
+Johor,2011,24,5
+Johor,2011,25,7
+Johor,2011,26,2
+Johor,2011,27,3
+Johor,2011,28,2
+Johor,2011,29,3
+Johor,2011,30,5
+Johor,2011,31,2
+Johor,2011,32,4
+Johor,2011,33,3
+Johor,2011,34,1
+Johor,2011,35,1
+Johor,2011,36,3
+Johor,2011,37,2
+Johor,2011,38,1
+Johor,2011,39,0
+Johor,2011,40,2
+Johor,2011,41,2
+Johor,2011,42,1
+Johor,2011,43,0
+Johor,2011,44,0
+Johor,2011,45,0
+Johor,2011,46,0
+Johor,2011,47,1
+Johor,2011,48,1
+Johor,2011,49,1
+Johor,2011,50,2
+Johor,2011,51,0
+Johor,2011,52,1
+Johor,2012,1,0
+Johor,2012,2,2
+Johor,2012,3,1
+Johor,2012,4,3
+Johor,2012,5,3
+Johor,2012,6,2
+Johor,2012,7,3
+Johor,2012,8,2
+Johor,2012,9,1
+Johor,2012,10,1
+Johor,2012,11,0
+Johor,2012,12,2
+Johor,2012,13,0
+Johor,2012,14,1
+Johor,2012,15,0
+Johor,2012,16,4
+Johor,2012,17,0
+Johor,2012,18,1
+Johor,2012,19,1
+Johor,2012,20,1
+Johor,2012,21,1
+Johor,2012,22,2
+Johor,2012,23,1
+Johor,2012,24,0
+Johor,2012,25,1
+Johor,2012,26,0
+Johor,2012,27,0
+Johor,2012,28,0
+Johor,2012,29,4
+Johor,2012,30,0
+Johor,2012,31,1
+Johor,2012,32,3
+Johor,2012,33,0
+Johor,2012,34,2
+Johor,2012,35,0
+Johor,2012,36,0
+Johor,2012,37,0
+Johor,2012,38,0
+Johor,2012,39,2
+Johor,2012,40,0
+Johor,2012,41,0
+Johor,2012,42,2
+Johor,2012,43,0
+Johor,2012,44,1
+Johor,2012,45,1
+Johor,2012,46,0
+Johor,2012,47,0
+Johor,2012,48,2
+Johor,2012,49,0
+Johor,2012,50,0
+Johor,2012,51,0
+Johor,2012,52,0
+Johor,2013,1,3
+Johor,2013,2,4
+Johor,2013,3,1
+Johor,2013,4,1
+Johor,2013,5,1
+Johor,2013,6,2
+Johor,2013,7,1
+Johor,2013,8,2
+Johor,2013,9,1
+Johor,2013,10,2
+Johor,2013,11,2
+Johor,2013,12,1
+Johor,2013,13,3
+Johor,2013,14,0
+Johor,2013,15,0
+Johor,2013,16,1
+Johor,2013,17,0
+Johor,2013,18,1
+Johor,2013,19,2
+Johor,2013,20,0
+Johor,2013,21,3
+Johor,2013,22,0
+Johor,2013,23,0
+Johor,2013,24,1
+Johor,2013,25,0
+Johor,2013,26,1
+Johor,2013,27,1
+Johor,2013,28,1
+Johor,2013,29,1
+Johor,2013,30,3
+Johor,2013,31,2
+Johor,2013,32,1
+Johor,2013,33,2
+Johor,2013,34,4
+Johor,2013,35,1
+Johor,2013,36,1
+Johor,2013,37,0
+Johor,2013,38,0
+Johor,2013,39,3
+Johor,2013,40,2
+Johor,2013,41,2
+Johor,2013,42,3
+Johor,2013,43,2
+Johor,2013,44,2
+Johor,2013,45,3
+Johor,2013,46,1
+Johor,2013,47,0
+Johor,2013,48,1
+Johor,2013,49,2
+Johor,2013,50,3
+Johor,2013,51,1
+Johor,2013,52,3
+Johor,2014,1,1
+Johor,2014,2,1
+Johor,2014,3,0
+Johor,2014,4,1
+Johor,2014,5,1
+Johor,2014,6,0
+Johor,2014,7,0
+Johor,2014,8,3
+Johor,2014,9,2
+Johor,2014,10,3
+Johor,2014,11,2
+Johor,2014,12,1
+Johor,2014,13,0
+Johor,2014,14,1
+Johor,2014,15,0
+Johor,2014,16,2
+Johor,2014,17,0
+Johor,2014,18,1
+Johor,2014,19,0
+Johor,2014,20,0
+Johor,2014,21,0
+Johor,2014,22,0
+Johor,2014,23,1
+Johor,2014,24,1
+Johor,2014,25,2
+Johor,2014,26,0
+Johor,2014,27,1
+Johor,2014,28,2
+Johor,2014,29,0
+Johor,2014,30,0
+Johor,2014,31,3
+Johor,2014,32,2
+Johor,2014,33,0
+Johor,2014,34,1
+Johor,2014,35,0
+Johor,2014,36,0
+Johor,2014,37,1
+Johor,2014,38,1
+Johor,2014,39,0
+Johor,2014,40,1
+Johor,2014,41,1
+Johor,2014,42,0
+Johor,2014,43,0
+Johor,2014,44,1
+Johor,2014,45,1
+Johor,2014,46,1
+Johor,2014,47,1
+Johor,2014,48,1
+Johor,2014,49,1
+Johor,2014,50,0
+Johor,2014,51,1
+Johor,2014,52,1
+Johor,2014,53,1
+Johor,2015,1,1
+Johor,2015,2,0
+Johor,2015,3,1
+Johor,2015,4,0
+Johor,2015,5,0
+Johor,2015,6,0
+Johor,2015,7,0
+Johor,2015,8,0
+Johor,2015,9,1
+Johor,2015,10,0
+Johor,2015,11,0
+Johor,2015,12,0
+Johor,2015,13,2
+Johor,2015,14,1
+Johor,2015,15,0
+Johor,2015,16,1
+Johor,2015,17,0
+Johor,2015,18,1
+Johor,2015,19,1
+Johor,2015,20,0
+Johor,2015,21,0
+Johor,2015,22,1
+Johor,2015,23,2
+Johor,2015,24,1
+Johor,2015,25,0
+Johor,2015,26,1
+Johor,2015,27,3
+Johor,2015,28,0
+Johor,2015,29,4
+Johor,2015,30,3
+Johor,2015,31,0
+Johor,2015,32,2
+Johor,2015,33,0
+Johor,2015,34,1
+Johor,2015,35,4
+Johor,2015,36,2
+Johor,2015,37,4
+Johor,2015,38,1
+Johor,2015,39,2
+Johor,2015,40,0
+Johor,2015,41,1
+Johor,2015,42,1
+Johor,2015,43,2
+Johor,2015,44,1
+Johor,2015,45,1
+Johor,2015,46,1
+Johor,2015,47,1
+Johor,2015,48,2
+Johor,2015,49,0
+Johor,2015,50,1
+Johor,2015,51,3
+Johor,2015,52,6
+Johor,2016,1,0
+Johor,2016,2,0
+Johor,2016,3,2
+Johor,2016,4,1
+Johor,2016,5,0
+Johor,2016,6,1
+Johor,2016,7,1
+Johor,2016,8,1
+Johor,2016,9,3
+Johor,2016,10,0
+Johor,2016,11,2
+Johor,2016,12,0
+Johor,2016,13,0
+Johor,2016,14,0
+Johor,2016,15,2
+Johor,2016,16,0
+Johor,2016,17,0
+Johor,2016,18,0
+Johor,2016,19,0
+Johor,2016,20,0
+Johor,2016,21,0
+Johor,2016,22,0
+Johor,2016,23,1
+Johor,2016,24,0
+Johor,2016,25,0
+Johor,2016,26,1
+Johor,2016,27,1
+Johor,2016,28,0
+Johor,2016,29,0
+Johor,2016,30,0
+Johor,2016,31,0
+Johor,2016,32,0
+Johor,2016,33,1
+Johor,2016,34,1
+Johor,2016,35,1
+Johor,2016,36,0
+Johor,2016,37,0
+Johor,2016,38,1
+Johor,2016,39,1
+Johor,2016,40,2
+Johor,2016,41,0
+Johor,2016,42,0
+Johor,2016,43,1
+Johor,2016,44,2
+Johor,2016,45,0
+Johor,2016,46,0
+Johor,2016,47,1
+Johor,2016,48,0
+Johor,2016,49,0
+Johor,2016,50,0
+Johor,2016,51,0
+Johor,2016,52,1
+Johor,2017,1,0
+Johor,2017,2,1
+Johor,2017,3,1
+Johor,2017,4,0
+Johor,2017,5,0
+Johor,2017,6,2
+Johor,2017,7,1
+Johor,2017,8,0
+Johor,2017,9,0
+Johor,2017,10,1
+Johor,2017,11,0
+Johor,2017,12,0
+Johor,2017,13,0
+Johor,2017,14,3
+Johor,2017,15,0
+Johor,2017,16,1
+Johor,2017,17,1
+Johor,2017,18,1
+Johor,2017,19,0
+Johor,2017,20,0
+Johor,2017,21,0
+Johor,2017,22,0
+Johor,2017,23,1
+Johor,2017,24,0
+Johor,2017,25,0
+Johor,2017,26,0
+Johor,2017,27,0
+Johor,2017,28,1
+Johor,2017,29,2
+Johor,2017,30,0
+Johor,2017,31,0
+Johor,2017,32,4
+Johor,2017,33,2
+Johor,2017,34,0
+Johor,2017,35,1
+Johor,2017,36,1
+Johor,2017,37,0
+Johor,2017,38,1
+Johor,2017,39,0
+Johor,2017,40,0
+Johor,2017,41,0
+Johor,2017,42,0
+Johor,2017,43,1
+Johor,2017,44,0
+Johor,2017,45,0
+Johor,2017,46,0
+Johor,2017,47,0
+Johor,2017,48,0
+Johor,2017,49,0
+Johor,2017,50,0
+Johor,2017,51,1
+Johor,2017,52,2
+Kedah,2010,1,0
+Kedah,2010,2,0
+Kedah,2010,3,0
+Kedah,2010,4,1
+Kedah,2010,5,0
+Kedah,2010,6,0
+Kedah,2010,7,0
+Kedah,2010,8,0
+Kedah,2010,9,0
+Kedah,2010,10,0
+Kedah,2010,11,0
+Kedah,2010,12,0
+Kedah,2010,13,0
+Kedah,2010,14,1
+Kedah,2010,15,0
+Kedah,2010,16,0
+Kedah,2010,17,0
+Kedah,2010,18,0
+Kedah,2010,19,0
+Kedah,2010,20,0
+Kedah,2010,21,0
+Kedah,2010,22,0
+Kedah,2010,23,0
+Kedah,2010,24,0
+Kedah,2010,25,1
+Kedah,2010,26,0
+Kedah,2010,27,0
+Kedah,2010,28,0
+Kedah,2010,29,0
+Kedah,2010,30,0
+Kedah,2010,31,0
+Kedah,2010,32,0
+Kedah,2010,33,0
+Kedah,2010,34,0
+Kedah,2010,35,0
+Kedah,2010,36,0
+Kedah,2010,37,0
+Kedah,2010,38,0
+Kedah,2010,39,0
+Kedah,2010,40,0
+Kedah,2010,41,0
+Kedah,2010,42,0
+Kedah,2010,43,0
+Kedah,2010,44,0
+Kedah,2010,45,0
+Kedah,2010,46,0
+Kedah,2010,47,0
+Kedah,2010,48,0
+Kedah,2010,49,0
+Kedah,2010,50,0
+Kedah,2010,51,0
+Kedah,2010,52,0
+Kedah,2011,1,3
+Kedah,2011,2,1
+Kedah,2011,3,0
+Kedah,2011,4,1
+Kedah,2011,5,1
+Kedah,2011,6,0
+Kedah,2011,7,2
+Kedah,2011,8,0
+Kedah,2011,9,0
+Kedah,2011,10,0
+Kedah,2011,11,0
+Kedah,2011,12,0
+Kedah,2011,13,0
+Kedah,2011,14,0
+Kedah,2011,15,1
+Kedah,2011,16,0
+Kedah,2011,17,0
+Kedah,2011,18,1
+Kedah,2011,19,0
+Kedah,2011,20,0
+Kedah,2011,21,0
+Kedah,2011,22,0
+Kedah,2011,23,0
+Kedah,2011,24,2
+Kedah,2011,25,1
+Kedah,2011,26,1
+Kedah,2011,27,1
+Kedah,2011,28,0
+Kedah,2011,29,0
+Kedah,2011,30,1
+Kedah,2011,31,0
+Kedah,2011,32,0
+Kedah,2011,33,0
+Kedah,2011,34,0
+Kedah,2011,35,0
+Kedah,2011,36,0
+Kedah,2011,37,0
+Kedah,2011,38,0
+Kedah,2011,39,0
+Kedah,2011,40,0
+Kedah,2011,41,0
+Kedah,2011,42,0
+Kedah,2011,43,0
+Kedah,2011,44,2
+Kedah,2011,45,0
+Kedah,2011,46,1
+Kedah,2011,47,0
+Kedah,2011,48,0
+Kedah,2011,49,1
+Kedah,2011,50,0
+Kedah,2011,51,0
+Kedah,2011,52,1
+Kedah,2012,1,1
+Kedah,2012,2,0
+Kedah,2012,3,0
+Kedah,2012,4,0
+Kedah,2012,5,0
+Kedah,2012,6,0
+Kedah,2012,7,0
+Kedah,2012,8,0
+Kedah,2012,9,1
+Kedah,2012,10,0
+Kedah,2012,11,0
+Kedah,2012,12,1
+Kedah,2012,13,0
+Kedah,2012,14,0
+Kedah,2012,15,1
+Kedah,2012,16,1
+Kedah,2012,17,0
+Kedah,2012,18,0
+Kedah,2012,19,1
+Kedah,2012,20,0
+Kedah,2012,21,0
+Kedah,2012,22,0
+Kedah,2012,23,0
+Kedah,2012,24,0
+Kedah,2012,25,0
+Kedah,2012,26,2
+Kedah,2012,27,0
+Kedah,2012,28,0
+Kedah,2012,29,3
+Kedah,2012,30,0
+Kedah,2012,31,1
+Kedah,2012,32,1
+Kedah,2012,33,1
+Kedah,2012,34,0
+Kedah,2012,35,0
+Kedah,2012,36,0
+Kedah,2012,37,0
+Kedah,2012,38,0
+Kedah,2012,39,0
+Kedah,2012,40,1
+Kedah,2012,41,0
+Kedah,2012,42,0
+Kedah,2012,43,0
+Kedah,2012,44,1
+Kedah,2012,45,0
+Kedah,2012,46,0
+Kedah,2012,47,0
+Kedah,2012,48,0
+Kedah,2012,49,0
+Kedah,2012,50,0
+Kedah,2012,51,0
+Kedah,2012,52,0
+Kedah,2013,1,0
+Kedah,2013,2,0
+Kedah,2013,3,0
+Kedah,2013,4,0
+Kedah,2013,5,0
+Kedah,2013,6,0
+Kedah,2013,7,0
+Kedah,2013,8,0
+Kedah,2013,9,0
+Kedah,2013,10,1
+Kedah,2013,11,1
+Kedah,2013,12,0
+Kedah,2013,13,0
+Kedah,2013,14,0
+Kedah,2013,15,0
+Kedah,2013,16,0
+Kedah,2013,17,0
+Kedah,2013,18,0
+Kedah,2013,19,0
+Kedah,2013,20,0
+Kedah,2013,21,0
+Kedah,2013,22,0
+Kedah,2013,23,0
+Kedah,2013,24,0
+Kedah,2013,25,0
+Kedah,2013,26,0
+Kedah,2013,27,0
+Kedah,2013,28,0
+Kedah,2013,29,0
+Kedah,2013,30,0
+Kedah,2013,31,0
+Kedah,2013,32,0
+Kedah,2013,33,1
+Kedah,2013,34,0
+Kedah,2013,35,1
+Kedah,2013,36,0
+Kedah,2013,37,0
+Kedah,2013,38,0
+Kedah,2013,39,0
+Kedah,2013,40,0
+Kedah,2013,41,0
+Kedah,2013,42,0
+Kedah,2013,43,0
+Kedah,2013,44,0
+Kedah,2013,45,0
+Kedah,2013,46,1
+Kedah,2013,47,0
+Kedah,2013,48,0
+Kedah,2013,49,0
+Kedah,2013,50,0
+Kedah,2013,51,0
+Kedah,2013,52,0
+Kedah,2014,1,1
+Kedah,2014,2,0
+Kedah,2014,3,1
+Kedah,2014,4,0
+Kedah,2014,5,0
+Kedah,2014,6,0
+Kedah,2014,7,0
+Kedah,2014,8,0
+Kedah,2014,9,0
+Kedah,2014,10,0
+Kedah,2014,11,0
+Kedah,2014,12,0
+Kedah,2014,13,1
+Kedah,2014,14,1
+Kedah,2014,15,0
+Kedah,2014,16,1
+Kedah,2014,17,0
+Kedah,2014,18,0
+Kedah,2014,19,0
+Kedah,2014,20,0
+Kedah,2014,21,0
+Kedah,2014,22,1
+Kedah,2014,23,1
+Kedah,2014,24,0
+Kedah,2014,25,0
+Kedah,2014,26,0
+Kedah,2014,27,0
+Kedah,2014,28,0
+Kedah,2014,29,0
+Kedah,2014,30,1
+Kedah,2014,31,0
+Kedah,2014,32,0
+Kedah,2014,33,2
+Kedah,2014,34,0
+Kedah,2014,35,0
+Kedah,2014,36,0
+Kedah,2014,37,0
+Kedah,2014,38,0
+Kedah,2014,39,1
+Kedah,2014,40,0
+Kedah,2014,41,0
+Kedah,2014,42,0
+Kedah,2014,43,0
+Kedah,2014,44,0
+Kedah,2014,45,0
+Kedah,2014,46,0
+Kedah,2014,47,1
+Kedah,2014,48,0
+Kedah,2014,49,0
+Kedah,2014,50,1
+Kedah,2014,51,1
+Kedah,2014,52,1
+Kedah,2014,53,0
+Kedah,2015,1,0
+Kedah,2015,2,0
+Kedah,2015,3,0
+Kedah,2015,4,1
+Kedah,2015,5,0
+Kedah,2015,6,0
+Kedah,2015,7,0
+Kedah,2015,8,0
+Kedah,2015,9,0
+Kedah,2015,10,0
+Kedah,2015,11,0
+Kedah,2015,12,0
+Kedah,2015,13,1
+Kedah,2015,14,0
+Kedah,2015,15,1
+Kedah,2015,16,0
+Kedah,2015,17,1
+Kedah,2015,18,1
+Kedah,2015,19,0
+Kedah,2015,20,0
+Kedah,2015,21,1
+Kedah,2015,22,0
+Kedah,2015,23,1
+Kedah,2015,24,0
+Kedah,2015,25,1
+Kedah,2015,26,0
+Kedah,2015,27,0
+Kedah,2015,28,0
+Kedah,2015,29,0
+Kedah,2015,30,1
+Kedah,2015,31,1
+Kedah,2015,32,1
+Kedah,2015,33,0
+Kedah,2015,34,0
+Kedah,2015,35,1
+Kedah,2015,36,0
+Kedah,2015,37,0
+Kedah,2015,38,0
+Kedah,2015,39,1
+Kedah,2015,40,1
+Kedah,2015,41,0
+Kedah,2015,42,0
+Kedah,2015,43,1
+Kedah,2015,44,0
+Kedah,2015,45,0
+Kedah,2015,46,0
+Kedah,2015,47,2
+Kedah,2015,48,0
+Kedah,2015,49,0
+Kedah,2015,50,0
+Kedah,2015,51,0
+Kedah,2015,52,0
+Kedah,2016,1,0
+Kedah,2016,2,0
+Kedah,2016,3,0
+Kedah,2016,4,0
+Kedah,2016,5,0
+Kedah,2016,6,0
+Kedah,2016,7,1
+Kedah,2016,8,0
+Kedah,2016,9,0
+Kedah,2016,10,0
+Kedah,2016,11,0
+Kedah,2016,12,0
+Kedah,2016,13,0
+Kedah,2016,14,0
+Kedah,2016,15,0
+Kedah,2016,16,0
+Kedah,2016,17,0
+Kedah,2016,18,0
+Kedah,2016,19,0
+Kedah,2016,20,0
+Kedah,2016,21,0
+Kedah,2016,22,0
+Kedah,2016,23,2
+Kedah,2016,24,0
+Kedah,2016,25,0
+Kedah,2016,26,0
+Kedah,2016,27,1
+Kedah,2016,28,0
+Kedah,2016,29,0
+Kedah,2016,30,0
+Kedah,2016,31,0
+Kedah,2016,32,0
+Kedah,2016,33,0
+Kedah,2016,34,0
+Kedah,2016,35,0
+Kedah,2016,36,0
+Kedah,2016,37,0
+Kedah,2016,38,0
+Kedah,2016,39,0
+Kedah,2016,40,0
+Kedah,2016,41,0
+Kedah,2016,42,1
+Kedah,2016,43,0
+Kedah,2016,44,0
+Kedah,2016,45,0
+Kedah,2016,46,1
+Kedah,2016,47,1
+Kedah,2016,48,1
+Kedah,2016,49,0
+Kedah,2016,50,0
+Kedah,2016,51,1
+Kedah,2016,52,0
+Kedah,2017,1,0
+Kedah,2017,2,0
+Kedah,2017,3,0
+Kedah,2017,4,0
+Kedah,2017,5,1
+Kedah,2017,6,0
+Kedah,2017,7,0
+Kedah,2017,8,0
+Kedah,2017,9,0
+Kedah,2017,10,0
+Kedah,2017,11,0
+Kedah,2017,12,0
+Kedah,2017,13,0
+Kedah,2017,14,0
+Kedah,2017,15,0
+Kedah,2017,16,0
+Kedah,2017,17,0
+Kedah,2017,18,2
+Kedah,2017,19,0
+Kedah,2017,20,0
+Kedah,2017,21,0
+Kedah,2017,22,1
+Kedah,2017,23,0
+Kedah,2017,24,0
+Kedah,2017,25,0
+Kedah,2017,26,0
+Kedah,2017,27,0
+Kedah,2017,28,1
+Kedah,2017,29,0
+Kedah,2017,30,0
+Kedah,2017,31,0
+Kedah,2017,32,0
+Kedah,2017,33,0
+Kedah,2017,34,0
+Kedah,2017,35,0
+Kedah,2017,36,0
+Kedah,2017,37,1
+Kedah,2017,38,0
+Kedah,2017,39,0
+Kedah,2017,40,0
+Kedah,2017,41,0
+Kedah,2017,42,0
+Kedah,2017,43,0
+Kedah,2017,44,1
+Kedah,2017,45,0
+Kedah,2017,46,0
+Kedah,2017,47,0
+Kedah,2017,48,0
+Kedah,2017,49,0
+Kedah,2017,50,0
+Kedah,2017,51,0
+Kedah,2017,52,0
+Kelantan,2010,1,2
+Kelantan,2010,2,3
+Kelantan,2010,3,4
+Kelantan,2010,4,3
+Kelantan,2010,5,7
+Kelantan,2010,6,0
+Kelantan,2010,7,4
+Kelantan,2010,8,3
+Kelantan,2010,9,0
+Kelantan,2010,10,3
+Kelantan,2010,11,3
+Kelantan,2010,12,7
+Kelantan,2010,13,5
+Kelantan,2010,14,4
+Kelantan,2010,15,4
+Kelantan,2010,16,3
+Kelantan,2010,17,1
+Kelantan,2010,18,4
+Kelantan,2010,19,3
+Kelantan,2010,20,3
+Kelantan,2010,21,7
+Kelantan,2010,22,4
+Kelantan,2010,23,3
+Kelantan,2010,24,3
+Kelantan,2010,25,5
+Kelantan,2010,26,6
+Kelantan,2010,27,3
+Kelantan,2010,28,4
+Kelantan,2010,29,17
+Kelantan,2010,30,12
+Kelantan,2010,31,16
+Kelantan,2010,32,15
+Kelantan,2010,33,17
+Kelantan,2010,34,19
+Kelantan,2010,35,30
+Kelantan,2010,36,11
+Kelantan,2010,37,7
+Kelantan,2010,38,2
+Kelantan,2010,39,3
+Kelantan,2010,40,4
+Kelantan,2010,41,3
+Kelantan,2010,42,2
+Kelantan,2010,43,1
+Kelantan,2010,44,3
+Kelantan,2010,45,2
+Kelantan,2010,46,0
+Kelantan,2010,47,2
+Kelantan,2010,48,0
+Kelantan,2010,49,2
+Kelantan,2010,50,3
+Kelantan,2010,51,3
+Kelantan,2010,52,4
+Kelantan,2011,1,3
+Kelantan,2011,2,0
+Kelantan,2011,3,2
+Kelantan,2011,4,0
+Kelantan,2011,5,2
+Kelantan,2011,6,0
+Kelantan,2011,7,2
+Kelantan,2011,8,0
+Kelantan,2011,9,0
+Kelantan,2011,10,0
+Kelantan,2011,11,0
+Kelantan,2011,12,1
+Kelantan,2011,13,2
+Kelantan,2011,14,0
+Kelantan,2011,15,1
+Kelantan,2011,16,1
+Kelantan,2011,17,0
+Kelantan,2011,18,1
+Kelantan,2011,19,0
+Kelantan,2011,20,0
+Kelantan,2011,21,0
+Kelantan,2011,22,1
+Kelantan,2011,23,0
+Kelantan,2011,24,2
+Kelantan,2011,25,1
+Kelantan,2011,26,1
+Kelantan,2011,27,1
+Kelantan,2011,28,1
+Kelantan,2011,29,2
+Kelantan,2011,30,0
+Kelantan,2011,31,1
+Kelantan,2011,32,1
+Kelantan,2011,33,0
+Kelantan,2011,34,0
+Kelantan,2011,35,0
+Kelantan,2011,36,0
+Kelantan,2011,37,1
+Kelantan,2011,38,0
+Kelantan,2011,39,0
+Kelantan,2011,40,0
+Kelantan,2011,41,1
+Kelantan,2011,42,1
+Kelantan,2011,43,1
+Kelantan,2011,44,1
+Kelantan,2011,45,2
+Kelantan,2011,46,0
+Kelantan,2011,47,1
+Kelantan,2011,48,0
+Kelantan,2011,49,1
+Kelantan,2011,50,1
+Kelantan,2011,51,1
+Kelantan,2011,52,1
+Kelantan,2012,1,0
+Kelantan,2012,2,0
+Kelantan,2012,3,0
+Kelantan,2012,4,1
+Kelantan,2012,5,1
+Kelantan,2012,6,0
+Kelantan,2012,7,2
+Kelantan,2012,8,0
+Kelantan,2012,9,0
+Kelantan,2012,10,0
+Kelantan,2012,11,2
+Kelantan,2012,12,0
+Kelantan,2012,13,2
+Kelantan,2012,14,1
+Kelantan,2012,15,0
+Kelantan,2012,16,2
+Kelantan,2012,17,0
+Kelantan,2012,18,0
+Kelantan,2012,19,0
+Kelantan,2012,20,0
+Kelantan,2012,21,1
+Kelantan,2012,22,0
+Kelantan,2012,23,0
+Kelantan,2012,24,0
+Kelantan,2012,25,0
+Kelantan,2012,26,0
+Kelantan,2012,27,0
+Kelantan,2012,28,0
+Kelantan,2012,29,0
+Kelantan,2012,30,0
+Kelantan,2012,31,1
+Kelantan,2012,32,1
+Kelantan,2012,33,0
+Kelantan,2012,34,0
+Kelantan,2012,35,1
+Kelantan,2012,36,0
+Kelantan,2012,37,1
+Kelantan,2012,38,0
+Kelantan,2012,39,0
+Kelantan,2012,40,0
+Kelantan,2012,41,0
+Kelantan,2012,42,0
+Kelantan,2012,43,0
+Kelantan,2012,44,0
+Kelantan,2012,45,0
+Kelantan,2012,46,1
+Kelantan,2012,47,0
+Kelantan,2012,48,0
+Kelantan,2012,49,0
+Kelantan,2012,50,0
+Kelantan,2012,51,1
+Kelantan,2012,52,0
+Kelantan,2013,1,0
+Kelantan,2013,2,0
+Kelantan,2013,3,0
+Kelantan,2013,4,0
+Kelantan,2013,5,0
+Kelantan,2013,6,1
+Kelantan,2013,7,0
+Kelantan,2013,8,0
+Kelantan,2013,9,0
+Kelantan,2013,10,0
+Kelantan,2013,11,2
+Kelantan,2013,12,0
+Kelantan,2013,13,0
+Kelantan,2013,14,1
+Kelantan,2013,15,1
+Kelantan,2013,16,0
+Kelantan,2013,17,1
+Kelantan,2013,18,0
+Kelantan,2013,19,0
+Kelantan,2013,20,0
+Kelantan,2013,21,0
+Kelantan,2013,22,0
+Kelantan,2013,23,0
+Kelantan,2013,24,0
+Kelantan,2013,25,0
+Kelantan,2013,26,0
+Kelantan,2013,27,0
+Kelantan,2013,28,0
+Kelantan,2013,29,1
+Kelantan,2013,30,1
+Kelantan,2013,31,1
+Kelantan,2013,32,0
+Kelantan,2013,33,0
+Kelantan,2013,34,0
+Kelantan,2013,35,0
+Kelantan,2013,36,0
+Kelantan,2013,37,1
+Kelantan,2013,38,2
+Kelantan,2013,39,0
+Kelantan,2013,40,0
+Kelantan,2013,41,1
+Kelantan,2013,42,0
+Kelantan,2013,43,2
+Kelantan,2013,44,0
+Kelantan,2013,45,0
+Kelantan,2013,46,1
+Kelantan,2013,47,0
+Kelantan,2013,48,0
+Kelantan,2013,49,0
+Kelantan,2013,50,0
+Kelantan,2013,51,0
+Kelantan,2013,52,0
+Kelantan,2014,1,0
+Kelantan,2014,2,0
+Kelantan,2014,3,0
+Kelantan,2014,4,0
+Kelantan,2014,5,0
+Kelantan,2014,6,1
+Kelantan,2014,7,1
+Kelantan,2014,8,0
+Kelantan,2014,9,1
+Kelantan,2014,10,1
+Kelantan,2014,11,1
+Kelantan,2014,12,0
+Kelantan,2014,13,1
+Kelantan,2014,14,0
+Kelantan,2014,15,0
+Kelantan,2014,16,0
+Kelantan,2014,17,0
+Kelantan,2014,18,0
+Kelantan,2014,19,0
+Kelantan,2014,20,1
+Kelantan,2014,21,0
+Kelantan,2014,22,0
+Kelantan,2014,23,1
+Kelantan,2014,24,1
+Kelantan,2014,25,0
+Kelantan,2014,26,0
+Kelantan,2014,27,2
+Kelantan,2014,28,0
+Kelantan,2014,29,2
+Kelantan,2014,30,1
+Kelantan,2014,31,2
+Kelantan,2014,32,5
+Kelantan,2014,33,3
+Kelantan,2014,34,5
+Kelantan,2014,35,3
+Kelantan,2014,36,1
+Kelantan,2014,37,0
+Kelantan,2014,38,1
+Kelantan,2014,39,0
+Kelantan,2014,40,2
+Kelantan,2014,41,0
+Kelantan,2014,42,0
+Kelantan,2014,43,0
+Kelantan,2014,44,0
+Kelantan,2014,45,0
+Kelantan,2014,46,1
+Kelantan,2014,47,0
+Kelantan,2014,48,0
+Kelantan,2014,49,0
+Kelantan,2014,50,0
+Kelantan,2014,51,0
+Kelantan,2014,52,0
+Kelantan,2014,53,0
+Kelantan,2015,1,0
+Kelantan,2015,2,0
+Kelantan,2015,3,1
+Kelantan,2015,4,0
+Kelantan,2015,5,0
+Kelantan,2015,6,0
+Kelantan,2015,7,0
+Kelantan,2015,8,0
+Kelantan,2015,9,0
+Kelantan,2015,10,0
+Kelantan,2015,11,0
+Kelantan,2015,12,0
+Kelantan,2015,13,1
+Kelantan,2015,14,0
+Kelantan,2015,15,0
+Kelantan,2015,16,0
+Kelantan,2015,17,0
+Kelantan,2015,18,0
+Kelantan,2015,19,0
+Kelantan,2015,20,0
+Kelantan,2015,21,0
+Kelantan,2015,22,0
+Kelantan,2015,23,0
+Kelantan,2015,24,0
+Kelantan,2015,25,0
+Kelantan,2015,26,0
+Kelantan,2015,27,1
+Kelantan,2015,28,0
+Kelantan,2015,29,1
+Kelantan,2015,30,0
+Kelantan,2015,31,0
+Kelantan,2015,32,0
+Kelantan,2015,33,0
+Kelantan,2015,34,0
+Kelantan,2015,35,0
+Kelantan,2015,36,2
+Kelantan,2015,37,0
+Kelantan,2015,38,0
+Kelantan,2015,39,1
+Kelantan,2015,40,0
+Kelantan,2015,41,0
+Kelantan,2015,42,1
+Kelantan,2015,43,1
+Kelantan,2015,44,0
+Kelantan,2015,45,0
+Kelantan,2015,46,0
+Kelantan,2015,47,0
+Kelantan,2015,48,0
+Kelantan,2015,49,0
+Kelantan,2015,50,0
+Kelantan,2015,51,0
+Kelantan,2015,52,1
+Kelantan,2016,1,0
+Kelantan,2016,2,0
+Kelantan,2016,3,0
+Kelantan,2016,4,0
+Kelantan,2016,5,1
+Kelantan,2016,6,0
+Kelantan,2016,7,0
+Kelantan,2016,8,1
+Kelantan,2016,9,0
+Kelantan,2016,10,0
+Kelantan,2016,11,0
+Kelantan,2016,12,0
+Kelantan,2016,13,0
+Kelantan,2016,14,0
+Kelantan,2016,15,0
+Kelantan,2016,16,0
+Kelantan,2016,17,0
+Kelantan,2016,18,0
+Kelantan,2016,19,1
+Kelantan,2016,20,0
+Kelantan,2016,21,0
+Kelantan,2016,22,0
+Kelantan,2016,23,0
+Kelantan,2016,24,0
+Kelantan,2016,25,1
+Kelantan,2016,26,0
+Kelantan,2016,27,0
+Kelantan,2016,28,0
+Kelantan,2016,29,1
+Kelantan,2016,30,0
+Kelantan,2016,31,1
+Kelantan,2016,32,4
+Kelantan,2016,33,1
+Kelantan,2016,34,1
+Kelantan,2016,35,0
+Kelantan,2016,36,1
+Kelantan,2016,37,0
+Kelantan,2016,38,1
+Kelantan,2016,39,0
+Kelantan,2016,40,0
+Kelantan,2016,41,1
+Kelantan,2016,42,0
+Kelantan,2016,43,1
+Kelantan,2016,44,0
+Kelantan,2016,45,0
+Kelantan,2016,46,1
+Kelantan,2016,47,0
+Kelantan,2016,48,0
+Kelantan,2016,49,1
+Kelantan,2016,50,0
+Kelantan,2016,51,0
+Kelantan,2016,52,0
+Kelantan,2017,1,1
+Kelantan,2017,2,0
+Kelantan,2017,3,0
+Kelantan,2017,4,0
+Kelantan,2017,5,1
+Kelantan,2017,6,0
+Kelantan,2017,7,1
+Kelantan,2017,8,1
+Kelantan,2017,9,0
+Kelantan,2017,10,0
+Kelantan,2017,11,1
+Kelantan,2017,12,0
+Kelantan,2017,13,0
+Kelantan,2017,14,0
+Kelantan,2017,15,0
+Kelantan,2017,16,0
+Kelantan,2017,17,0
+Kelantan,2017,18,0
+Kelantan,2017,19,0
+Kelantan,2017,20,0
+Kelantan,2017,21,0
+Kelantan,2017,22,0
+Kelantan,2017,23,1
+Kelantan,2017,24,0
+Kelantan,2017,25,0
+Kelantan,2017,26,0
+Kelantan,2017,27,0
+Kelantan,2017,28,0
+Kelantan,2017,29,0
+Kelantan,2017,30,0
+Kelantan,2017,31,0
+Kelantan,2017,32,0
+Kelantan,2017,33,0
+Kelantan,2017,34,0
+Kelantan,2017,35,0
+Kelantan,2017,36,0
+Kelantan,2017,37,0
+Kelantan,2017,38,0
+Kelantan,2017,39,0
+Kelantan,2017,40,0
+Kelantan,2017,41,0
+Kelantan,2017,42,0
+Kelantan,2017,43,0
+Kelantan,2017,44,0
+Kelantan,2017,45,0
+Kelantan,2017,46,0
+Kelantan,2017,47,1
+Kelantan,2017,48,0
+Kelantan,2017,49,0
+Kelantan,2017,50,0
+Kelantan,2017,51,0
+Kelantan,2017,52,0
+Kuala Lumpur,2010,1,3
+Kuala Lumpur,2010,2,5
+Kuala Lumpur,2010,3,3
+Kuala Lumpur,2010,4,6
+Kuala Lumpur,2010,5,4
+Kuala Lumpur,2010,6,4
+Kuala Lumpur,2010,7,5
+Kuala Lumpur,2010,8,5
+Kuala Lumpur,2010,9,17
+Kuala Lumpur,2010,10,11
+Kuala Lumpur,2010,11,16
+Kuala Lumpur,2010,12,7
+Kuala Lumpur,2010,13,7
+Kuala Lumpur,2010,14,2
+Kuala Lumpur,2010,15,8
+Kuala Lumpur,2010,16,15
+Kuala Lumpur,2010,17,11
+Kuala Lumpur,2010,18,1
+Kuala Lumpur,2010,19,4
+Kuala Lumpur,2010,20,11
+Kuala Lumpur,2010,21,5
+Kuala Lumpur,2010,22,3
+Kuala Lumpur,2010,23,6
+Kuala Lumpur,2010,24,8
+Kuala Lumpur,2010,25,4
+Kuala Lumpur,2010,26,6
+Kuala Lumpur,2010,27,5
+Kuala Lumpur,2010,28,4
+Kuala Lumpur,2010,29,5
+Kuala Lumpur,2010,30,6
+Kuala Lumpur,2010,31,4
+Kuala Lumpur,2010,32,5
+Kuala Lumpur,2010,33,5
+Kuala Lumpur,2010,34,3
+Kuala Lumpur,2010,35,4
+Kuala Lumpur,2010,36,1
+Kuala Lumpur,2010,37,4
+Kuala Lumpur,2010,38,5
+Kuala Lumpur,2010,39,5
+Kuala Lumpur,2010,40,4
+Kuala Lumpur,2010,41,7
+Kuala Lumpur,2010,42,6
+Kuala Lumpur,2010,43,7
+Kuala Lumpur,2010,44,5
+Kuala Lumpur,2010,45,6
+Kuala Lumpur,2010,46,1
+Kuala Lumpur,2010,47,7
+Kuala Lumpur,2010,48,7
+Kuala Lumpur,2010,49,1
+Kuala Lumpur,2010,50,5
+Kuala Lumpur,2010,51,5
+Kuala Lumpur,2010,52,3
+Kuala Lumpur,2011,1,3
+Kuala Lumpur,2011,2,1
+Kuala Lumpur,2011,3,4
+Kuala Lumpur,2011,4,8
+Kuala Lumpur,2011,5,1
+Kuala Lumpur,2011,6,1
+Kuala Lumpur,2011,7,3
+Kuala Lumpur,2011,8,2
+Kuala Lumpur,2011,9,4
+Kuala Lumpur,2011,10,4
+Kuala Lumpur,2011,11,1
+Kuala Lumpur,2011,12,1
+Kuala Lumpur,2011,13,3
+Kuala Lumpur,2011,14,2
+Kuala Lumpur,2011,15,3
+Kuala Lumpur,2011,16,5
+Kuala Lumpur,2011,17,2
+Kuala Lumpur,2011,18,2
+Kuala Lumpur,2011,19,2
+Kuala Lumpur,2011,20,4
+Kuala Lumpur,2011,21,4
+Kuala Lumpur,2011,22,7
+Kuala Lumpur,2011,23,4
+Kuala Lumpur,2011,24,4
+Kuala Lumpur,2011,25,6
+Kuala Lumpur,2011,26,4
+Kuala Lumpur,2011,27,3
+Kuala Lumpur,2011,28,3
+Kuala Lumpur,2011,29,2
+Kuala Lumpur,2011,30,2
+Kuala Lumpur,2011,31,2
+Kuala Lumpur,2011,32,3
+Kuala Lumpur,2011,33,3
+Kuala Lumpur,2011,34,5
+Kuala Lumpur,2011,35,1
+Kuala Lumpur,2011,36,1
+Kuala Lumpur,2011,37,2
+Kuala Lumpur,2011,38,2
+Kuala Lumpur,2011,39,4
+Kuala Lumpur,2011,40,3
+Kuala Lumpur,2011,41,3
+Kuala Lumpur,2011,42,2
+Kuala Lumpur,2011,43,7
+Kuala Lumpur,2011,44,5
+Kuala Lumpur,2011,45,0
+Kuala Lumpur,2011,46,8
+Kuala Lumpur,2011,47,3
+Kuala Lumpur,2011,48,2
+Kuala Lumpur,2011,49,1
+Kuala Lumpur,2011,50,4
+Kuala Lumpur,2011,51,1
+Kuala Lumpur,2011,52,3
+Kuala Lumpur,2012,1,0
+Kuala Lumpur,2012,2,1
+Kuala Lumpur,2012,3,1
+Kuala Lumpur,2012,4,2
+Kuala Lumpur,2012,5,2
+Kuala Lumpur,2012,6,5
+Kuala Lumpur,2012,7,3
+Kuala Lumpur,2012,8,4
+Kuala Lumpur,2012,9,2
+Kuala Lumpur,2012,10,2
+Kuala Lumpur,2012,11,5
+Kuala Lumpur,2012,12,3
+Kuala Lumpur,2012,13,4
+Kuala Lumpur,2012,14,2
+Kuala Lumpur,2012,15,0
+Kuala Lumpur,2012,16,3
+Kuala Lumpur,2012,17,9
+Kuala Lumpur,2012,18,2
+Kuala Lumpur,2012,19,0
+Kuala Lumpur,2012,20,0
+Kuala Lumpur,2012,21,3
+Kuala Lumpur,2012,22,3
+Kuala Lumpur,2012,23,2
+Kuala Lumpur,2012,24,0
+Kuala Lumpur,2012,25,2
+Kuala Lumpur,2012,26,2
+Kuala Lumpur,2012,27,0
+Kuala Lumpur,2012,28,0
+Kuala Lumpur,2012,29,0
+Kuala Lumpur,2012,30,0
+Kuala Lumpur,2012,31,0
+Kuala Lumpur,2012,32,1
+Kuala Lumpur,2012,33,0
+Kuala Lumpur,2012,34,1
+Kuala Lumpur,2012,35,1
+Kuala Lumpur,2012,36,0
+Kuala Lumpur,2012,37,1
+Kuala Lumpur,2012,38,1
+Kuala Lumpur,2012,39,0
+Kuala Lumpur,2012,40,1
+Kuala Lumpur,2012,41,0
+Kuala Lumpur,2012,42,1
+Kuala Lumpur,2012,43,0
+Kuala Lumpur,2012,44,0
+Kuala Lumpur,2012,45,0
+Kuala Lumpur,2012,46,0
+Kuala Lumpur,2012,47,0
+Kuala Lumpur,2012,48,2
+Kuala Lumpur,2012,49,1
+Kuala Lumpur,2012,50,1
+Kuala Lumpur,2012,51,1
+Kuala Lumpur,2012,52,0
+Kuala Lumpur,2013,1,0
+Kuala Lumpur,2013,2,2
+Kuala Lumpur,2013,3,1
+Kuala Lumpur,2013,4,2
+Kuala Lumpur,2013,5,1
+Kuala Lumpur,2013,6,4
+Kuala Lumpur,2013,7,2
+Kuala Lumpur,2013,8,2
+Kuala Lumpur,2013,9,4
+Kuala Lumpur,2013,10,4
+Kuala Lumpur,2013,11,3
+Kuala Lumpur,2013,12,2
+Kuala Lumpur,2013,13,1
+Kuala Lumpur,2013,14,2
+Kuala Lumpur,2013,15,0
+Kuala Lumpur,2013,16,0
+Kuala Lumpur,2013,17,1
+Kuala Lumpur,2013,18,4
+Kuala Lumpur,2013,19,1
+Kuala Lumpur,2013,20,0
+Kuala Lumpur,2013,21,2
+Kuala Lumpur,2013,22,1
+Kuala Lumpur,2013,23,2
+Kuala Lumpur,2013,24,2
+Kuala Lumpur,2013,25,3
+Kuala Lumpur,2013,26,4
+Kuala Lumpur,2013,27,2
+Kuala Lumpur,2013,28,1
+Kuala Lumpur,2013,29,2
+Kuala Lumpur,2013,30,0
+Kuala Lumpur,2013,31,2
+Kuala Lumpur,2013,32,0
+Kuala Lumpur,2013,33,2
+Kuala Lumpur,2013,34,1
+Kuala Lumpur,2013,35,4
+Kuala Lumpur,2013,36,3
+Kuala Lumpur,2013,37,0
+Kuala Lumpur,2013,38,1
+Kuala Lumpur,2013,39,1
+Kuala Lumpur,2013,40,0
+Kuala Lumpur,2013,41,0
+Kuala Lumpur,2013,42,0
+Kuala Lumpur,2013,43,1
+Kuala Lumpur,2013,44,1
+Kuala Lumpur,2013,45,0
+Kuala Lumpur,2013,46,5
+Kuala Lumpur,2013,47,1
+Kuala Lumpur,2013,48,0
+Kuala Lumpur,2013,49,0
+Kuala Lumpur,2013,50,2
+Kuala Lumpur,2013,51,0
+Kuala Lumpur,2013,52,2
+Kuala Lumpur,2014,1,3
+Kuala Lumpur,2014,2,1
+Kuala Lumpur,2014,3,10
+Kuala Lumpur,2014,4,4
+Kuala Lumpur,2014,5,2
+Kuala Lumpur,2014,6,6
+Kuala Lumpur,2014,7,2
+Kuala Lumpur,2014,8,2
+Kuala Lumpur,2014,9,2
+Kuala Lumpur,2014,10,3
+Kuala Lumpur,2014,11,1
+Kuala Lumpur,2014,12,1
+Kuala Lumpur,2014,13,2
+Kuala Lumpur,2014,14,3
+Kuala Lumpur,2014,15,2
+Kuala Lumpur,2014,16,1
+Kuala Lumpur,2014,17,1
+Kuala Lumpur,2014,18,3
+Kuala Lumpur,2014,19,0
+Kuala Lumpur,2014,20,1
+Kuala Lumpur,2014,21,1
+Kuala Lumpur,2014,22,1
+Kuala Lumpur,2014,23,2
+Kuala Lumpur,2014,24,2
+Kuala Lumpur,2014,25,3
+Kuala Lumpur,2014,26,2
+Kuala Lumpur,2014,27,6
+Kuala Lumpur,2014,28,4
+Kuala Lumpur,2014,29,4
+Kuala Lumpur,2014,30,2
+Kuala Lumpur,2014,31,1
+Kuala Lumpur,2014,32,2
+Kuala Lumpur,2014,33,2
+Kuala Lumpur,2014,34,0
+Kuala Lumpur,2014,35,3
+Kuala Lumpur,2014,36,1
+Kuala Lumpur,2014,37,1
+Kuala Lumpur,2014,38,3
+Kuala Lumpur,2014,39,2
+Kuala Lumpur,2014,40,2
+Kuala Lumpur,2014,41,2
+Kuala Lumpur,2014,42,1
+Kuala Lumpur,2014,43,1
+Kuala Lumpur,2014,44,1
+Kuala Lumpur,2014,45,1
+Kuala Lumpur,2014,46,1
+Kuala Lumpur,2014,47,0
+Kuala Lumpur,2014,48,1
+Kuala Lumpur,2014,49,0
+Kuala Lumpur,2014,50,3
+Kuala Lumpur,2014,51,1
+Kuala Lumpur,2014,52,1
+Kuala Lumpur,2014,53,2
+Kuala Lumpur,2015,1,4
+Kuala Lumpur,2015,2,2
+Kuala Lumpur,2015,3,2
+Kuala Lumpur,2015,4,3
+Kuala Lumpur,2015,5,2
+Kuala Lumpur,2015,6,3
+Kuala Lumpur,2015,7,6
+Kuala Lumpur,2015,8,2
+Kuala Lumpur,2015,9,3
+Kuala Lumpur,2015,10,3
+Kuala Lumpur,2015,11,3
+Kuala Lumpur,2015,12,0
+Kuala Lumpur,2015,13,1
+Kuala Lumpur,2015,14,2
+Kuala Lumpur,2015,15,2
+Kuala Lumpur,2015,16,1
+Kuala Lumpur,2015,17,1
+Kuala Lumpur,2015,18,1
+Kuala Lumpur,2015,19,2
+Kuala Lumpur,2015,20,1
+Kuala Lumpur,2015,21,1
+Kuala Lumpur,2015,22,2
+Kuala Lumpur,2015,23,1
+Kuala Lumpur,2015,24,2
+Kuala Lumpur,2015,25,4
+Kuala Lumpur,2015,26,2
+Kuala Lumpur,2015,27,2
+Kuala Lumpur,2015,28,2
+Kuala Lumpur,2015,29,0
+Kuala Lumpur,2015,30,0
+Kuala Lumpur,2015,31,4
+Kuala Lumpur,2015,32,2
+Kuala Lumpur,2015,33,3
+Kuala Lumpur,2015,34,2
+Kuala Lumpur,2015,35,4
+Kuala Lumpur,2015,36,2
+Kuala Lumpur,2015,37,2
+Kuala Lumpur,2015,38,1
+Kuala Lumpur,2015,39,2
+Kuala Lumpur,2015,40,3
+Kuala Lumpur,2015,41,2
+Kuala Lumpur,2015,42,1
+Kuala Lumpur,2015,43,2
+Kuala Lumpur,2015,44,1
+Kuala Lumpur,2015,45,3
+Kuala Lumpur,2015,46,2
+Kuala Lumpur,2015,47,1
+Kuala Lumpur,2015,48,1
+Kuala Lumpur,2015,49,2
+Kuala Lumpur,2015,50,2
+Kuala Lumpur,2015,51,1
+Kuala Lumpur,2015,52,1
+Kuala Lumpur,2016,1,2
+Kuala Lumpur,2016,2,2
+Kuala Lumpur,2016,3,4
+Kuala Lumpur,2016,4,4
+Kuala Lumpur,2016,5,4
+Kuala Lumpur,2016,6,1
+Kuala Lumpur,2016,7,1
+Kuala Lumpur,2016,8,0
+Kuala Lumpur,2016,9,0
+Kuala Lumpur,2016,10,1
+Kuala Lumpur,2016,11,2
+Kuala Lumpur,2016,12,2
+Kuala Lumpur,2016,13,1
+Kuala Lumpur,2016,14,1
+Kuala Lumpur,2016,15,1
+Kuala Lumpur,2016,16,1
+Kuala Lumpur,2016,17,1
+Kuala Lumpur,2016,18,2
+Kuala Lumpur,2016,19,1
+Kuala Lumpur,2016,20,1
+Kuala Lumpur,2016,21,1
+Kuala Lumpur,2016,22,2
+Kuala Lumpur,2016,23,2
+Kuala Lumpur,2016,24,4
+Kuala Lumpur,2016,25,3
+Kuala Lumpur,2016,26,0
+Kuala Lumpur,2016,27,0
+Kuala Lumpur,2016,28,1
+Kuala Lumpur,2016,29,2
+Kuala Lumpur,2016,30,3
+Kuala Lumpur,2016,31,0
+Kuala Lumpur,2016,32,3
+Kuala Lumpur,2016,33,1
+Kuala Lumpur,2016,34,1
+Kuala Lumpur,2016,35,1
+Kuala Lumpur,2016,36,1
+Kuala Lumpur,2016,37,1
+Kuala Lumpur,2016,38,1
+Kuala Lumpur,2016,39,0
+Kuala Lumpur,2016,40,0
+Kuala Lumpur,2016,41,1
+Kuala Lumpur,2016,42,1
+Kuala Lumpur,2016,43,2
+Kuala Lumpur,2016,44,1
+Kuala Lumpur,2016,45,0
+Kuala Lumpur,2016,46,1
+Kuala Lumpur,2016,47,1
+Kuala Lumpur,2016,48,1
+Kuala Lumpur,2016,49,2
+Kuala Lumpur,2016,50,0
+Kuala Lumpur,2016,51,1
+Kuala Lumpur,2016,52,1
+Kuala Lumpur,2017,1,0
+Kuala Lumpur,2017,2,1
+Kuala Lumpur,2017,3,2
+Kuala Lumpur,2017,4,3
+Kuala Lumpur,2017,5,2
+Kuala Lumpur,2017,6,1
+Kuala Lumpur,2017,7,2
+Kuala Lumpur,2017,8,1
+Kuala Lumpur,2017,9,0
+Kuala Lumpur,2017,10,2
+Kuala Lumpur,2017,11,0
+Kuala Lumpur,2017,12,1
+Kuala Lumpur,2017,13,3
+Kuala Lumpur,2017,14,3
+Kuala Lumpur,2017,15,1
+Kuala Lumpur,2017,16,1
+Kuala Lumpur,2017,17,3
+Kuala Lumpur,2017,18,2
+Kuala Lumpur,2017,19,5
+Kuala Lumpur,2017,20,2
+Kuala Lumpur,2017,21,3
+Kuala Lumpur,2017,22,1
+Kuala Lumpur,2017,23,1
+Kuala Lumpur,2017,24,2
+Kuala Lumpur,2017,25,1
+Kuala Lumpur,2017,26,0
+Kuala Lumpur,2017,27,0
+Kuala Lumpur,2017,28,1
+Kuala Lumpur,2017,29,2
+Kuala Lumpur,2017,30,1
+Kuala Lumpur,2017,31,2
+Kuala Lumpur,2017,32,3
+Kuala Lumpur,2017,33,2
+Kuala Lumpur,2017,34,0
+Kuala Lumpur,2017,35,0
+Kuala Lumpur,2017,36,1
+Kuala Lumpur,2017,37,1
+Kuala Lumpur,2017,38,1
+Kuala Lumpur,2017,39,0
+Kuala Lumpur,2017,40,1
+Kuala Lumpur,2017,41,1
+Kuala Lumpur,2017,42,0
+Kuala Lumpur,2017,43,1
+Kuala Lumpur,2017,44,0
+Kuala Lumpur,2017,45,0
+Kuala Lumpur,2017,46,2
+Kuala Lumpur,2017,47,0
+Kuala Lumpur,2017,48,0
+Kuala Lumpur,2017,49,0
+Kuala Lumpur,2017,50,0
+Kuala Lumpur,2017,51,0
+Kuala Lumpur,2017,52,0
+Labuan,2010,1,0
+Labuan,2010,2,0
+Labuan,2010,3,0
+Labuan,2010,4,0
+Labuan,2010,5,0
+Labuan,2010,6,0
+Labuan,2010,7,0
+Labuan,2010,8,0
+Labuan,2010,9,0
+Labuan,2010,10,0
+Labuan,2010,11,0
+Labuan,2010,12,0
+Labuan,2010,13,0
+Labuan,2010,14,0
+Labuan,2010,15,0
+Labuan,2010,16,0
+Labuan,2010,17,0
+Labuan,2010,18,0
+Labuan,2010,19,0
+Labuan,2010,20,0
+Labuan,2010,21,0
+Labuan,2010,22,0
+Labuan,2010,23,0
+Labuan,2010,24,0
+Labuan,2010,25,0
+Labuan,2010,26,0
+Labuan,2010,27,0
+Labuan,2010,28,0
+Labuan,2010,29,0
+Labuan,2010,30,0
+Labuan,2010,31,0
+Labuan,2010,32,0
+Labuan,2010,33,0
+Labuan,2010,34,0
+Labuan,2010,35,0
+Labuan,2010,36,0
+Labuan,2010,37,0
+Labuan,2010,38,0
+Labuan,2010,39,0
+Labuan,2010,40,0
+Labuan,2010,41,0
+Labuan,2010,42,0
+Labuan,2010,43,0
+Labuan,2010,44,0
+Labuan,2010,45,0
+Labuan,2010,46,0
+Labuan,2010,47,0
+Labuan,2010,48,0
+Labuan,2010,49,0
+Labuan,2010,50,0
+Labuan,2010,51,0
+Labuan,2010,52,0
+Labuan,2011,1,0
+Labuan,2011,2,0
+Labuan,2011,3,0
+Labuan,2011,4,0
+Labuan,2011,5,0
+Labuan,2011,6,0
+Labuan,2011,7,0
+Labuan,2011,8,0
+Labuan,2011,9,0
+Labuan,2011,10,0
+Labuan,2011,11,0
+Labuan,2011,12,0
+Labuan,2011,13,0
+Labuan,2011,14,0
+Labuan,2011,15,0
+Labuan,2011,16,0
+Labuan,2011,17,0
+Labuan,2011,18,0
+Labuan,2011,19,0
+Labuan,2011,20,0
+Labuan,2011,21,0
+Labuan,2011,22,0
+Labuan,2011,23,0
+Labuan,2011,24,0
+Labuan,2011,25,0
+Labuan,2011,26,0
+Labuan,2011,27,0
+Labuan,2011,28,0
+Labuan,2011,29,0
+Labuan,2011,30,0
+Labuan,2011,31,0
+Labuan,2011,32,0
+Labuan,2011,33,0
+Labuan,2011,34,0
+Labuan,2011,35,0
+Labuan,2011,36,0
+Labuan,2011,37,0
+Labuan,2011,38,0
+Labuan,2011,39,0
+Labuan,2011,40,0
+Labuan,2011,41,0
+Labuan,2011,42,0
+Labuan,2011,43,0
+Labuan,2011,44,0
+Labuan,2011,45,0
+Labuan,2011,46,0
+Labuan,2011,47,0
+Labuan,2011,48,0
+Labuan,2011,49,0
+Labuan,2011,50,0
+Labuan,2011,51,0
+Labuan,2011,52,0
+Labuan,2012,1,0
+Labuan,2012,2,0
+Labuan,2012,3,0
+Labuan,2012,4,0
+Labuan,2012,5,0
+Labuan,2012,6,0
+Labuan,2012,7,0
+Labuan,2012,8,0
+Labuan,2012,9,0
+Labuan,2012,10,0
+Labuan,2012,11,0
+Labuan,2012,12,0
+Labuan,2012,13,0
+Labuan,2012,14,0
+Labuan,2012,15,0
+Labuan,2012,16,0
+Labuan,2012,17,0
+Labuan,2012,18,0
+Labuan,2012,19,0
+Labuan,2012,20,0
+Labuan,2012,21,0
+Labuan,2012,22,0
+Labuan,2012,23,0
+Labuan,2012,24,0
+Labuan,2012,25,0
+Labuan,2012,26,0
+Labuan,2012,27,0
+Labuan,2012,28,0
+Labuan,2012,29,0
+Labuan,2012,30,0
+Labuan,2012,31,0
+Labuan,2012,32,0
+Labuan,2012,33,0
+Labuan,2012,34,0
+Labuan,2012,35,0
+Labuan,2012,36,0
+Labuan,2012,37,0
+Labuan,2012,38,0
+Labuan,2012,39,0
+Labuan,2012,40,0
+Labuan,2012,41,0
+Labuan,2012,42,0
+Labuan,2012,43,0
+Labuan,2012,44,0
+Labuan,2012,45,0
+Labuan,2012,46,0
+Labuan,2012,47,0
+Labuan,2012,48,0
+Labuan,2012,49,0
+Labuan,2012,50,0
+Labuan,2012,51,0
+Labuan,2012,52,0
+Labuan,2013,1,0
+Labuan,2013,2,0
+Labuan,2013,3,0
+Labuan,2013,4,0
+Labuan,2013,5,0
+Labuan,2013,6,0
+Labuan,2013,7,0
+Labuan,2013,8,0
+Labuan,2013,9,0
+Labuan,2013,10,0
+Labuan,2013,11,0
+Labuan,2013,12,0
+Labuan,2013,13,0
+Labuan,2013,14,0
+Labuan,2013,15,0
+Labuan,2013,16,0
+Labuan,2013,17,0
+Labuan,2013,18,0
+Labuan,2013,19,0
+Labuan,2013,20,0
+Labuan,2013,21,0
+Labuan,2013,22,0
+Labuan,2013,23,0
+Labuan,2013,24,0
+Labuan,2013,25,0
+Labuan,2013,26,0
+Labuan,2013,27,0
+Labuan,2013,28,0
+Labuan,2013,29,1
+Labuan,2013,30,0
+Labuan,2013,31,0
+Labuan,2013,32,0
+Labuan,2013,33,0
+Labuan,2013,34,0
+Labuan,2013,35,0
+Labuan,2013,36,1
+Labuan,2013,37,0
+Labuan,2013,38,0
+Labuan,2013,39,0
+Labuan,2013,40,0
+Labuan,2013,41,0
+Labuan,2013,42,0
+Labuan,2013,43,0
+Labuan,2013,44,0
+Labuan,2013,45,0
+Labuan,2013,46,0
+Labuan,2013,47,0
+Labuan,2013,48,0
+Labuan,2013,49,0
+Labuan,2013,50,0
+Labuan,2013,51,0
+Labuan,2013,52,0
+Labuan,2014,1,0
+Labuan,2014,2,0
+Labuan,2014,3,0
+Labuan,2014,4,0
+Labuan,2014,5,0
+Labuan,2014,6,0
+Labuan,2014,7,0
+Labuan,2014,8,0
+Labuan,2014,9,0
+Labuan,2014,10,0
+Labuan,2014,11,0
+Labuan,2014,12,0
+Labuan,2014,13,0
+Labuan,2014,14,0
+Labuan,2014,15,0
+Labuan,2014,16,0
+Labuan,2014,17,0
+Labuan,2014,18,0
+Labuan,2014,19,0
+Labuan,2014,20,0
+Labuan,2014,21,0
+Labuan,2014,22,0
+Labuan,2014,23,0
+Labuan,2014,24,0
+Labuan,2014,25,0
+Labuan,2014,26,0
+Labuan,2014,27,0
+Labuan,2014,28,0
+Labuan,2014,29,0
+Labuan,2014,30,0
+Labuan,2014,31,0
+Labuan,2014,32,0
+Labuan,2014,33,0
+Labuan,2014,34,0
+Labuan,2014,35,0
+Labuan,2014,36,0
+Labuan,2014,37,0
+Labuan,2014,38,0
+Labuan,2014,39,0
+Labuan,2014,40,0
+Labuan,2014,41,0
+Labuan,2014,42,0
+Labuan,2014,43,0
+Labuan,2014,44,0
+Labuan,2014,45,0
+Labuan,2014,46,0
+Labuan,2014,47,0
+Labuan,2014,48,0
+Labuan,2014,49,0
+Labuan,2014,50,0
+Labuan,2014,51,0
+Labuan,2014,52,0
+Labuan,2014,53,0
+Labuan,2015,1,0
+Labuan,2015,2,0
+Labuan,2015,3,0
+Labuan,2015,4,0
+Labuan,2015,5,0
+Labuan,2015,6,0
+Labuan,2015,7,0
+Labuan,2015,8,0
+Labuan,2015,9,0
+Labuan,2015,10,0
+Labuan,2015,11,0
+Labuan,2015,12,0
+Labuan,2015,13,0
+Labuan,2015,14,0
+Labuan,2015,15,0
+Labuan,2015,16,0
+Labuan,2015,17,0
+Labuan,2015,18,0
+Labuan,2015,19,0
+Labuan,2015,20,0
+Labuan,2015,21,0
+Labuan,2015,22,0
+Labuan,2015,23,0
+Labuan,2015,24,0
+Labuan,2015,25,0
+Labuan,2015,26,0
+Labuan,2015,27,0
+Labuan,2015,28,0
+Labuan,2015,29,0
+Labuan,2015,30,0
+Labuan,2015,31,0
+Labuan,2015,32,0
+Labuan,2015,33,0
+Labuan,2015,34,0
+Labuan,2015,35,0
+Labuan,2015,36,0
+Labuan,2015,37,0
+Labuan,2015,38,0
+Labuan,2015,39,0
+Labuan,2015,40,0
+Labuan,2015,41,0
+Labuan,2015,42,0
+Labuan,2015,43,0
+Labuan,2015,44,0
+Labuan,2015,45,0
+Labuan,2015,46,0
+Labuan,2015,47,0
+Labuan,2015,48,0
+Labuan,2015,49,0
+Labuan,2015,50,0
+Labuan,2015,51,0
+Labuan,2015,52,0
+Labuan,2016,1,0
+Labuan,2016,2,0
+Labuan,2016,3,0
+Labuan,2016,4,0
+Labuan,2016,5,0
+Labuan,2016,6,0
+Labuan,2016,7,0
+Labuan,2016,8,0
+Labuan,2016,9,0
+Labuan,2016,10,0
+Labuan,2016,11,0
+Labuan,2016,12,0
+Labuan,2016,13,0
+Labuan,2016,14,0
+Labuan,2016,15,0
+Labuan,2016,16,0
+Labuan,2016,17,0
+Labuan,2016,18,0
+Labuan,2016,19,0
+Labuan,2016,20,0
+Labuan,2016,21,0
+Labuan,2016,22,0
+Labuan,2016,23,0
+Labuan,2016,24,0
+Labuan,2016,25,0
+Labuan,2016,26,0
+Labuan,2016,27,0
+Labuan,2016,28,0
+Labuan,2016,29,0
+Labuan,2016,30,0
+Labuan,2016,31,0
+Labuan,2016,32,0
+Labuan,2016,33,0
+Labuan,2016,34,0
+Labuan,2016,35,0
+Labuan,2016,36,0
+Labuan,2016,37,0
+Labuan,2016,38,0
+Labuan,2016,39,0
+Labuan,2016,40,0
+Labuan,2016,41,0
+Labuan,2016,42,0
+Labuan,2016,43,0
+Labuan,2016,44,0
+Labuan,2016,45,0
+Labuan,2016,46,0
+Labuan,2016,47,0
+Labuan,2016,48,0
+Labuan,2016,49,0
+Labuan,2016,50,0
+Labuan,2016,51,0
+Labuan,2016,52,0
+Labuan,2017,1,0
+Labuan,2017,2,0
+Labuan,2017,3,0
+Labuan,2017,4,0
+Labuan,2017,5,0
+Labuan,2017,6,0
+Labuan,2017,7,0
+Labuan,2017,8,0
+Labuan,2017,9,0
+Labuan,2017,10,0
+Labuan,2017,11,0
+Labuan,2017,12,0
+Labuan,2017,13,0
+Labuan,2017,14,0
+Labuan,2017,15,0
+Labuan,2017,16,0
+Labuan,2017,17,0
+Labuan,2017,18,0
+Labuan,2017,19,0
+Labuan,2017,20,0
+Labuan,2017,21,0
+Labuan,2017,22,0
+Labuan,2017,23,0
+Labuan,2017,24,0
+Labuan,2017,25,0
+Labuan,2017,26,0
+Labuan,2017,27,0
+Labuan,2017,28,0
+Labuan,2017,29,0
+Labuan,2017,30,0
+Labuan,2017,31,0
+Labuan,2017,32,0
+Labuan,2017,33,0
+Labuan,2017,34,0
+Labuan,2017,35,0
+Labuan,2017,36,0
+Labuan,2017,37,0
+Labuan,2017,38,0
+Labuan,2017,39,0
+Labuan,2017,40,0
+Labuan,2017,41,0
+Labuan,2017,42,0
+Labuan,2017,43,0
+Labuan,2017,44,0
+Labuan,2017,45,0
+Labuan,2017,46,0
+Labuan,2017,47,0
+Labuan,2017,48,0
+Labuan,2017,49,0
+Labuan,2017,50,0
+Labuan,2017,51,0
+Labuan,2017,52,0
+Melaka,2010,1,0
+Melaka,2010,2,0
+Melaka,2010,3,2
+Melaka,2010,4,6
+Melaka,2010,5,0
+Melaka,2010,6,3
+Melaka,2010,7,2
+Melaka,2010,8,2
+Melaka,2010,9,2
+Melaka,2010,10,2
+Melaka,2010,11,1
+Melaka,2010,12,2
+Melaka,2010,13,7
+Melaka,2010,14,4
+Melaka,2010,15,2
+Melaka,2010,16,2
+Melaka,2010,17,7
+Melaka,2010,18,4
+Melaka,2010,19,3
+Melaka,2010,20,4
+Melaka,2010,21,7
+Melaka,2010,22,7
+Melaka,2010,23,8
+Melaka,2010,24,1
+Melaka,2010,25,8
+Melaka,2010,26,9
+Melaka,2010,27,10
+Melaka,2010,28,4
+Melaka,2010,29,9
+Melaka,2010,30,8
+Melaka,2010,31,12
+Melaka,2010,32,26
+Melaka,2010,33,23
+Melaka,2010,34,20
+Melaka,2010,35,3
+Melaka,2010,36,2
+Melaka,2010,37,3
+Melaka,2010,38,3
+Melaka,2010,39,8
+Melaka,2010,40,17
+Melaka,2010,41,10
+Melaka,2010,42,11
+Melaka,2010,43,11
+Melaka,2010,44,9
+Melaka,2010,45,6
+Melaka,2010,46,13
+Melaka,2010,47,1
+Melaka,2010,48,2
+Melaka,2010,49,1
+Melaka,2010,50,0
+Melaka,2010,51,0
+Melaka,2010,52,1
+Melaka,2011,1,0
+Melaka,2011,2,3
+Melaka,2011,3,1
+Melaka,2011,4,0
+Melaka,2011,5,0
+Melaka,2011,6,1
+Melaka,2011,7,0
+Melaka,2011,8,0
+Melaka,2011,9,1
+Melaka,2011,10,1
+Melaka,2011,11,0
+Melaka,2011,12,0
+Melaka,2011,13,0
+Melaka,2011,14,0
+Melaka,2011,15,0
+Melaka,2011,16,0
+Melaka,2011,17,2
+Melaka,2011,18,1
+Melaka,2011,19,0
+Melaka,2011,20,0
+Melaka,2011,21,0
+Melaka,2011,22,0
+Melaka,2011,23,0
+Melaka,2011,24,0
+Melaka,2011,25,1
+Melaka,2011,26,0
+Melaka,2011,27,0
+Melaka,2011,28,0
+Melaka,2011,29,2
+Melaka,2011,30,0
+Melaka,2011,31,0
+Melaka,2011,32,0
+Melaka,2011,33,0
+Melaka,2011,34,0
+Melaka,2011,35,0
+Melaka,2011,36,0
+Melaka,2011,37,0
+Melaka,2011,38,1
+Melaka,2011,39,0
+Melaka,2011,40,0
+Melaka,2011,41,0
+Melaka,2011,42,2
+Melaka,2011,43,0
+Melaka,2011,44,0
+Melaka,2011,45,1
+Melaka,2011,46,0
+Melaka,2011,47,0
+Melaka,2011,48,0
+Melaka,2011,49,0
+Melaka,2011,50,0
+Melaka,2011,51,1
+Melaka,2011,52,0
+Melaka,2012,1,2
+Melaka,2012,2,2
+Melaka,2012,3,0
+Melaka,2012,4,0
+Melaka,2012,5,1
+Melaka,2012,6,0
+Melaka,2012,7,0
+Melaka,2012,8,0
+Melaka,2012,9,0
+Melaka,2012,10,0
+Melaka,2012,11,0
+Melaka,2012,12,0
+Melaka,2012,13,1
+Melaka,2012,14,0
+Melaka,2012,15,0
+Melaka,2012,16,0
+Melaka,2012,17,0
+Melaka,2012,18,1
+Melaka,2012,19,0
+Melaka,2012,20,0
+Melaka,2012,21,1
+Melaka,2012,22,0
+Melaka,2012,23,1
+Melaka,2012,24,1
+Melaka,2012,25,0
+Melaka,2012,26,0
+Melaka,2012,27,0
+Melaka,2012,28,0
+Melaka,2012,29,0
+Melaka,2012,30,0
+Melaka,2012,31,0
+Melaka,2012,32,0
+Melaka,2012,33,0
+Melaka,2012,34,0
+Melaka,2012,35,0
+Melaka,2012,36,1
+Melaka,2012,37,0
+Melaka,2012,38,0
+Melaka,2012,39,1
+Melaka,2012,40,0
+Melaka,2012,41,0
+Melaka,2012,42,0
+Melaka,2012,43,1
+Melaka,2012,44,0
+Melaka,2012,45,0
+Melaka,2012,46,0
+Melaka,2012,47,0
+Melaka,2012,48,0
+Melaka,2012,49,0
+Melaka,2012,50,0
+Melaka,2012,51,0
+Melaka,2012,52,0
+Melaka,2013,1,0
+Melaka,2013,2,0
+Melaka,2013,3,0
+Melaka,2013,4,0
+Melaka,2013,5,0
+Melaka,2013,6,1
+Melaka,2013,7,1
+Melaka,2013,8,0
+Melaka,2013,9,0
+Melaka,2013,10,0
+Melaka,2013,11,1
+Melaka,2013,12,0
+Melaka,2013,13,0
+Melaka,2013,14,0
+Melaka,2013,15,0
+Melaka,2013,16,0
+Melaka,2013,17,1
+Melaka,2013,18,0
+Melaka,2013,19,0
+Melaka,2013,20,1
+Melaka,2013,21,1
+Melaka,2013,22,0
+Melaka,2013,23,2
+Melaka,2013,24,0
+Melaka,2013,25,0
+Melaka,2013,26,1
+Melaka,2013,27,0
+Melaka,2013,28,0
+Melaka,2013,29,0
+Melaka,2013,30,0
+Melaka,2013,31,0
+Melaka,2013,32,0
+Melaka,2013,33,1
+Melaka,2013,34,1
+Melaka,2013,35,2
+Melaka,2013,36,1
+Melaka,2013,37,4
+Melaka,2013,38,1
+Melaka,2013,39,6
+Melaka,2013,40,8
+Melaka,2013,41,3
+Melaka,2013,42,4
+Melaka,2013,43,10
+Melaka,2013,44,4
+Melaka,2013,45,1
+Melaka,2013,46,2
+Melaka,2013,47,3
+Melaka,2013,48,10
+Melaka,2013,49,3
+Melaka,2013,50,2
+Melaka,2013,51,5
+Melaka,2013,52,2
+Melaka,2014,1,1
+Melaka,2014,2,1
+Melaka,2014,3,4
+Melaka,2014,4,1
+Melaka,2014,5,1
+Melaka,2014,6,2
+Melaka,2014,7,1
+Melaka,2014,8,1
+Melaka,2014,9,0
+Melaka,2014,10,0
+Melaka,2014,11,1
+Melaka,2014,12,2
+Melaka,2014,13,1
+Melaka,2014,14,0
+Melaka,2014,15,0
+Melaka,2014,16,0
+Melaka,2014,17,0
+Melaka,2014,18,0
+Melaka,2014,19,0
+Melaka,2014,20,0
+Melaka,2014,21,0
+Melaka,2014,22,1
+Melaka,2014,23,0
+Melaka,2014,24,0
+Melaka,2014,25,2
+Melaka,2014,26,0
+Melaka,2014,27,1
+Melaka,2014,28,1
+Melaka,2014,29,2
+Melaka,2014,30,0
+Melaka,2014,31,1
+Melaka,2014,32,1
+Melaka,2014,33,0
+Melaka,2014,34,1
+Melaka,2014,35,2
+Melaka,2014,36,2
+Melaka,2014,37,1
+Melaka,2014,38,1
+Melaka,2014,39,0
+Melaka,2014,40,3
+Melaka,2014,41,0
+Melaka,2014,42,0
+Melaka,2014,43,1
+Melaka,2014,44,0
+Melaka,2014,45,1
+Melaka,2014,46,2
+Melaka,2014,47,0
+Melaka,2014,48,1
+Melaka,2014,49,0
+Melaka,2014,50,1
+Melaka,2014,51,3
+Melaka,2014,52,3
+Melaka,2014,53,1
+Melaka,2015,1,1
+Melaka,2015,2,1
+Melaka,2015,3,1
+Melaka,2015,4,2
+Melaka,2015,5,1
+Melaka,2015,6,0
+Melaka,2015,7,0
+Melaka,2015,8,2
+Melaka,2015,9,0
+Melaka,2015,10,0
+Melaka,2015,11,1
+Melaka,2015,12,0
+Melaka,2015,13,0
+Melaka,2015,14,1
+Melaka,2015,15,0
+Melaka,2015,16,1
+Melaka,2015,17,2
+Melaka,2015,18,0
+Melaka,2015,19,0
+Melaka,2015,20,1
+Melaka,2015,21,1
+Melaka,2015,22,1
+Melaka,2015,23,0
+Melaka,2015,24,0
+Melaka,2015,25,1
+Melaka,2015,26,0
+Melaka,2015,27,0
+Melaka,2015,28,1
+Melaka,2015,29,1
+Melaka,2015,30,1
+Melaka,2015,31,0
+Melaka,2015,32,4
+Melaka,2015,33,3
+Melaka,2015,34,1
+Melaka,2015,35,0
+Melaka,2015,36,0
+Melaka,2015,37,0
+Melaka,2015,38,1
+Melaka,2015,39,0
+Melaka,2015,40,0
+Melaka,2015,41,1
+Melaka,2015,42,2
+Melaka,2015,43,4
+Melaka,2015,44,0
+Melaka,2015,45,0
+Melaka,2015,46,1
+Melaka,2015,47,4
+Melaka,2015,48,1
+Melaka,2015,49,0
+Melaka,2015,50,0
+Melaka,2015,51,1
+Melaka,2015,52,1
+Melaka,2016,1,0
+Melaka,2016,2,0
+Melaka,2016,3,1
+Melaka,2016,4,1
+Melaka,2016,5,0
+Melaka,2016,6,1
+Melaka,2016,7,0
+Melaka,2016,8,0
+Melaka,2016,9,0
+Melaka,2016,10,2
+Melaka,2016,11,0
+Melaka,2016,12,0
+Melaka,2016,13,1
+Melaka,2016,14,2
+Melaka,2016,15,0
+Melaka,2016,16,0
+Melaka,2016,17,0
+Melaka,2016,18,0
+Melaka,2016,19,0
+Melaka,2016,20,0
+Melaka,2016,21,1
+Melaka,2016,22,0
+Melaka,2016,23,1
+Melaka,2016,24,1
+Melaka,2016,25,1
+Melaka,2016,26,2
+Melaka,2016,27,0
+Melaka,2016,28,1
+Melaka,2016,29,0
+Melaka,2016,30,3
+Melaka,2016,31,0
+Melaka,2016,32,0
+Melaka,2016,33,0
+Melaka,2016,34,0
+Melaka,2016,35,2
+Melaka,2016,36,1
+Melaka,2016,37,0
+Melaka,2016,38,0
+Melaka,2016,39,0
+Melaka,2016,40,0
+Melaka,2016,41,0
+Melaka,2016,42,0
+Melaka,2016,43,1
+Melaka,2016,44,0
+Melaka,2016,45,0
+Melaka,2016,46,0
+Melaka,2016,47,1
+Melaka,2016,48,0
+Melaka,2016,49,0
+Melaka,2016,50,1
+Melaka,2016,51,0
+Melaka,2016,52,0
+Melaka,2017,1,0
+Melaka,2017,2,0
+Melaka,2017,3,1
+Melaka,2017,4,1
+Melaka,2017,5,0
+Melaka,2017,6,1
+Melaka,2017,7,0
+Melaka,2017,8,0
+Melaka,2017,9,0
+Melaka,2017,10,0
+Melaka,2017,11,0
+Melaka,2017,12,2
+Melaka,2017,13,0
+Melaka,2017,14,0
+Melaka,2017,15,0
+Melaka,2017,16,2
+Melaka,2017,17,0
+Melaka,2017,18,0
+Melaka,2017,19,0
+Melaka,2017,20,1
+Melaka,2017,21,0
+Melaka,2017,22,0
+Melaka,2017,23,0
+Melaka,2017,24,0
+Melaka,2017,25,1
+Melaka,2017,26,0
+Melaka,2017,27,0
+Melaka,2017,28,0
+Melaka,2017,29,0
+Melaka,2017,30,0
+Melaka,2017,31,0
+Melaka,2017,32,0
+Melaka,2017,33,0
+Melaka,2017,34,0
+Melaka,2017,35,0
+Melaka,2017,36,1
+Melaka,2017,37,0
+Melaka,2017,38,0
+Melaka,2017,39,0
+Melaka,2017,40,0
+Melaka,2017,41,0
+Melaka,2017,42,0
+Melaka,2017,43,1
+Melaka,2017,44,0
+Melaka,2017,45,0
+Melaka,2017,46,0
+Melaka,2017,47,0
+Melaka,2017,48,0
+Melaka,2017,49,0
+Melaka,2017,50,0
+Melaka,2017,51,0
+Melaka,2017,52,0
+Negeri Sembilan,2010,1,2
+Negeri Sembilan,2010,2,4
+Negeri Sembilan,2010,3,2
+Negeri Sembilan,2010,4,4
+Negeri Sembilan,2010,5,4
+Negeri Sembilan,2010,6,3
+Negeri Sembilan,2010,7,2
+Negeri Sembilan,2010,8,1
+Negeri Sembilan,2010,9,3
+Negeri Sembilan,2010,10,0
+Negeri Sembilan,2010,11,2
+Negeri Sembilan,2010,12,1
+Negeri Sembilan,2010,13,2
+Negeri Sembilan,2010,14,1
+Negeri Sembilan,2010,15,8
+Negeri Sembilan,2010,16,4
+Negeri Sembilan,2010,17,5
+Negeri Sembilan,2010,18,3
+Negeri Sembilan,2010,19,2
+Negeri Sembilan,2010,20,5
+Negeri Sembilan,2010,21,7
+Negeri Sembilan,2010,22,7
+Negeri Sembilan,2010,23,3
+Negeri Sembilan,2010,24,6
+Negeri Sembilan,2010,25,4
+Negeri Sembilan,2010,26,3
+Negeri Sembilan,2010,27,3
+Negeri Sembilan,2010,28,6
+Negeri Sembilan,2010,29,3
+Negeri Sembilan,2010,30,1
+Negeri Sembilan,2010,31,3
+Negeri Sembilan,2010,32,2
+Negeri Sembilan,2010,33,1
+Negeri Sembilan,2010,34,1
+Negeri Sembilan,2010,35,1
+Negeri Sembilan,2010,36,0
+Negeri Sembilan,2010,37,0
+Negeri Sembilan,2010,38,2
+Negeri Sembilan,2010,39,0
+Negeri Sembilan,2010,40,2
+Negeri Sembilan,2010,41,0
+Negeri Sembilan,2010,42,0
+Negeri Sembilan,2010,43,2
+Negeri Sembilan,2010,44,1
+Negeri Sembilan,2010,45,1
+Negeri Sembilan,2010,46,2
+Negeri Sembilan,2010,47,3
+Negeri Sembilan,2010,48,3
+Negeri Sembilan,2010,49,0
+Negeri Sembilan,2010,50,1
+Negeri Sembilan,2010,51,0
+Negeri Sembilan,2010,52,2
+Negeri Sembilan,2011,1,1
+Negeri Sembilan,2011,2,1
+Negeri Sembilan,2011,3,1
+Negeri Sembilan,2011,4,0
+Negeri Sembilan,2011,5,2
+Negeri Sembilan,2011,6,0
+Negeri Sembilan,2011,7,0
+Negeri Sembilan,2011,8,1
+Negeri Sembilan,2011,9,1
+Negeri Sembilan,2011,10,3
+Negeri Sembilan,2011,11,1
+Negeri Sembilan,2011,12,0
+Negeri Sembilan,2011,13,1
+Negeri Sembilan,2011,14,1
+Negeri Sembilan,2011,15,1
+Negeri Sembilan,2011,16,2
+Negeri Sembilan,2011,17,1
+Negeri Sembilan,2011,18,2
+Negeri Sembilan,2011,19,0
+Negeri Sembilan,2011,20,1
+Negeri Sembilan,2011,21,0
+Negeri Sembilan,2011,22,0
+Negeri Sembilan,2011,23,0
+Negeri Sembilan,2011,24,3
+Negeri Sembilan,2011,25,0
+Negeri Sembilan,2011,26,2
+Negeri Sembilan,2011,27,4
+Negeri Sembilan,2011,28,0
+Negeri Sembilan,2011,29,1
+Negeri Sembilan,2011,30,3
+Negeri Sembilan,2011,31,1
+Negeri Sembilan,2011,32,1
+Negeri Sembilan,2011,33,0
+Negeri Sembilan,2011,34,1
+Negeri Sembilan,2011,35,0
+Negeri Sembilan,2011,36,1
+Negeri Sembilan,2011,37,1
+Negeri Sembilan,2011,38,1
+Negeri Sembilan,2011,39,1
+Negeri Sembilan,2011,40,0
+Negeri Sembilan,2011,41,1
+Negeri Sembilan,2011,42,0
+Negeri Sembilan,2011,43,0
+Negeri Sembilan,2011,44,1
+Negeri Sembilan,2011,45,0
+Negeri Sembilan,2011,46,1
+Negeri Sembilan,2011,47,0
+Negeri Sembilan,2011,48,2
+Negeri Sembilan,2011,49,1
+Negeri Sembilan,2011,50,0
+Negeri Sembilan,2011,51,0
+Negeri Sembilan,2011,52,0
+Negeri Sembilan,2012,1,0
+Negeri Sembilan,2012,2,0
+Negeri Sembilan,2012,3,1
+Negeri Sembilan,2012,4,0
+Negeri Sembilan,2012,5,0
+Negeri Sembilan,2012,6,0
+Negeri Sembilan,2012,7,0
+Negeri Sembilan,2012,8,1
+Negeri Sembilan,2012,9,0
+Negeri Sembilan,2012,10,1
+Negeri Sembilan,2012,11,0
+Negeri Sembilan,2012,12,0
+Negeri Sembilan,2012,13,0
+Negeri Sembilan,2012,14,0
+Negeri Sembilan,2012,15,0
+Negeri Sembilan,2012,16,1
+Negeri Sembilan,2012,17,0
+Negeri Sembilan,2012,18,0
+Negeri Sembilan,2012,19,0
+Negeri Sembilan,2012,20,0
+Negeri Sembilan,2012,21,0
+Negeri Sembilan,2012,22,0
+Negeri Sembilan,2012,23,0
+Negeri Sembilan,2012,24,0
+Negeri Sembilan,2012,25,0
+Negeri Sembilan,2012,26,0
+Negeri Sembilan,2012,27,0
+Negeri Sembilan,2012,28,0
+Negeri Sembilan,2012,29,0
+Negeri Sembilan,2012,30,0
+Negeri Sembilan,2012,31,0
+Negeri Sembilan,2012,32,0
+Negeri Sembilan,2012,33,0
+Negeri Sembilan,2012,34,0
+Negeri Sembilan,2012,35,0
+Negeri Sembilan,2012,36,0
+Negeri Sembilan,2012,37,0
+Negeri Sembilan,2012,38,0
+Negeri Sembilan,2012,39,0
+Negeri Sembilan,2012,40,0
+Negeri Sembilan,2012,41,0
+Negeri Sembilan,2012,42,0
+Negeri Sembilan,2012,43,0
+Negeri Sembilan,2012,44,1
+Negeri Sembilan,2012,45,0
+Negeri Sembilan,2012,46,0
+Negeri Sembilan,2012,47,0
+Negeri Sembilan,2012,48,0
+Negeri Sembilan,2012,49,0
+Negeri Sembilan,2012,50,0
+Negeri Sembilan,2012,51,0
+Negeri Sembilan,2012,52,0
+Negeri Sembilan,2013,1,0
+Negeri Sembilan,2013,2,0
+Negeri Sembilan,2013,3,0
+Negeri Sembilan,2013,4,0
+Negeri Sembilan,2013,5,0
+Negeri Sembilan,2013,6,0
+Negeri Sembilan,2013,7,0
+Negeri Sembilan,2013,8,0
+Negeri Sembilan,2013,9,0
+Negeri Sembilan,2013,10,0
+Negeri Sembilan,2013,11,0
+Negeri Sembilan,2013,12,0
+Negeri Sembilan,2013,13,1
+Negeri Sembilan,2013,14,0
+Negeri Sembilan,2013,15,0
+Negeri Sembilan,2013,16,0
+Negeri Sembilan,2013,17,0
+Negeri Sembilan,2013,18,0
+Negeri Sembilan,2013,19,0
+Negeri Sembilan,2013,20,1
+Negeri Sembilan,2013,21,0
+Negeri Sembilan,2013,22,0
+Negeri Sembilan,2013,23,0
+Negeri Sembilan,2013,24,1
+Negeri Sembilan,2013,25,0
+Negeri Sembilan,2013,26,0
+Negeri Sembilan,2013,27,0
+Negeri Sembilan,2013,28,0
+Negeri Sembilan,2013,29,0
+Negeri Sembilan,2013,30,0
+Negeri Sembilan,2013,31,0
+Negeri Sembilan,2013,32,0
+Negeri Sembilan,2013,33,1
+Negeri Sembilan,2013,34,0
+Negeri Sembilan,2013,35,0
+Negeri Sembilan,2013,36,0
+Negeri Sembilan,2013,37,0
+Negeri Sembilan,2013,38,0
+Negeri Sembilan,2013,39,0
+Negeri Sembilan,2013,40,0
+Negeri Sembilan,2013,41,0
+Negeri Sembilan,2013,42,0
+Negeri Sembilan,2013,43,0
+Negeri Sembilan,2013,44,0
+Negeri Sembilan,2013,45,1
+Negeri Sembilan,2013,46,0
+Negeri Sembilan,2013,47,0
+Negeri Sembilan,2013,48,0
+Negeri Sembilan,2013,49,0
+Negeri Sembilan,2013,50,0
+Negeri Sembilan,2013,51,0
+Negeri Sembilan,2013,52,0
+Negeri Sembilan,2014,1,1
+Negeri Sembilan,2014,2,0
+Negeri Sembilan,2014,3,0
+Negeri Sembilan,2014,4,0
+Negeri Sembilan,2014,5,1
+Negeri Sembilan,2014,6,0
+Negeri Sembilan,2014,7,0
+Negeri Sembilan,2014,8,0
+Negeri Sembilan,2014,9,0
+Negeri Sembilan,2014,10,0
+Negeri Sembilan,2014,11,0
+Negeri Sembilan,2014,12,1
+Negeri Sembilan,2014,13,0
+Negeri Sembilan,2014,14,0
+Negeri Sembilan,2014,15,0
+Negeri Sembilan,2014,16,0
+Negeri Sembilan,2014,17,0
+Negeri Sembilan,2014,18,0
+Negeri Sembilan,2014,19,0
+Negeri Sembilan,2014,20,1
+Negeri Sembilan,2014,21,0
+Negeri Sembilan,2014,22,1
+Negeri Sembilan,2014,23,0
+Negeri Sembilan,2014,24,0
+Negeri Sembilan,2014,25,0
+Negeri Sembilan,2014,26,1
+Negeri Sembilan,2014,27,0
+Negeri Sembilan,2014,28,0
+Negeri Sembilan,2014,29,0
+Negeri Sembilan,2014,30,1
+Negeri Sembilan,2014,31,0
+Negeri Sembilan,2014,32,0
+Negeri Sembilan,2014,33,0
+Negeri Sembilan,2014,34,1
+Negeri Sembilan,2014,35,0
+Negeri Sembilan,2014,36,0
+Negeri Sembilan,2014,37,0
+Negeri Sembilan,2014,38,0
+Negeri Sembilan,2014,39,1
+Negeri Sembilan,2014,40,0
+Negeri Sembilan,2014,41,0
+Negeri Sembilan,2014,42,1
+Negeri Sembilan,2014,43,0
+Negeri Sembilan,2014,44,0
+Negeri Sembilan,2014,45,0
+Negeri Sembilan,2014,46,2
+Negeri Sembilan,2014,47,1
+Negeri Sembilan,2014,48,0
+Negeri Sembilan,2014,49,1
+Negeri Sembilan,2014,50,0
+Negeri Sembilan,2014,51,0
+Negeri Sembilan,2014,52,0
+Negeri Sembilan,2014,53,0
+Negeri Sembilan,2015,1,0
+Negeri Sembilan,2015,2,0
+Negeri Sembilan,2015,3,1
+Negeri Sembilan,2015,4,1
+Negeri Sembilan,2015,5,2
+Negeri Sembilan,2015,6,0
+Negeri Sembilan,2015,7,0
+Negeri Sembilan,2015,8,0
+Negeri Sembilan,2015,9,0
+Negeri Sembilan,2015,10,1
+Negeri Sembilan,2015,11,2
+Negeri Sembilan,2015,12,0
+Negeri Sembilan,2015,13,0
+Negeri Sembilan,2015,14,0
+Negeri Sembilan,2015,15,0
+Negeri Sembilan,2015,16,0
+Negeri Sembilan,2015,17,1
+Negeri Sembilan,2015,18,0
+Negeri Sembilan,2015,19,1
+Negeri Sembilan,2015,20,2
+Negeri Sembilan,2015,21,0
+Negeri Sembilan,2015,22,0
+Negeri Sembilan,2015,23,0
+Negeri Sembilan,2015,24,0
+Negeri Sembilan,2015,25,0
+Negeri Sembilan,2015,26,0
+Negeri Sembilan,2015,27,1
+Negeri Sembilan,2015,28,0
+Negeri Sembilan,2015,29,1
+Negeri Sembilan,2015,30,0
+Negeri Sembilan,2015,31,1
+Negeri Sembilan,2015,32,2
+Negeri Sembilan,2015,33,2
+Negeri Sembilan,2015,34,3
+Negeri Sembilan,2015,35,0
+Negeri Sembilan,2015,36,1
+Negeri Sembilan,2015,37,1
+Negeri Sembilan,2015,38,1
+Negeri Sembilan,2015,39,1
+Negeri Sembilan,2015,40,0
+Negeri Sembilan,2015,41,0
+Negeri Sembilan,2015,42,0
+Negeri Sembilan,2015,43,0
+Negeri Sembilan,2015,44,1
+Negeri Sembilan,2015,45,0
+Negeri Sembilan,2015,46,1
+Negeri Sembilan,2015,47,0
+Negeri Sembilan,2015,48,1
+Negeri Sembilan,2015,49,1
+Negeri Sembilan,2015,50,1
+Negeri Sembilan,2015,51,0
+Negeri Sembilan,2015,52,1
+Negeri Sembilan,2016,1,1
+Negeri Sembilan,2016,2,1
+Negeri Sembilan,2016,3,1
+Negeri Sembilan,2016,4,0
+Negeri Sembilan,2016,5,0
+Negeri Sembilan,2016,6,0
+Negeri Sembilan,2016,7,0
+Negeri Sembilan,2016,8,0
+Negeri Sembilan,2016,9,3
+Negeri Sembilan,2016,10,3
+Negeri Sembilan,2016,11,0
+Negeri Sembilan,2016,12,1
+Negeri Sembilan,2016,13,0
+Negeri Sembilan,2016,14,0
+Negeri Sembilan,2016,15,0
+Negeri Sembilan,2016,16,0
+Negeri Sembilan,2016,17,0
+Negeri Sembilan,2016,18,1
+Negeri Sembilan,2016,19,0
+Negeri Sembilan,2016,20,0
+Negeri Sembilan,2016,21,0
+Negeri Sembilan,2016,22,0
+Negeri Sembilan,2016,23,0
+Negeri Sembilan,2016,24,0
+Negeri Sembilan,2016,25,1
+Negeri Sembilan,2016,26,3
+Negeri Sembilan,2016,27,1
+Negeri Sembilan,2016,28,0
+Negeri Sembilan,2016,29,1
+Negeri Sembilan,2016,30,2
+Negeri Sembilan,2016,31,0
+Negeri Sembilan,2016,32,0
+Negeri Sembilan,2016,33,0
+Negeri Sembilan,2016,34,0
+Negeri Sembilan,2016,35,0
+Negeri Sembilan,2016,36,1
+Negeri Sembilan,2016,37,0
+Negeri Sembilan,2016,38,1
+Negeri Sembilan,2016,39,2
+Negeri Sembilan,2016,40,1
+Negeri Sembilan,2016,41,1
+Negeri Sembilan,2016,42,1
+Negeri Sembilan,2016,43,0
+Negeri Sembilan,2016,44,0
+Negeri Sembilan,2016,45,0
+Negeri Sembilan,2016,46,0
+Negeri Sembilan,2016,47,0
+Negeri Sembilan,2016,48,0
+Negeri Sembilan,2016,49,0
+Negeri Sembilan,2016,50,0
+Negeri Sembilan,2016,51,0
+Negeri Sembilan,2016,52,2
+Negeri Sembilan,2017,1,1
+Negeri Sembilan,2017,2,1
+Negeri Sembilan,2017,3,1
+Negeri Sembilan,2017,4,0
+Negeri Sembilan,2017,5,0
+Negeri Sembilan,2017,6,1
+Negeri Sembilan,2017,7,1
+Negeri Sembilan,2017,8,1
+Negeri Sembilan,2017,9,0
+Negeri Sembilan,2017,10,1
+Negeri Sembilan,2017,11,0
+Negeri Sembilan,2017,12,1
+Negeri Sembilan,2017,13,0
+Negeri Sembilan,2017,14,0
+Negeri Sembilan,2017,15,0
+Negeri Sembilan,2017,16,0
+Negeri Sembilan,2017,17,0
+Negeri Sembilan,2017,18,0
+Negeri Sembilan,2017,19,0
+Negeri Sembilan,2017,20,1
+Negeri Sembilan,2017,21,0
+Negeri Sembilan,2017,22,0
+Negeri Sembilan,2017,23,0
+Negeri Sembilan,2017,24,0
+Negeri Sembilan,2017,25,1
+Negeri Sembilan,2017,26,1
+Negeri Sembilan,2017,27,0
+Negeri Sembilan,2017,28,0
+Negeri Sembilan,2017,29,1
+Negeri Sembilan,2017,30,0
+Negeri Sembilan,2017,31,0
+Negeri Sembilan,2017,32,0
+Negeri Sembilan,2017,33,0
+Negeri Sembilan,2017,34,0
+Negeri Sembilan,2017,35,0
+Negeri Sembilan,2017,36,0
+Negeri Sembilan,2017,37,0
+Negeri Sembilan,2017,38,0
+Negeri Sembilan,2017,39,0
+Negeri Sembilan,2017,40,0
+Negeri Sembilan,2017,41,0
+Negeri Sembilan,2017,42,0
+Negeri Sembilan,2017,43,0
+Negeri Sembilan,2017,44,0
+Negeri Sembilan,2017,45,0
+Negeri Sembilan,2017,46,1
+Negeri Sembilan,2017,47,0
+Negeri Sembilan,2017,48,0
+Negeri Sembilan,2017,49,0
+Negeri Sembilan,2017,50,0
+Negeri Sembilan,2017,51,0
+Negeri Sembilan,2017,52,0
+Pahang,2010,1,0
+Pahang,2010,2,2
+Pahang,2010,3,1
+Pahang,2010,4,0
+Pahang,2010,5,1
+Pahang,2010,6,0
+Pahang,2010,7,0
+Pahang,2010,8,2
+Pahang,2010,9,1
+Pahang,2010,10,0
+Pahang,2010,11,0
+Pahang,2010,12,2
+Pahang,2010,13,0
+Pahang,2010,14,0
+Pahang,2010,15,0
+Pahang,2010,16,1
+Pahang,2010,17,0
+Pahang,2010,18,0
+Pahang,2010,19,0
+Pahang,2010,20,0
+Pahang,2010,21,1
+Pahang,2010,22,0
+Pahang,2010,23,5
+Pahang,2010,24,4
+Pahang,2010,25,4
+Pahang,2010,26,3
+Pahang,2010,27,3
+Pahang,2010,28,1
+Pahang,2010,29,4
+Pahang,2010,30,3
+Pahang,2010,31,1
+Pahang,2010,32,4
+Pahang,2010,33,4
+Pahang,2010,34,3
+Pahang,2010,35,4
+Pahang,2010,36,1
+Pahang,2010,37,1
+Pahang,2010,38,2
+Pahang,2010,39,4
+Pahang,2010,40,4
+Pahang,2010,41,7
+Pahang,2010,42,4
+Pahang,2010,43,7
+Pahang,2010,44,4
+Pahang,2010,45,5
+Pahang,2010,46,1
+Pahang,2010,47,3
+Pahang,2010,48,4
+Pahang,2010,49,6
+Pahang,2010,50,5
+Pahang,2010,51,3
+Pahang,2010,52,1
+Pahang,2011,1,2
+Pahang,2011,2,0
+Pahang,2011,3,2
+Pahang,2011,4,2
+Pahang,2011,5,1
+Pahang,2011,6,2
+Pahang,2011,7,2
+Pahang,2011,8,0
+Pahang,2011,9,3
+Pahang,2011,10,1
+Pahang,2011,11,0
+Pahang,2011,12,0
+Pahang,2011,13,0
+Pahang,2011,14,1
+Pahang,2011,15,1
+Pahang,2011,16,1
+Pahang,2011,17,0
+Pahang,2011,18,0
+Pahang,2011,19,0
+Pahang,2011,20,1
+Pahang,2011,21,0
+Pahang,2011,22,1
+Pahang,2011,23,0
+Pahang,2011,24,2
+Pahang,2011,25,1
+Pahang,2011,26,1
+Pahang,2011,27,0
+Pahang,2011,28,3
+Pahang,2011,29,1
+Pahang,2011,30,2
+Pahang,2011,31,0
+Pahang,2011,32,0
+Pahang,2011,33,1
+Pahang,2011,34,0
+Pahang,2011,35,2
+Pahang,2011,36,0
+Pahang,2011,37,1
+Pahang,2011,38,1
+Pahang,2011,39,1
+Pahang,2011,40,0
+Pahang,2011,41,1
+Pahang,2011,42,1
+Pahang,2011,43,0
+Pahang,2011,44,1
+Pahang,2011,45,0
+Pahang,2011,46,1
+Pahang,2011,47,0
+Pahang,2011,48,0
+Pahang,2011,49,0
+Pahang,2011,50,0
+Pahang,2011,51,0
+Pahang,2011,52,0
+Pahang,2012,1,1
+Pahang,2012,2,2
+Pahang,2012,3,1
+Pahang,2012,4,0
+Pahang,2012,5,0
+Pahang,2012,6,0
+Pahang,2012,7,0
+Pahang,2012,8,0
+Pahang,2012,9,0
+Pahang,2012,10,0
+Pahang,2012,11,0
+Pahang,2012,12,0
+Pahang,2012,13,0
+Pahang,2012,14,0
+Pahang,2012,15,2
+Pahang,2012,16,0
+Pahang,2012,17,0
+Pahang,2012,18,0
+Pahang,2012,19,1
+Pahang,2012,20,0
+Pahang,2012,21,0
+Pahang,2012,22,0
+Pahang,2012,23,0
+Pahang,2012,24,0
+Pahang,2012,25,1
+Pahang,2012,26,0
+Pahang,2012,27,1
+Pahang,2012,28,1
+Pahang,2012,29,1
+Pahang,2012,30,0
+Pahang,2012,31,0
+Pahang,2012,32,0
+Pahang,2012,33,0
+Pahang,2012,34,0
+Pahang,2012,35,0
+Pahang,2012,36,1
+Pahang,2012,37,0
+Pahang,2012,38,0
+Pahang,2012,39,0
+Pahang,2012,40,1
+Pahang,2012,41,0
+Pahang,2012,42,0
+Pahang,2012,43,0
+Pahang,2012,44,1
+Pahang,2012,45,0
+Pahang,2012,46,0
+Pahang,2012,47,0
+Pahang,2012,48,0
+Pahang,2012,49,0
+Pahang,2012,50,0
+Pahang,2012,51,0
+Pahang,2012,52,0
+Pahang,2013,1,0
+Pahang,2013,2,0
+Pahang,2013,3,0
+Pahang,2013,4,0
+Pahang,2013,5,0
+Pahang,2013,6,0
+Pahang,2013,7,2
+Pahang,2013,8,0
+Pahang,2013,9,0
+Pahang,2013,10,0
+Pahang,2013,11,0
+Pahang,2013,12,0
+Pahang,2013,13,0
+Pahang,2013,14,0
+Pahang,2013,15,0
+Pahang,2013,16,0
+Pahang,2013,17,0
+Pahang,2013,18,0
+Pahang,2013,19,0
+Pahang,2013,20,0
+Pahang,2013,21,0
+Pahang,2013,22,0
+Pahang,2013,23,0
+Pahang,2013,24,0
+Pahang,2013,25,0
+Pahang,2013,26,0
+Pahang,2013,27,0
+Pahang,2013,28,0
+Pahang,2013,29,0
+Pahang,2013,30,0
+Pahang,2013,31,0
+Pahang,2013,32,0
+Pahang,2013,33,0
+Pahang,2013,34,0
+Pahang,2013,35,0
+Pahang,2013,36,1
+Pahang,2013,37,0
+Pahang,2013,38,0
+Pahang,2013,39,0
+Pahang,2013,40,0
+Pahang,2013,41,1
+Pahang,2013,42,0
+Pahang,2013,43,0
+Pahang,2013,44,0
+Pahang,2013,45,0
+Pahang,2013,46,0
+Pahang,2013,47,0
+Pahang,2013,48,0
+Pahang,2013,49,0
+Pahang,2013,50,0
+Pahang,2013,51,0
+Pahang,2013,52,0
+Pahang,2014,1,0
+Pahang,2014,2,0
+Pahang,2014,3,0
+Pahang,2014,4,0
+Pahang,2014,5,0
+Pahang,2014,6,0
+Pahang,2014,7,1
+Pahang,2014,8,0
+Pahang,2014,9,0
+Pahang,2014,10,0
+Pahang,2014,11,0
+Pahang,2014,12,0
+Pahang,2014,13,0
+Pahang,2014,14,0
+Pahang,2014,15,0
+Pahang,2014,16,0
+Pahang,2014,17,0
+Pahang,2014,18,0
+Pahang,2014,19,0
+Pahang,2014,20,0
+Pahang,2014,21,0
+Pahang,2014,22,0
+Pahang,2014,23,1
+Pahang,2014,24,1
+Pahang,2014,25,0
+Pahang,2014,26,0
+Pahang,2014,27,0
+Pahang,2014,28,1
+Pahang,2014,29,1
+Pahang,2014,30,1
+Pahang,2014,31,0
+Pahang,2014,32,2
+Pahang,2014,33,0
+Pahang,2014,34,0
+Pahang,2014,35,1
+Pahang,2014,36,0
+Pahang,2014,37,0
+Pahang,2014,38,1
+Pahang,2014,39,0
+Pahang,2014,40,0
+Pahang,2014,41,0
+Pahang,2014,42,0
+Pahang,2014,43,0
+Pahang,2014,44,0
+Pahang,2014,45,0
+Pahang,2014,46,1
+Pahang,2014,47,1
+Pahang,2014,48,0
+Pahang,2014,49,0
+Pahang,2014,50,0
+Pahang,2014,51,0
+Pahang,2014,52,1
+Pahang,2014,53,0
+Pahang,2015,1,0
+Pahang,2015,2,0
+Pahang,2015,3,0
+Pahang,2015,4,1
+Pahang,2015,5,0
+Pahang,2015,6,1
+Pahang,2015,7,0
+Pahang,2015,8,0
+Pahang,2015,9,0
+Pahang,2015,10,0
+Pahang,2015,11,0
+Pahang,2015,12,0
+Pahang,2015,13,0
+Pahang,2015,14,0
+Pahang,2015,15,1
+Pahang,2015,16,0
+Pahang,2015,17,1
+Pahang,2015,18,0
+Pahang,2015,19,0
+Pahang,2015,20,0
+Pahang,2015,21,1
+Pahang,2015,22,0
+Pahang,2015,23,0
+Pahang,2015,24,1
+Pahang,2015,25,1
+Pahang,2015,26,0
+Pahang,2015,27,0
+Pahang,2015,28,0
+Pahang,2015,29,0
+Pahang,2015,30,0
+Pahang,2015,31,2
+Pahang,2015,32,0
+Pahang,2015,33,1
+Pahang,2015,34,0
+Pahang,2015,35,1
+Pahang,2015,36,0
+Pahang,2015,37,0
+Pahang,2015,38,0
+Pahang,2015,39,0
+Pahang,2015,40,2
+Pahang,2015,41,1
+Pahang,2015,42,1
+Pahang,2015,43,1
+Pahang,2015,44,1
+Pahang,2015,45,0
+Pahang,2015,46,1
+Pahang,2015,47,0
+Pahang,2015,48,1
+Pahang,2015,49,1
+Pahang,2015,50,0
+Pahang,2015,51,1
+Pahang,2015,52,1
+Pahang,2016,1,0
+Pahang,2016,2,0
+Pahang,2016,3,0
+Pahang,2016,4,1
+Pahang,2016,5,0
+Pahang,2016,6,0
+Pahang,2016,7,1
+Pahang,2016,8,0
+Pahang,2016,9,0
+Pahang,2016,10,2
+Pahang,2016,11,0
+Pahang,2016,12,0
+Pahang,2016,13,0
+Pahang,2016,14,0
+Pahang,2016,15,0
+Pahang,2016,16,0
+Pahang,2016,17,1
+Pahang,2016,18,0
+Pahang,2016,19,1
+Pahang,2016,20,1
+Pahang,2016,21,0
+Pahang,2016,22,0
+Pahang,2016,23,0
+Pahang,2016,24,0
+Pahang,2016,25,0
+Pahang,2016,26,0
+Pahang,2016,27,0
+Pahang,2016,28,0
+Pahang,2016,29,0
+Pahang,2016,30,0
+Pahang,2016,31,0
+Pahang,2016,32,1
+Pahang,2016,33,1
+Pahang,2016,34,0
+Pahang,2016,35,0
+Pahang,2016,36,0
+Pahang,2016,37,0
+Pahang,2016,38,0
+Pahang,2016,39,0
+Pahang,2016,40,0
+Pahang,2016,41,0
+Pahang,2016,42,1
+Pahang,2016,43,0
+Pahang,2016,44,0
+Pahang,2016,45,2
+Pahang,2016,46,0
+Pahang,2016,47,0
+Pahang,2016,48,0
+Pahang,2016,49,1
+Pahang,2016,50,0
+Pahang,2016,51,0
+Pahang,2016,52,1
+Pahang,2017,1,0
+Pahang,2017,2,0
+Pahang,2017,3,0
+Pahang,2017,4,0
+Pahang,2017,5,0
+Pahang,2017,6,0
+Pahang,2017,7,0
+Pahang,2017,8,0
+Pahang,2017,9,0
+Pahang,2017,10,0
+Pahang,2017,11,0
+Pahang,2017,12,1
+Pahang,2017,13,0
+Pahang,2017,14,0
+Pahang,2017,15,0
+Pahang,2017,16,0
+Pahang,2017,17,0
+Pahang,2017,18,0
+Pahang,2017,19,0
+Pahang,2017,20,0
+Pahang,2017,21,1
+Pahang,2017,22,0
+Pahang,2017,23,0
+Pahang,2017,24,0
+Pahang,2017,25,0
+Pahang,2017,26,0
+Pahang,2017,27,0
+Pahang,2017,28,0
+Pahang,2017,29,0
+Pahang,2017,30,0
+Pahang,2017,31,0
+Pahang,2017,32,0
+Pahang,2017,33,0
+Pahang,2017,34,0
+Pahang,2017,35,0
+Pahang,2017,36,0
+Pahang,2017,37,1
+Pahang,2017,38,0
+Pahang,2017,39,2
+Pahang,2017,40,0
+Pahang,2017,41,0
+Pahang,2017,42,0
+Pahang,2017,43,0
+Pahang,2017,44,1
+Pahang,2017,45,0
+Pahang,2017,46,0
+Pahang,2017,47,0
+Pahang,2017,48,0
+Pahang,2017,49,0
+Pahang,2017,50,0
+Pahang,2017,51,0
+Pahang,2017,52,0
+Perak,2010,1,0
+Perak,2010,2,0
+Perak,2010,3,0
+Perak,2010,4,0
+Perak,2010,5,1
+Perak,2010,6,0
+Perak,2010,7,0
+Perak,2010,8,1
+Perak,2010,9,1
+Perak,2010,10,0
+Perak,2010,11,0
+Perak,2010,12,1
+Perak,2010,13,1
+Perak,2010,14,2
+Perak,2010,15,0
+Perak,2010,16,0
+Perak,2010,17,1
+Perak,2010,18,0
+Perak,2010,19,0
+Perak,2010,20,1
+Perak,2010,21,0
+Perak,2010,22,0
+Perak,2010,23,2
+Perak,2010,24,1
+Perak,2010,25,3
+Perak,2010,26,0
+Perak,2010,27,0
+Perak,2010,28,0
+Perak,2010,29,1
+Perak,2010,30,1
+Perak,2010,31,1
+Perak,2010,32,2
+Perak,2010,33,1
+Perak,2010,34,1
+Perak,2010,35,1
+Perak,2010,36,0
+Perak,2010,37,0
+Perak,2010,38,1
+Perak,2010,39,1
+Perak,2010,40,0
+Perak,2010,41,0
+Perak,2010,42,1
+Perak,2010,43,0
+Perak,2010,44,0
+Perak,2010,45,1
+Perak,2010,46,2
+Perak,2010,47,0
+Perak,2010,48,0
+Perak,2010,49,0
+Perak,2010,50,2
+Perak,2010,51,0
+Perak,2010,52,1
+Perak,2011,1,1
+Perak,2011,2,1
+Perak,2011,3,0
+Perak,2011,4,1
+Perak,2011,5,0
+Perak,2011,6,1
+Perak,2011,7,1
+Perak,2011,8,2
+Perak,2011,9,0
+Perak,2011,10,4
+Perak,2011,11,0
+Perak,2011,12,0
+Perak,2011,13,0
+Perak,2011,14,1
+Perak,2011,15,0
+Perak,2011,16,1
+Perak,2011,17,1
+Perak,2011,18,0
+Perak,2011,19,1
+Perak,2011,20,0
+Perak,2011,21,0
+Perak,2011,22,1
+Perak,2011,23,0
+Perak,2011,24,1
+Perak,2011,25,1
+Perak,2011,26,1
+Perak,2011,27,0
+Perak,2011,28,1
+Perak,2011,29,2
+Perak,2011,30,0
+Perak,2011,31,1
+Perak,2011,32,1
+Perak,2011,33,0
+Perak,2011,34,0
+Perak,2011,35,0
+Perak,2011,36,0
+Perak,2011,37,0
+Perak,2011,38,0
+Perak,2011,39,0
+Perak,2011,40,0
+Perak,2011,41,0
+Perak,2011,42,0
+Perak,2011,43,0
+Perak,2011,44,1
+Perak,2011,45,0
+Perak,2011,46,1
+Perak,2011,47,4
+Perak,2011,48,0
+Perak,2011,49,3
+Perak,2011,50,0
+Perak,2011,51,1
+Perak,2011,52,0
+Perak,2012,1,1
+Perak,2012,2,0
+Perak,2012,3,0
+Perak,2012,4,1
+Perak,2012,5,3
+Perak,2012,6,0
+Perak,2012,7,0
+Perak,2012,8,1
+Perak,2012,9,0
+Perak,2012,10,0
+Perak,2012,11,1
+Perak,2012,12,0
+Perak,2012,13,0
+Perak,2012,14,0
+Perak,2012,15,0
+Perak,2012,16,0
+Perak,2012,17,0
+Perak,2012,18,0
+Perak,2012,19,0
+Perak,2012,20,0
+Perak,2012,21,0
+Perak,2012,22,1
+Perak,2012,23,1
+Perak,2012,24,2
+Perak,2012,25,1
+Perak,2012,26,0
+Perak,2012,27,2
+Perak,2012,28,0
+Perak,2012,29,1
+Perak,2012,30,0
+Perak,2012,31,0
+Perak,2012,32,1
+Perak,2012,33,0
+Perak,2012,34,1
+Perak,2012,35,2
+Perak,2012,36,2
+Perak,2012,37,1
+Perak,2012,38,0
+Perak,2012,39,1
+Perak,2012,40,0
+Perak,2012,41,0
+Perak,2012,42,1
+Perak,2012,43,0
+Perak,2012,44,1
+Perak,2012,45,0
+Perak,2012,46,1
+Perak,2012,47,4
+Perak,2012,48,0
+Perak,2012,49,1
+Perak,2012,50,2
+Perak,2012,51,0
+Perak,2012,52,0
+Perak,2013,1,0
+Perak,2013,2,0
+Perak,2013,3,1
+Perak,2013,4,4
+Perak,2013,5,0
+Perak,2013,6,1
+Perak,2013,7,0
+Perak,2013,8,0
+Perak,2013,9,0
+Perak,2013,10,0
+Perak,2013,11,1
+Perak,2013,12,0
+Perak,2013,13,0
+Perak,2013,14,0
+Perak,2013,15,1
+Perak,2013,16,0
+Perak,2013,17,0
+Perak,2013,18,0
+Perak,2013,19,0
+Perak,2013,20,0
+Perak,2013,21,0
+Perak,2013,22,0
+Perak,2013,23,0
+Perak,2013,24,1
+Perak,2013,25,1
+Perak,2013,26,0
+Perak,2013,27,0
+Perak,2013,28,0
+Perak,2013,29,0
+Perak,2013,30,0
+Perak,2013,31,0
+Perak,2013,32,0
+Perak,2013,33,1
+Perak,2013,34,0
+Perak,2013,35,0
+Perak,2013,36,1
+Perak,2013,37,0
+Perak,2013,38,2
+Perak,2013,39,0
+Perak,2013,40,1
+Perak,2013,41,0
+Perak,2013,42,0
+Perak,2013,43,0
+Perak,2013,44,0
+Perak,2013,45,0
+Perak,2013,46,0
+Perak,2013,47,1
+Perak,2013,48,1
+Perak,2013,49,0
+Perak,2013,50,0
+Perak,2013,51,0
+Perak,2013,52,1
+Perak,2014,1,0
+Perak,2014,2,2
+Perak,2014,3,0
+Perak,2014,4,0
+Perak,2014,5,1
+Perak,2014,6,1
+Perak,2014,7,0
+Perak,2014,8,0
+Perak,2014,9,0
+Perak,2014,10,1
+Perak,2014,11,0
+Perak,2014,12,1
+Perak,2014,13,0
+Perak,2014,14,1
+Perak,2014,15,1
+Perak,2014,16,1
+Perak,2014,17,0
+Perak,2014,18,1
+Perak,2014,19,0
+Perak,2014,20,1
+Perak,2014,21,1
+Perak,2014,22,0
+Perak,2014,23,1
+Perak,2014,24,2
+Perak,2014,25,0
+Perak,2014,26,1
+Perak,2014,27,1
+Perak,2014,28,1
+Perak,2014,29,0
+Perak,2014,30,2
+Perak,2014,31,0
+Perak,2014,32,0
+Perak,2014,33,0
+Perak,2014,34,0
+Perak,2014,35,0
+Perak,2014,36,0
+Perak,2014,37,0
+Perak,2014,38,1
+Perak,2014,39,0
+Perak,2014,40,3
+Perak,2014,41,1
+Perak,2014,42,1
+Perak,2014,43,1
+Perak,2014,44,0
+Perak,2014,45,1
+Perak,2014,46,1
+Perak,2014,47,0
+Perak,2014,48,0
+Perak,2014,49,2
+Perak,2014,50,0
+Perak,2014,51,3
+Perak,2014,52,7
+Perak,2014,53,5
+Perak,2015,1,4
+Perak,2015,2,3
+Perak,2015,3,3
+Perak,2015,4,2
+Perak,2015,5,3
+Perak,2015,6,0
+Perak,2015,7,2
+Perak,2015,8,1
+Perak,2015,9,4
+Perak,2015,10,2
+Perak,2015,11,2
+Perak,2015,12,2
+Perak,2015,13,0
+Perak,2015,14,0
+Perak,2015,15,0
+Perak,2015,16,1
+Perak,2015,17,1
+Perak,2015,18,2
+Perak,2015,19,0
+Perak,2015,20,1
+Perak,2015,21,2
+Perak,2015,22,0
+Perak,2015,23,0
+Perak,2015,24,1
+Perak,2015,25,1
+Perak,2015,26,1
+Perak,2015,27,1
+Perak,2015,28,2
+Perak,2015,29,2
+Perak,2015,30,1
+Perak,2015,31,1
+Perak,2015,32,4
+Perak,2015,33,0
+Perak,2015,34,3
+Perak,2015,35,3
+Perak,2015,36,0
+Perak,2015,37,0
+Perak,2015,38,1
+Perak,2015,39,1
+Perak,2015,40,2
+Perak,2015,41,0
+Perak,2015,42,1
+Perak,2015,43,0
+Perak,2015,44,2
+Perak,2015,45,0
+Perak,2015,46,0
+Perak,2015,47,1
+Perak,2015,48,2
+Perak,2015,49,3
+Perak,2015,50,1
+Perak,2015,51,1
+Perak,2015,52,0
+Perak,2016,1,1
+Perak,2016,2,0
+Perak,2016,3,0
+Perak,2016,4,2
+Perak,2016,5,1
+Perak,2016,6,0
+Perak,2016,7,1
+Perak,2016,8,1
+Perak,2016,9,1
+Perak,2016,10,2
+Perak,2016,11,1
+Perak,2016,12,0
+Perak,2016,13,0
+Perak,2016,14,1
+Perak,2016,15,1
+Perak,2016,16,0
+Perak,2016,17,0
+Perak,2016,18,0
+Perak,2016,19,0
+Perak,2016,20,0
+Perak,2016,21,2
+Perak,2016,22,0
+Perak,2016,23,1
+Perak,2016,24,1
+Perak,2016,25,0
+Perak,2016,26,2
+Perak,2016,27,1
+Perak,2016,28,2
+Perak,2016,29,1
+Perak,2016,30,0
+Perak,2016,31,0
+Perak,2016,32,0
+Perak,2016,33,1
+Perak,2016,34,0
+Perak,2016,35,1
+Perak,2016,36,1
+Perak,2016,37,0
+Perak,2016,38,0
+Perak,2016,39,1
+Perak,2016,40,0
+Perak,2016,41,0
+Perak,2016,42,0
+Perak,2016,43,0
+Perak,2016,44,0
+Perak,2016,45,1
+Perak,2016,46,1
+Perak,2016,47,0
+Perak,2016,48,0
+Perak,2016,49,0
+Perak,2016,50,0
+Perak,2016,51,1
+Perak,2016,52,0
+Perak,2017,1,1
+Perak,2017,2,1
+Perak,2017,3,0
+Perak,2017,4,1
+Perak,2017,5,1
+Perak,2017,6,1
+Perak,2017,7,0
+Perak,2017,8,1
+Perak,2017,9,1
+Perak,2017,10,1
+Perak,2017,11,0
+Perak,2017,12,2
+Perak,2017,13,1
+Perak,2017,14,0
+Perak,2017,15,1
+Perak,2017,16,1
+Perak,2017,17,1
+Perak,2017,18,0
+Perak,2017,19,1
+Perak,2017,20,0
+Perak,2017,21,2
+Perak,2017,22,1
+Perak,2017,23,2
+Perak,2017,24,0
+Perak,2017,25,0
+Perak,2017,26,0
+Perak,2017,27,1
+Perak,2017,28,1
+Perak,2017,29,1
+Perak,2017,30,0
+Perak,2017,31,0
+Perak,2017,32,1
+Perak,2017,33,0
+Perak,2017,34,0
+Perak,2017,35,1
+Perak,2017,36,1
+Perak,2017,37,2
+Perak,2017,38,0
+Perak,2017,39,1
+Perak,2017,40,0
+Perak,2017,41,0
+Perak,2017,42,0
+Perak,2017,43,0
+Perak,2017,44,0
+Perak,2017,45,0
+Perak,2017,46,0
+Perak,2017,47,0
+Perak,2017,48,0
+Perak,2017,49,1
+Perak,2017,50,0
+Perak,2017,51,0
+Perak,2017,52,0
+Perlis,2010,1,0
+Perlis,2010,2,0
+Perlis,2010,3,0
+Perlis,2010,4,0
+Perlis,2010,5,0
+Perlis,2010,6,0
+Perlis,2010,7,0
+Perlis,2010,8,0
+Perlis,2010,9,0
+Perlis,2010,10,0
+Perlis,2010,11,0
+Perlis,2010,12,0
+Perlis,2010,13,0
+Perlis,2010,14,0
+Perlis,2010,15,0
+Perlis,2010,16,0
+Perlis,2010,17,0
+Perlis,2010,18,0
+Perlis,2010,19,0
+Perlis,2010,20,0
+Perlis,2010,21,0
+Perlis,2010,22,0
+Perlis,2010,23,0
+Perlis,2010,24,0
+Perlis,2010,25,0
+Perlis,2010,26,0
+Perlis,2010,27,0
+Perlis,2010,28,0
+Perlis,2010,29,0
+Perlis,2010,30,0
+Perlis,2010,31,0
+Perlis,2010,32,0
+Perlis,2010,33,0
+Perlis,2010,34,0
+Perlis,2010,35,0
+Perlis,2010,36,0
+Perlis,2010,37,0
+Perlis,2010,38,0
+Perlis,2010,39,0
+Perlis,2010,40,0
+Perlis,2010,41,0
+Perlis,2010,42,0
+Perlis,2010,43,0
+Perlis,2010,44,0
+Perlis,2010,45,0
+Perlis,2010,46,0
+Perlis,2010,47,0
+Perlis,2010,48,0
+Perlis,2010,49,0
+Perlis,2010,50,0
+Perlis,2010,51,0
+Perlis,2010,52,0
+Perlis,2011,1,0
+Perlis,2011,2,0
+Perlis,2011,3,0
+Perlis,2011,4,0
+Perlis,2011,5,0
+Perlis,2011,6,0
+Perlis,2011,7,0
+Perlis,2011,8,0
+Perlis,2011,9,0
+Perlis,2011,10,0
+Perlis,2011,11,0
+Perlis,2011,12,0
+Perlis,2011,13,0
+Perlis,2011,14,0
+Perlis,2011,15,0
+Perlis,2011,16,0
+Perlis,2011,17,0
+Perlis,2011,18,0
+Perlis,2011,19,0
+Perlis,2011,20,0
+Perlis,2011,21,0
+Perlis,2011,22,0
+Perlis,2011,23,0
+Perlis,2011,24,0
+Perlis,2011,25,0
+Perlis,2011,26,0
+Perlis,2011,27,0
+Perlis,2011,28,0
+Perlis,2011,29,0
+Perlis,2011,30,0
+Perlis,2011,31,0
+Perlis,2011,32,0
+Perlis,2011,33,0
+Perlis,2011,34,0
+Perlis,2011,35,0
+Perlis,2011,36,0
+Perlis,2011,37,0
+Perlis,2011,38,0
+Perlis,2011,39,0
+Perlis,2011,40,0
+Perlis,2011,41,0
+Perlis,2011,42,0
+Perlis,2011,43,0
+Perlis,2011,44,0
+Perlis,2011,45,0
+Perlis,2011,46,0
+Perlis,2011,47,0
+Perlis,2011,48,0
+Perlis,2011,49,0
+Perlis,2011,50,0
+Perlis,2011,51,0
+Perlis,2011,52,0
+Perlis,2012,1,0
+Perlis,2012,2,0
+Perlis,2012,3,0
+Perlis,2012,4,0
+Perlis,2012,5,0
+Perlis,2012,6,0
+Perlis,2012,7,0
+Perlis,2012,8,0
+Perlis,2012,9,0
+Perlis,2012,10,0
+Perlis,2012,11,0
+Perlis,2012,12,0
+Perlis,2012,13,0
+Perlis,2012,14,0
+Perlis,2012,15,0
+Perlis,2012,16,0
+Perlis,2012,17,0
+Perlis,2012,18,0
+Perlis,2012,19,0
+Perlis,2012,20,0
+Perlis,2012,21,0
+Perlis,2012,22,0
+Perlis,2012,23,0
+Perlis,2012,24,0
+Perlis,2012,25,0
+Perlis,2012,26,0
+Perlis,2012,27,0
+Perlis,2012,28,0
+Perlis,2012,29,0
+Perlis,2012,30,0
+Perlis,2012,31,0
+Perlis,2012,32,0
+Perlis,2012,33,0
+Perlis,2012,34,0
+Perlis,2012,35,0
+Perlis,2012,36,0
+Perlis,2012,37,0
+Perlis,2012,38,0
+Perlis,2012,39,0
+Perlis,2012,40,0
+Perlis,2012,41,0
+Perlis,2012,42,0
+Perlis,2012,43,0
+Perlis,2012,44,0
+Perlis,2012,45,1
+Perlis,2012,46,0
+Perlis,2012,47,0
+Perlis,2012,48,0
+Perlis,2012,49,0
+Perlis,2012,50,0
+Perlis,2012,51,0
+Perlis,2012,52,0
+Perlis,2013,1,0
+Perlis,2013,2,0
+Perlis,2013,3,0
+Perlis,2013,4,0
+Perlis,2013,5,0
+Perlis,2013,6,1
+Perlis,2013,7,0
+Perlis,2013,8,0
+Perlis,2013,9,0
+Perlis,2013,10,0
+Perlis,2013,11,0
+Perlis,2013,12,0
+Perlis,2013,13,0
+Perlis,2013,14,0
+Perlis,2013,15,0
+Perlis,2013,16,0
+Perlis,2013,17,0
+Perlis,2013,18,0
+Perlis,2013,19,0
+Perlis,2013,20,0
+Perlis,2013,21,0
+Perlis,2013,22,0
+Perlis,2013,23,0
+Perlis,2013,24,0
+Perlis,2013,25,1
+Perlis,2013,26,0
+Perlis,2013,27,0
+Perlis,2013,28,0
+Perlis,2013,29,0
+Perlis,2013,30,0
+Perlis,2013,31,0
+Perlis,2013,32,0
+Perlis,2013,33,0
+Perlis,2013,34,1
+Perlis,2013,35,0
+Perlis,2013,36,0
+Perlis,2013,37,0
+Perlis,2013,38,0
+Perlis,2013,39,0
+Perlis,2013,40,0
+Perlis,2013,41,0
+Perlis,2013,42,0
+Perlis,2013,43,0
+Perlis,2013,44,0
+Perlis,2013,45,0
+Perlis,2013,46,0
+Perlis,2013,47,0
+Perlis,2013,48,0
+Perlis,2013,49,0
+Perlis,2013,50,0
+Perlis,2013,51,0
+Perlis,2013,52,0
+Perlis,2014,1,0
+Perlis,2014,2,0
+Perlis,2014,3,0
+Perlis,2014,4,0
+Perlis,2014,5,0
+Perlis,2014,6,0
+Perlis,2014,7,0
+Perlis,2014,8,0
+Perlis,2014,9,0
+Perlis,2014,10,0
+Perlis,2014,11,0
+Perlis,2014,12,0
+Perlis,2014,13,0
+Perlis,2014,14,0
+Perlis,2014,15,0
+Perlis,2014,16,0
+Perlis,2014,17,0
+Perlis,2014,18,0
+Perlis,2014,19,0
+Perlis,2014,20,0
+Perlis,2014,21,0
+Perlis,2014,22,0
+Perlis,2014,23,0
+Perlis,2014,24,0
+Perlis,2014,25,0
+Perlis,2014,26,0
+Perlis,2014,27,0
+Perlis,2014,28,0
+Perlis,2014,29,0
+Perlis,2014,30,0
+Perlis,2014,31,0
+Perlis,2014,32,0
+Perlis,2014,33,0
+Perlis,2014,34,0
+Perlis,2014,35,0
+Perlis,2014,36,0
+Perlis,2014,37,0
+Perlis,2014,38,0
+Perlis,2014,39,0
+Perlis,2014,40,0
+Perlis,2014,41,0
+Perlis,2014,42,0
+Perlis,2014,43,0
+Perlis,2014,44,0
+Perlis,2014,45,0
+Perlis,2014,46,0
+Perlis,2014,47,0
+Perlis,2014,48,0
+Perlis,2014,49,0
+Perlis,2014,50,0
+Perlis,2014,51,0
+Perlis,2014,52,0
+Perlis,2014,53,0
+Perlis,2015,1,0
+Perlis,2015,2,0
+Perlis,2015,3,0
+Perlis,2015,4,1
+Perlis,2015,5,0
+Perlis,2015,6,0
+Perlis,2015,7,0
+Perlis,2015,8,0
+Perlis,2015,9,0
+Perlis,2015,10,0
+Perlis,2015,11,1
+Perlis,2015,12,0
+Perlis,2015,13,0
+Perlis,2015,14,0
+Perlis,2015,15,0
+Perlis,2015,16,0
+Perlis,2015,17,0
+Perlis,2015,18,0
+Perlis,2015,19,0
+Perlis,2015,20,0
+Perlis,2015,21,0
+Perlis,2015,22,0
+Perlis,2015,23,0
+Perlis,2015,24,0
+Perlis,2015,25,0
+Perlis,2015,26,0
+Perlis,2015,27,0
+Perlis,2015,28,0
+Perlis,2015,29,0
+Perlis,2015,30,0
+Perlis,2015,31,0
+Perlis,2015,32,0
+Perlis,2015,33,0
+Perlis,2015,34,0
+Perlis,2015,35,0
+Perlis,2015,36,0
+Perlis,2015,37,0
+Perlis,2015,38,0
+Perlis,2015,39,0
+Perlis,2015,40,0
+Perlis,2015,41,0
+Perlis,2015,42,0
+Perlis,2015,43,0
+Perlis,2015,44,0
+Perlis,2015,45,0
+Perlis,2015,46,0
+Perlis,2015,47,0
+Perlis,2015,48,0
+Perlis,2015,49,0
+Perlis,2015,50,0
+Perlis,2015,51,0
+Perlis,2015,52,0
+Perlis,2016,1,0
+Perlis,2016,2,0
+Perlis,2016,3,0
+Perlis,2016,4,0
+Perlis,2016,5,0
+Perlis,2016,6,0
+Perlis,2016,7,0
+Perlis,2016,8,0
+Perlis,2016,9,0
+Perlis,2016,10,0
+Perlis,2016,11,0
+Perlis,2016,12,0
+Perlis,2016,13,0
+Perlis,2016,14,0
+Perlis,2016,15,0
+Perlis,2016,16,0
+Perlis,2016,17,0
+Perlis,2016,18,1
+Perlis,2016,19,0
+Perlis,2016,20,0
+Perlis,2016,21,0
+Perlis,2016,22,0
+Perlis,2016,23,0
+Perlis,2016,24,0
+Perlis,2016,25,0
+Perlis,2016,26,0
+Perlis,2016,27,0
+Perlis,2016,28,0
+Perlis,2016,29,0
+Perlis,2016,30,0
+Perlis,2016,31,0
+Perlis,2016,32,0
+Perlis,2016,33,0
+Perlis,2016,34,0
+Perlis,2016,35,0
+Perlis,2016,36,0
+Perlis,2016,37,0
+Perlis,2016,38,0
+Perlis,2016,39,0
+Perlis,2016,40,0
+Perlis,2016,41,0
+Perlis,2016,42,0
+Perlis,2016,43,0
+Perlis,2016,44,0
+Perlis,2016,45,0
+Perlis,2016,46,0
+Perlis,2016,47,0
+Perlis,2016,48,0
+Perlis,2016,49,0
+Perlis,2016,50,0
+Perlis,2016,51,0
+Perlis,2016,52,0
+Perlis,2017,1,0
+Perlis,2017,2,0
+Perlis,2017,3,0
+Perlis,2017,4,0
+Perlis,2017,5,0
+Perlis,2017,6,0
+Perlis,2017,7,0
+Perlis,2017,8,0
+Perlis,2017,9,0
+Perlis,2017,10,0
+Perlis,2017,11,0
+Perlis,2017,12,0
+Perlis,2017,13,0
+Perlis,2017,14,0
+Perlis,2017,15,0
+Perlis,2017,16,0
+Perlis,2017,17,0
+Perlis,2017,18,0
+Perlis,2017,19,1
+Perlis,2017,20,0
+Perlis,2017,21,0
+Perlis,2017,22,0
+Perlis,2017,23,0
+Perlis,2017,24,0
+Perlis,2017,25,0
+Perlis,2017,26,0
+Perlis,2017,27,0
+Perlis,2017,28,0
+Perlis,2017,29,0
+Perlis,2017,30,0
+Perlis,2017,31,0
+Perlis,2017,32,0
+Perlis,2017,33,0
+Perlis,2017,34,0
+Perlis,2017,35,0
+Perlis,2017,36,0
+Perlis,2017,37,0
+Perlis,2017,38,0
+Perlis,2017,39,0
+Perlis,2017,40,0
+Perlis,2017,41,0
+Perlis,2017,42,0
+Perlis,2017,43,0
+Perlis,2017,44,0
+Perlis,2017,45,0
+Perlis,2017,46,0
+Perlis,2017,47,0
+Perlis,2017,48,0
+Perlis,2017,49,0
+Perlis,2017,50,0
+Perlis,2017,51,0
+Perlis,2017,52,0
+Pulau Pinang,2010,1,0
+Pulau Pinang,2010,2,0
+Pulau Pinang,2010,3,0
+Pulau Pinang,2010,4,0
+Pulau Pinang,2010,5,2
+Pulau Pinang,2010,6,2
+Pulau Pinang,2010,7,0
+Pulau Pinang,2010,8,0
+Pulau Pinang,2010,9,0
+Pulau Pinang,2010,10,0
+Pulau Pinang,2010,11,0
+Pulau Pinang,2010,12,0
+Pulau Pinang,2010,13,0
+Pulau Pinang,2010,14,0
+Pulau Pinang,2010,15,0
+Pulau Pinang,2010,16,0
+Pulau Pinang,2010,17,1
+Pulau Pinang,2010,18,0
+Pulau Pinang,2010,19,0
+Pulau Pinang,2010,20,0
+Pulau Pinang,2010,21,3
+Pulau Pinang,2010,22,0
+Pulau Pinang,2010,23,0
+Pulau Pinang,2010,24,0
+Pulau Pinang,2010,25,0
+Pulau Pinang,2010,26,0
+Pulau Pinang,2010,27,1
+Pulau Pinang,2010,28,1
+Pulau Pinang,2010,29,1
+Pulau Pinang,2010,30,0
+Pulau Pinang,2010,31,0
+Pulau Pinang,2010,32,0
+Pulau Pinang,2010,33,1
+Pulau Pinang,2010,34,0
+Pulau Pinang,2010,35,1
+Pulau Pinang,2010,36,0
+Pulau Pinang,2010,37,3
+Pulau Pinang,2010,38,1
+Pulau Pinang,2010,39,0
+Pulau Pinang,2010,40,1
+Pulau Pinang,2010,41,0
+Pulau Pinang,2010,42,0
+Pulau Pinang,2010,43,0
+Pulau Pinang,2010,44,0
+Pulau Pinang,2010,45,0
+Pulau Pinang,2010,46,0
+Pulau Pinang,2010,47,1
+Pulau Pinang,2010,48,1
+Pulau Pinang,2010,49,0
+Pulau Pinang,2010,50,1
+Pulau Pinang,2010,51,0
+Pulau Pinang,2010,52,0
+Pulau Pinang,2011,1,1
+Pulau Pinang,2011,2,0
+Pulau Pinang,2011,3,3
+Pulau Pinang,2011,4,1
+Pulau Pinang,2011,5,1
+Pulau Pinang,2011,6,0
+Pulau Pinang,2011,7,1
+Pulau Pinang,2011,8,3
+Pulau Pinang,2011,9,1
+Pulau Pinang,2011,10,0
+Pulau Pinang,2011,11,3
+Pulau Pinang,2011,12,1
+Pulau Pinang,2011,13,1
+Pulau Pinang,2011,14,0
+Pulau Pinang,2011,15,0
+Pulau Pinang,2011,16,2
+Pulau Pinang,2011,17,0
+Pulau Pinang,2011,18,0
+Pulau Pinang,2011,19,2
+Pulau Pinang,2011,20,0
+Pulau Pinang,2011,21,0
+Pulau Pinang,2011,22,0
+Pulau Pinang,2011,23,1
+Pulau Pinang,2011,24,0
+Pulau Pinang,2011,25,1
+Pulau Pinang,2011,26,1
+Pulau Pinang,2011,27,0
+Pulau Pinang,2011,28,3
+Pulau Pinang,2011,29,1
+Pulau Pinang,2011,30,1
+Pulau Pinang,2011,31,2
+Pulau Pinang,2011,32,1
+Pulau Pinang,2011,33,3
+Pulau Pinang,2011,34,0
+Pulau Pinang,2011,35,0
+Pulau Pinang,2011,36,0
+Pulau Pinang,2011,37,1
+Pulau Pinang,2011,38,0
+Pulau Pinang,2011,39,1
+Pulau Pinang,2011,40,0
+Pulau Pinang,2011,41,1
+Pulau Pinang,2011,42,1
+Pulau Pinang,2011,43,0
+Pulau Pinang,2011,44,0
+Pulau Pinang,2011,45,0
+Pulau Pinang,2011,46,0
+Pulau Pinang,2011,47,2
+Pulau Pinang,2011,48,0
+Pulau Pinang,2011,49,0
+Pulau Pinang,2011,50,0
+Pulau Pinang,2011,51,1
+Pulau Pinang,2011,52,0
+Pulau Pinang,2012,1,0
+Pulau Pinang,2012,2,0
+Pulau Pinang,2012,3,0
+Pulau Pinang,2012,4,1
+Pulau Pinang,2012,5,0
+Pulau Pinang,2012,6,0
+Pulau Pinang,2012,7,1
+Pulau Pinang,2012,8,0
+Pulau Pinang,2012,9,1
+Pulau Pinang,2012,10,0
+Pulau Pinang,2012,11,0
+Pulau Pinang,2012,12,0
+Pulau Pinang,2012,13,2
+Pulau Pinang,2012,14,0
+Pulau Pinang,2012,15,0
+Pulau Pinang,2012,16,0
+Pulau Pinang,2012,17,0
+Pulau Pinang,2012,18,0
+Pulau Pinang,2012,19,1
+Pulau Pinang,2012,20,0
+Pulau Pinang,2012,21,0
+Pulau Pinang,2012,22,2
+Pulau Pinang,2012,23,0
+Pulau Pinang,2012,24,0
+Pulau Pinang,2012,25,2
+Pulau Pinang,2012,26,0
+Pulau Pinang,2012,27,1
+Pulau Pinang,2012,28,1
+Pulau Pinang,2012,29,0
+Pulau Pinang,2012,30,0
+Pulau Pinang,2012,31,0
+Pulau Pinang,2012,32,0
+Pulau Pinang,2012,33,0
+Pulau Pinang,2012,34,0
+Pulau Pinang,2012,35,1
+Pulau Pinang,2012,36,1
+Pulau Pinang,2012,37,0
+Pulau Pinang,2012,38,0
+Pulau Pinang,2012,39,1
+Pulau Pinang,2012,40,0
+Pulau Pinang,2012,41,1
+Pulau Pinang,2012,42,0
+Pulau Pinang,2012,43,2
+Pulau Pinang,2012,44,0
+Pulau Pinang,2012,45,0
+Pulau Pinang,2012,46,2
+Pulau Pinang,2012,47,0
+Pulau Pinang,2012,48,0
+Pulau Pinang,2012,49,1
+Pulau Pinang,2012,50,0
+Pulau Pinang,2012,51,0
+Pulau Pinang,2012,52,0
+Pulau Pinang,2013,1,0
+Pulau Pinang,2013,2,0
+Pulau Pinang,2013,3,0
+Pulau Pinang,2013,4,0
+Pulau Pinang,2013,5,0
+Pulau Pinang,2013,6,0
+Pulau Pinang,2013,7,1
+Pulau Pinang,2013,8,1
+Pulau Pinang,2013,9,0
+Pulau Pinang,2013,10,0
+Pulau Pinang,2013,11,0
+Pulau Pinang,2013,12,0
+Pulau Pinang,2013,13,0
+Pulau Pinang,2013,14,0
+Pulau Pinang,2013,15,0
+Pulau Pinang,2013,16,0
+Pulau Pinang,2013,17,0
+Pulau Pinang,2013,18,1
+Pulau Pinang,2013,19,0
+Pulau Pinang,2013,20,0
+Pulau Pinang,2013,21,2
+Pulau Pinang,2013,22,1
+Pulau Pinang,2013,23,1
+Pulau Pinang,2013,24,0
+Pulau Pinang,2013,25,1
+Pulau Pinang,2013,26,1
+Pulau Pinang,2013,27,0
+Pulau Pinang,2013,28,1
+Pulau Pinang,2013,29,0
+Pulau Pinang,2013,30,1
+Pulau Pinang,2013,31,1
+Pulau Pinang,2013,32,0
+Pulau Pinang,2013,33,0
+Pulau Pinang,2013,34,0
+Pulau Pinang,2013,35,0
+Pulau Pinang,2013,36,2
+Pulau Pinang,2013,37,1
+Pulau Pinang,2013,38,1
+Pulau Pinang,2013,39,0
+Pulau Pinang,2013,40,1
+Pulau Pinang,2013,41,1
+Pulau Pinang,2013,42,2
+Pulau Pinang,2013,43,1
+Pulau Pinang,2013,44,1
+Pulau Pinang,2013,45,2
+Pulau Pinang,2013,46,4
+Pulau Pinang,2013,47,6
+Pulau Pinang,2013,48,2
+Pulau Pinang,2013,49,4
+Pulau Pinang,2013,50,2
+Pulau Pinang,2013,51,1
+Pulau Pinang,2013,52,1
+Pulau Pinang,2014,1,1
+Pulau Pinang,2014,2,1
+Pulau Pinang,2014,3,3
+Pulau Pinang,2014,4,3
+Pulau Pinang,2014,5,2
+Pulau Pinang,2014,6,0
+Pulau Pinang,2014,7,1
+Pulau Pinang,2014,8,1
+Pulau Pinang,2014,9,0
+Pulau Pinang,2014,10,1
+Pulau Pinang,2014,11,0
+Pulau Pinang,2014,12,1
+Pulau Pinang,2014,13,0
+Pulau Pinang,2014,14,0
+Pulau Pinang,2014,15,1
+Pulau Pinang,2014,16,0
+Pulau Pinang,2014,17,0
+Pulau Pinang,2014,18,0
+Pulau Pinang,2014,19,0
+Pulau Pinang,2014,20,0
+Pulau Pinang,2014,21,0
+Pulau Pinang,2014,22,0
+Pulau Pinang,2014,23,0
+Pulau Pinang,2014,24,0
+Pulau Pinang,2014,25,0
+Pulau Pinang,2014,26,0
+Pulau Pinang,2014,27,0
+Pulau Pinang,2014,28,3
+Pulau Pinang,2014,29,0
+Pulau Pinang,2014,30,1
+Pulau Pinang,2014,31,1
+Pulau Pinang,2014,32,0
+Pulau Pinang,2014,33,0
+Pulau Pinang,2014,34,1
+Pulau Pinang,2014,35,0
+Pulau Pinang,2014,36,1
+Pulau Pinang,2014,37,0
+Pulau Pinang,2014,38,0
+Pulau Pinang,2014,39,2
+Pulau Pinang,2014,40,0
+Pulau Pinang,2014,41,2
+Pulau Pinang,2014,42,0
+Pulau Pinang,2014,43,0
+Pulau Pinang,2014,44,1
+Pulau Pinang,2014,45,4
+Pulau Pinang,2014,46,1
+Pulau Pinang,2014,47,1
+Pulau Pinang,2014,48,1
+Pulau Pinang,2014,49,3
+Pulau Pinang,2014,50,2
+Pulau Pinang,2014,51,2
+Pulau Pinang,2014,52,2
+Pulau Pinang,2014,53,2
+Pulau Pinang,2015,1,2
+Pulau Pinang,2015,2,0
+Pulau Pinang,2015,3,0
+Pulau Pinang,2015,4,1
+Pulau Pinang,2015,5,2
+Pulau Pinang,2015,6,2
+Pulau Pinang,2015,7,0
+Pulau Pinang,2015,8,1
+Pulau Pinang,2015,9,2
+Pulau Pinang,2015,10,2
+Pulau Pinang,2015,11,0
+Pulau Pinang,2015,12,0
+Pulau Pinang,2015,13,0
+Pulau Pinang,2015,14,0
+Pulau Pinang,2015,15,0
+Pulau Pinang,2015,16,0
+Pulau Pinang,2015,17,3
+Pulau Pinang,2015,18,1
+Pulau Pinang,2015,19,0
+Pulau Pinang,2015,20,0
+Pulau Pinang,2015,21,0
+Pulau Pinang,2015,22,0
+Pulau Pinang,2015,23,2
+Pulau Pinang,2015,24,1
+Pulau Pinang,2015,25,1
+Pulau Pinang,2015,26,0
+Pulau Pinang,2015,27,1
+Pulau Pinang,2015,28,1
+Pulau Pinang,2015,29,1
+Pulau Pinang,2015,30,0
+Pulau Pinang,2015,31,0
+Pulau Pinang,2015,32,1
+Pulau Pinang,2015,33,1
+Pulau Pinang,2015,34,1
+Pulau Pinang,2015,35,0
+Pulau Pinang,2015,36,0
+Pulau Pinang,2015,37,1
+Pulau Pinang,2015,38,1
+Pulau Pinang,2015,39,2
+Pulau Pinang,2015,40,1
+Pulau Pinang,2015,41,1
+Pulau Pinang,2015,42,1
+Pulau Pinang,2015,43,1
+Pulau Pinang,2015,44,1
+Pulau Pinang,2015,45,1
+Pulau Pinang,2015,46,1
+Pulau Pinang,2015,47,0
+Pulau Pinang,2015,48,0
+Pulau Pinang,2015,49,2
+Pulau Pinang,2015,50,1
+Pulau Pinang,2015,51,0
+Pulau Pinang,2015,52,0
+Pulau Pinang,2016,1,1
+Pulau Pinang,2016,2,2
+Pulau Pinang,2016,3,1
+Pulau Pinang,2016,4,3
+Pulau Pinang,2016,5,0
+Pulau Pinang,2016,6,0
+Pulau Pinang,2016,7,0
+Pulau Pinang,2016,8,0
+Pulau Pinang,2016,9,0
+Pulau Pinang,2016,10,0
+Pulau Pinang,2016,11,0
+Pulau Pinang,2016,12,0
+Pulau Pinang,2016,13,0
+Pulau Pinang,2016,14,1
+Pulau Pinang,2016,15,0
+Pulau Pinang,2016,16,0
+Pulau Pinang,2016,17,0
+Pulau Pinang,2016,18,0
+Pulau Pinang,2016,19,0
+Pulau Pinang,2016,20,0
+Pulau Pinang,2016,21,0
+Pulau Pinang,2016,22,0
+Pulau Pinang,2016,23,0
+Pulau Pinang,2016,24,0
+Pulau Pinang,2016,25,0
+Pulau Pinang,2016,26,1
+Pulau Pinang,2016,27,0
+Pulau Pinang,2016,28,0
+Pulau Pinang,2016,29,0
+Pulau Pinang,2016,30,0
+Pulau Pinang,2016,31,0
+Pulau Pinang,2016,32,0
+Pulau Pinang,2016,33,1
+Pulau Pinang,2016,34,1
+Pulau Pinang,2016,35,0
+Pulau Pinang,2016,36,0
+Pulau Pinang,2016,37,0
+Pulau Pinang,2016,38,0
+Pulau Pinang,2016,39,0
+Pulau Pinang,2016,40,1
+Pulau Pinang,2016,41,0
+Pulau Pinang,2016,42,0
+Pulau Pinang,2016,43,1
+Pulau Pinang,2016,44,0
+Pulau Pinang,2016,45,0
+Pulau Pinang,2016,46,0
+Pulau Pinang,2016,47,1
+Pulau Pinang,2016,48,0
+Pulau Pinang,2016,49,0
+Pulau Pinang,2016,50,0
+Pulau Pinang,2016,51,0
+Pulau Pinang,2016,52,0
+Pulau Pinang,2017,1,0
+Pulau Pinang,2017,2,0
+Pulau Pinang,2017,3,2
+Pulau Pinang,2017,4,0
+Pulau Pinang,2017,5,0
+Pulau Pinang,2017,6,1
+Pulau Pinang,2017,7,1
+Pulau Pinang,2017,8,0
+Pulau Pinang,2017,9,0
+Pulau Pinang,2017,10,0
+Pulau Pinang,2017,11,0
+Pulau Pinang,2017,12,0
+Pulau Pinang,2017,13,0
+Pulau Pinang,2017,14,1
+Pulau Pinang,2017,15,1
+Pulau Pinang,2017,16,0
+Pulau Pinang,2017,17,0
+Pulau Pinang,2017,18,0
+Pulau Pinang,2017,19,1
+Pulau Pinang,2017,20,0
+Pulau Pinang,2017,21,0
+Pulau Pinang,2017,22,0
+Pulau Pinang,2017,23,1
+Pulau Pinang,2017,24,1
+Pulau Pinang,2017,25,0
+Pulau Pinang,2017,26,1
+Pulau Pinang,2017,27,2
+Pulau Pinang,2017,28,1
+Pulau Pinang,2017,29,0
+Pulau Pinang,2017,30,0
+Pulau Pinang,2017,31,1
+Pulau Pinang,2017,32,0
+Pulau Pinang,2017,33,1
+Pulau Pinang,2017,34,1
+Pulau Pinang,2017,35,0
+Pulau Pinang,2017,36,1
+Pulau Pinang,2017,37,0
+Pulau Pinang,2017,38,0
+Pulau Pinang,2017,39,0
+Pulau Pinang,2017,40,0
+Pulau Pinang,2017,41,0
+Pulau Pinang,2017,42,0
+Pulau Pinang,2017,43,0
+Pulau Pinang,2017,44,0
+Pulau Pinang,2017,45,0
+Pulau Pinang,2017,46,0
+Pulau Pinang,2017,47,0
+Pulau Pinang,2017,48,0
+Pulau Pinang,2017,49,0
+Pulau Pinang,2017,50,0
+Pulau Pinang,2017,51,0
+Pulau Pinang,2017,52,0
+Sabah,2010,1,2
+Sabah,2010,2,1
+Sabah,2010,3,1
+Sabah,2010,4,0
+Sabah,2010,5,0
+Sabah,2010,6,0
+Sabah,2010,7,1
+Sabah,2010,8,0
+Sabah,2010,9,0
+Sabah,2010,10,1
+Sabah,2010,11,2
+Sabah,2010,12,0
+Sabah,2010,13,2
+Sabah,2010,14,1
+Sabah,2010,15,0
+Sabah,2010,16,0
+Sabah,2010,17,0
+Sabah,2010,18,1
+Sabah,2010,19,0
+Sabah,2010,20,0
+Sabah,2010,21,0
+Sabah,2010,22,0
+Sabah,2010,23,0
+Sabah,2010,24,0
+Sabah,2010,25,0
+Sabah,2010,26,0
+Sabah,2010,27,0
+Sabah,2010,28,1
+Sabah,2010,29,0
+Sabah,2010,30,0
+Sabah,2010,31,0
+Sabah,2010,32,2
+Sabah,2010,33,0
+Sabah,2010,34,0
+Sabah,2010,35,0
+Sabah,2010,36,0
+Sabah,2010,37,0
+Sabah,2010,38,0
+Sabah,2010,39,0
+Sabah,2010,40,0
+Sabah,2010,41,0
+Sabah,2010,42,0
+Sabah,2010,43,0
+Sabah,2010,44,0
+Sabah,2010,45,0
+Sabah,2010,46,2
+Sabah,2010,47,0
+Sabah,2010,48,0
+Sabah,2010,49,0
+Sabah,2010,50,0
+Sabah,2010,51,0
+Sabah,2010,52,0
+Sabah,2011,1,1
+Sabah,2011,2,1
+Sabah,2011,3,0
+Sabah,2011,4,2
+Sabah,2011,5,0
+Sabah,2011,6,1
+Sabah,2011,7,3
+Sabah,2011,8,2
+Sabah,2011,9,0
+Sabah,2011,10,1
+Sabah,2011,11,0
+Sabah,2011,12,1
+Sabah,2011,13,0
+Sabah,2011,14,0
+Sabah,2011,15,0
+Sabah,2011,16,1
+Sabah,2011,17,1
+Sabah,2011,18,0
+Sabah,2011,19,0
+Sabah,2011,20,0
+Sabah,2011,21,1
+Sabah,2011,22,0
+Sabah,2011,23,1
+Sabah,2011,24,0
+Sabah,2011,25,1
+Sabah,2011,26,0
+Sabah,2011,27,0
+Sabah,2011,28,1
+Sabah,2011,29,0
+Sabah,2011,30,1
+Sabah,2011,31,1
+Sabah,2011,32,1
+Sabah,2011,33,0
+Sabah,2011,34,0
+Sabah,2011,35,0
+Sabah,2011,36,0
+Sabah,2011,37,0
+Sabah,2011,38,0
+Sabah,2011,39,0
+Sabah,2011,40,0
+Sabah,2011,41,0
+Sabah,2011,42,1
+Sabah,2011,43,0
+Sabah,2011,44,0
+Sabah,2011,45,2
+Sabah,2011,46,0
+Sabah,2011,47,0
+Sabah,2011,48,1
+Sabah,2011,49,1
+Sabah,2011,50,1
+Sabah,2011,51,0
+Sabah,2011,52,1
+Sabah,2012,1,0
+Sabah,2012,2,0
+Sabah,2012,3,0
+Sabah,2012,4,1
+Sabah,2012,5,0
+Sabah,2012,6,0
+Sabah,2012,7,1
+Sabah,2012,8,1
+Sabah,2012,9,0
+Sabah,2012,10,0
+Sabah,2012,11,0
+Sabah,2012,12,1
+Sabah,2012,13,0
+Sabah,2012,14,0
+Sabah,2012,15,0
+Sabah,2012,16,0
+Sabah,2012,17,0
+Sabah,2012,18,0
+Sabah,2012,19,0
+Sabah,2012,20,1
+Sabah,2012,21,1
+Sabah,2012,22,0
+Sabah,2012,23,1
+Sabah,2012,24,0
+Sabah,2012,25,0
+Sabah,2012,26,0
+Sabah,2012,27,0
+Sabah,2012,28,1
+Sabah,2012,29,0
+Sabah,2012,30,0
+Sabah,2012,31,1
+Sabah,2012,32,0
+Sabah,2012,33,0
+Sabah,2012,34,1
+Sabah,2012,35,0
+Sabah,2012,36,0
+Sabah,2012,37,0
+Sabah,2012,38,0
+Sabah,2012,39,0
+Sabah,2012,40,0
+Sabah,2012,41,0
+Sabah,2012,42,0
+Sabah,2012,43,2
+Sabah,2012,44,3
+Sabah,2012,45,0
+Sabah,2012,46,0
+Sabah,2012,47,0
+Sabah,2012,48,0
+Sabah,2012,49,3
+Sabah,2012,50,0
+Sabah,2012,51,0
+Sabah,2012,52,0
+Sabah,2013,1,0
+Sabah,2013,2,1
+Sabah,2013,3,1
+Sabah,2013,4,0
+Sabah,2013,5,2
+Sabah,2013,6,1
+Sabah,2013,7,0
+Sabah,2013,8,0
+Sabah,2013,9,1
+Sabah,2013,10,0
+Sabah,2013,11,0
+Sabah,2013,12,0
+Sabah,2013,13,0
+Sabah,2013,14,1
+Sabah,2013,15,0
+Sabah,2013,16,0
+Sabah,2013,17,1
+Sabah,2013,18,0
+Sabah,2013,19,0
+Sabah,2013,20,1
+Sabah,2013,21,0
+Sabah,2013,22,1
+Sabah,2013,23,0
+Sabah,2013,24,0
+Sabah,2013,25,0
+Sabah,2013,26,0
+Sabah,2013,27,0
+Sabah,2013,28,0
+Sabah,2013,29,0
+Sabah,2013,30,0
+Sabah,2013,31,0
+Sabah,2013,32,0
+Sabah,2013,33,1
+Sabah,2013,34,0
+Sabah,2013,35,0
+Sabah,2013,36,0
+Sabah,2013,37,0
+Sabah,2013,38,0
+Sabah,2013,39,2
+Sabah,2013,40,0
+Sabah,2013,41,0
+Sabah,2013,42,1
+Sabah,2013,43,0
+Sabah,2013,44,0
+Sabah,2013,45,1
+Sabah,2013,46,3
+Sabah,2013,47,0
+Sabah,2013,48,0
+Sabah,2013,49,3
+Sabah,2013,50,1
+Sabah,2013,51,2
+Sabah,2013,52,1
+Sabah,2014,1,1
+Sabah,2014,2,1
+Sabah,2014,3,0
+Sabah,2014,4,2
+Sabah,2014,5,0
+Sabah,2014,6,0
+Sabah,2014,7,2
+Sabah,2014,8,1
+Sabah,2014,9,3
+Sabah,2014,10,1
+Sabah,2014,11,0
+Sabah,2014,12,0
+Sabah,2014,13,0
+Sabah,2014,14,0
+Sabah,2014,15,0
+Sabah,2014,16,1
+Sabah,2014,17,0
+Sabah,2014,18,0
+Sabah,2014,19,1
+Sabah,2014,20,0
+Sabah,2014,21,0
+Sabah,2014,22,0
+Sabah,2014,23,0
+Sabah,2014,24,0
+Sabah,2014,25,0
+Sabah,2014,26,1
+Sabah,2014,27,1
+Sabah,2014,28,0
+Sabah,2014,29,1
+Sabah,2014,30,0
+Sabah,2014,31,0
+Sabah,2014,32,0
+Sabah,2014,33,1
+Sabah,2014,34,0
+Sabah,2014,35,0
+Sabah,2014,36,0
+Sabah,2014,37,0
+Sabah,2014,38,0
+Sabah,2014,39,1
+Sabah,2014,40,0
+Sabah,2014,41,1
+Sabah,2014,42,0
+Sabah,2014,43,0
+Sabah,2014,44,0
+Sabah,2014,45,0
+Sabah,2014,46,0
+Sabah,2014,47,1
+Sabah,2014,48,0
+Sabah,2014,49,1
+Sabah,2014,50,1
+Sabah,2014,51,0
+Sabah,2014,52,0
+Sabah,2014,53,1
+Sabah,2015,1,0
+Sabah,2015,2,0
+Sabah,2015,3,0
+Sabah,2015,4,1
+Sabah,2015,5,0
+Sabah,2015,6,1
+Sabah,2015,7,1
+Sabah,2015,8,0
+Sabah,2015,9,0
+Sabah,2015,10,0
+Sabah,2015,11,1
+Sabah,2015,12,1
+Sabah,2015,13,0
+Sabah,2015,14,0
+Sabah,2015,15,0
+Sabah,2015,16,0
+Sabah,2015,17,0
+Sabah,2015,18,0
+Sabah,2015,19,0
+Sabah,2015,20,0
+Sabah,2015,21,0
+Sabah,2015,22,1
+Sabah,2015,23,0
+Sabah,2015,24,0
+Sabah,2015,25,0
+Sabah,2015,26,1
+Sabah,2015,27,1
+Sabah,2015,28,0
+Sabah,2015,29,0
+Sabah,2015,30,0
+Sabah,2015,31,0
+Sabah,2015,32,0
+Sabah,2015,33,0
+Sabah,2015,34,0
+Sabah,2015,35,0
+Sabah,2015,36,0
+Sabah,2015,37,0
+Sabah,2015,38,0
+Sabah,2015,39,2
+Sabah,2015,40,1
+Sabah,2015,41,4
+Sabah,2015,42,0
+Sabah,2015,43,1
+Sabah,2015,44,1
+Sabah,2015,45,0
+Sabah,2015,46,0
+Sabah,2015,47,0
+Sabah,2015,48,0
+Sabah,2015,49,0
+Sabah,2015,50,0
+Sabah,2015,51,0
+Sabah,2015,52,3
+Sabah,2016,1,0
+Sabah,2016,2,1
+Sabah,2016,3,0
+Sabah,2016,4,1
+Sabah,2016,5,0
+Sabah,2016,6,0
+Sabah,2016,7,0
+Sabah,2016,8,0
+Sabah,2016,9,0
+Sabah,2016,10,0
+Sabah,2016,11,1
+Sabah,2016,12,0
+Sabah,2016,13,0
+Sabah,2016,14,0
+Sabah,2016,15,0
+Sabah,2016,16,0
+Sabah,2016,17,0
+Sabah,2016,18,0
+Sabah,2016,19,0
+Sabah,2016,20,0
+Sabah,2016,21,0
+Sabah,2016,22,0
+Sabah,2016,23,0
+Sabah,2016,24,1
+Sabah,2016,25,1
+Sabah,2016,26,0
+Sabah,2016,27,0
+Sabah,2016,28,1
+Sabah,2016,29,0
+Sabah,2016,30,0
+Sabah,2016,31,0
+Sabah,2016,32,0
+Sabah,2016,33,0
+Sabah,2016,34,0
+Sabah,2016,35,0
+Sabah,2016,36,0
+Sabah,2016,37,0
+Sabah,2016,38,0
+Sabah,2016,39,0
+Sabah,2016,40,0
+Sabah,2016,41,1
+Sabah,2016,42,1
+Sabah,2016,43,0
+Sabah,2016,44,1
+Sabah,2016,45,0
+Sabah,2016,46,0
+Sabah,2016,47,0
+Sabah,2016,48,1
+Sabah,2016,49,0
+Sabah,2016,50,0
+Sabah,2016,51,0
+Sabah,2016,52,0
+Sabah,2017,1,1
+Sabah,2017,2,1
+Sabah,2017,3,0
+Sabah,2017,4,0
+Sabah,2017,5,0
+Sabah,2017,6,1
+Sabah,2017,7,0
+Sabah,2017,8,0
+Sabah,2017,9,0
+Sabah,2017,10,1
+Sabah,2017,11,0
+Sabah,2017,12,0
+Sabah,2017,13,0
+Sabah,2017,14,0
+Sabah,2017,15,0
+Sabah,2017,16,0
+Sabah,2017,17,0
+Sabah,2017,18,0
+Sabah,2017,19,0
+Sabah,2017,20,0
+Sabah,2017,21,0
+Sabah,2017,22,0
+Sabah,2017,23,0
+Sabah,2017,24,0
+Sabah,2017,25,0
+Sabah,2017,26,0
+Sabah,2017,27,0
+Sabah,2017,28,1
+Sabah,2017,29,0
+Sabah,2017,30,1
+Sabah,2017,31,1
+Sabah,2017,32,0
+Sabah,2017,33,1
+Sabah,2017,34,0
+Sabah,2017,35,0
+Sabah,2017,36,0
+Sabah,2017,37,0
+Sabah,2017,38,0
+Sabah,2017,39,0
+Sabah,2017,40,0
+Sabah,2017,41,2
+Sabah,2017,42,0
+Sabah,2017,43,0
+Sabah,2017,44,0
+Sabah,2017,45,0
+Sabah,2017,46,0
+Sabah,2017,47,0
+Sabah,2017,48,2
+Sabah,2017,49,0
+Sabah,2017,50,0
+Sabah,2017,51,0
+Sabah,2017,52,1
+Sarawak,2010,1,0
+Sarawak,2010,2,0
+Sarawak,2010,3,0
+Sarawak,2010,4,0
+Sarawak,2010,5,0
+Sarawak,2010,6,0
+Sarawak,2010,7,4
+Sarawak,2010,8,4
+Sarawak,2010,9,5
+Sarawak,2010,10,5
+Sarawak,2010,11,8
+Sarawak,2010,12,10
+Sarawak,2010,13,3
+Sarawak,2010,14,1
+Sarawak,2010,15,2
+Sarawak,2010,16,0
+Sarawak,2010,17,4
+Sarawak,2010,18,5
+Sarawak,2010,19,3
+Sarawak,2010,20,3
+Sarawak,2010,21,9
+Sarawak,2010,22,1
+Sarawak,2010,23,4
+Sarawak,2010,24,8
+Sarawak,2010,25,4
+Sarawak,2010,26,8
+Sarawak,2010,27,6
+Sarawak,2010,28,5
+Sarawak,2010,29,7
+Sarawak,2010,30,5
+Sarawak,2010,31,3
+Sarawak,2010,32,7
+Sarawak,2010,33,1
+Sarawak,2010,34,3
+Sarawak,2010,35,4
+Sarawak,2010,36,3
+Sarawak,2010,37,0
+Sarawak,2010,38,3
+Sarawak,2010,39,0
+Sarawak,2010,40,3
+Sarawak,2010,41,2
+Sarawak,2010,42,0
+Sarawak,2010,43,1
+Sarawak,2010,44,3
+Sarawak,2010,45,5
+Sarawak,2010,46,1
+Sarawak,2010,47,1
+Sarawak,2010,48,2
+Sarawak,2010,49,1
+Sarawak,2010,50,0
+Sarawak,2010,51,0
+Sarawak,2010,52,5
+Sarawak,2011,1,4
+Sarawak,2011,2,1
+Sarawak,2011,3,3
+Sarawak,2011,4,0
+Sarawak,2011,5,0
+Sarawak,2011,6,0
+Sarawak,2011,7,0
+Sarawak,2011,8,0
+Sarawak,2011,9,1
+Sarawak,2011,10,1
+Sarawak,2011,11,2
+Sarawak,2011,12,1
+Sarawak,2011,13,0
+Sarawak,2011,14,0
+Sarawak,2011,15,0
+Sarawak,2011,16,0
+Sarawak,2011,17,0
+Sarawak,2011,18,1
+Sarawak,2011,19,1
+Sarawak,2011,20,1
+Sarawak,2011,21,0
+Sarawak,2011,22,0
+Sarawak,2011,23,2
+Sarawak,2011,24,1
+Sarawak,2011,25,2
+Sarawak,2011,26,0
+Sarawak,2011,27,1
+Sarawak,2011,28,0
+Sarawak,2011,29,0
+Sarawak,2011,30,0
+Sarawak,2011,31,2
+Sarawak,2011,32,0
+Sarawak,2011,33,1
+Sarawak,2011,34,0
+Sarawak,2011,35,1
+Sarawak,2011,36,1
+Sarawak,2011,37,1
+Sarawak,2011,38,1
+Sarawak,2011,39,2
+Sarawak,2011,40,0
+Sarawak,2011,41,0
+Sarawak,2011,42,0
+Sarawak,2011,43,0
+Sarawak,2011,44,0
+Sarawak,2011,45,0
+Sarawak,2011,46,0
+Sarawak,2011,47,0
+Sarawak,2011,48,0
+Sarawak,2011,49,2
+Sarawak,2011,50,0
+Sarawak,2011,51,0
+Sarawak,2011,52,0
+Sarawak,2012,1,0
+Sarawak,2012,2,0
+Sarawak,2012,3,0
+Sarawak,2012,4,0
+Sarawak,2012,5,0
+Sarawak,2012,6,0
+Sarawak,2012,7,0
+Sarawak,2012,8,3
+Sarawak,2012,9,0
+Sarawak,2012,10,0
+Sarawak,2012,11,2
+Sarawak,2012,12,1
+Sarawak,2012,13,0
+Sarawak,2012,14,0
+Sarawak,2012,15,0
+Sarawak,2012,16,3
+Sarawak,2012,17,1
+Sarawak,2012,18,1
+Sarawak,2012,19,1
+Sarawak,2012,20,3
+Sarawak,2012,21,0
+Sarawak,2012,22,1
+Sarawak,2012,23,0
+Sarawak,2012,24,0
+Sarawak,2012,25,0
+Sarawak,2012,26,1
+Sarawak,2012,27,1
+Sarawak,2012,28,0
+Sarawak,2012,29,2
+Sarawak,2012,30,0
+Sarawak,2012,31,0
+Sarawak,2012,32,1
+Sarawak,2012,33,2
+Sarawak,2012,34,0
+Sarawak,2012,35,2
+Sarawak,2012,36,0
+Sarawak,2012,37,2
+Sarawak,2012,38,1
+Sarawak,2012,39,2
+Sarawak,2012,40,1
+Sarawak,2012,41,2
+Sarawak,2012,42,0
+Sarawak,2012,43,1
+Sarawak,2012,44,0
+Sarawak,2012,45,0
+Sarawak,2012,46,1
+Sarawak,2012,47,0
+Sarawak,2012,48,1
+Sarawak,2012,49,1
+Sarawak,2012,50,0
+Sarawak,2012,51,0
+Sarawak,2012,52,0
+Sarawak,2013,1,0
+Sarawak,2013,2,1
+Sarawak,2013,3,1
+Sarawak,2013,4,0
+Sarawak,2013,5,0
+Sarawak,2013,6,1
+Sarawak,2013,7,0
+Sarawak,2013,8,1
+Sarawak,2013,9,0
+Sarawak,2013,10,0
+Sarawak,2013,11,0
+Sarawak,2013,12,0
+Sarawak,2013,13,1
+Sarawak,2013,14,0
+Sarawak,2013,15,2
+Sarawak,2013,16,0
+Sarawak,2013,17,0
+Sarawak,2013,18,0
+Sarawak,2013,19,0
+Sarawak,2013,20,0
+Sarawak,2013,21,1
+Sarawak,2013,22,1
+Sarawak,2013,23,1
+Sarawak,2013,24,0
+Sarawak,2013,25,0
+Sarawak,2013,26,1
+Sarawak,2013,27,1
+Sarawak,2013,28,0
+Sarawak,2013,29,0
+Sarawak,2013,30,0
+Sarawak,2013,31,0
+Sarawak,2013,32,0
+Sarawak,2013,33,0
+Sarawak,2013,34,1
+Sarawak,2013,35,0
+Sarawak,2013,36,0
+Sarawak,2013,37,0
+Sarawak,2013,38,0
+Sarawak,2013,39,0
+Sarawak,2013,40,0
+Sarawak,2013,41,0
+Sarawak,2013,42,0
+Sarawak,2013,43,0
+Sarawak,2013,44,0
+Sarawak,2013,45,1
+Sarawak,2013,46,0
+Sarawak,2013,47,1
+Sarawak,2013,48,0
+Sarawak,2013,49,1
+Sarawak,2013,50,0
+Sarawak,2013,51,1
+Sarawak,2013,52,0
+Sarawak,2014,1,1
+Sarawak,2014,2,0
+Sarawak,2014,3,1
+Sarawak,2014,4,0
+Sarawak,2014,5,0
+Sarawak,2014,6,2
+Sarawak,2014,7,1
+Sarawak,2014,8,0
+Sarawak,2014,9,1
+Sarawak,2014,10,1
+Sarawak,2014,11,0
+Sarawak,2014,12,2
+Sarawak,2014,13,1
+Sarawak,2014,14,1
+Sarawak,2014,15,1
+Sarawak,2014,16,0
+Sarawak,2014,17,0
+Sarawak,2014,18,0
+Sarawak,2014,19,0
+Sarawak,2014,20,1
+Sarawak,2014,21,0
+Sarawak,2014,22,0
+Sarawak,2014,23,0
+Sarawak,2014,24,0
+Sarawak,2014,25,0
+Sarawak,2014,26,0
+Sarawak,2014,27,1
+Sarawak,2014,28,1
+Sarawak,2014,29,0
+Sarawak,2014,30,0
+Sarawak,2014,31,0
+Sarawak,2014,32,1
+Sarawak,2014,33,0
+Sarawak,2014,34,0
+Sarawak,2014,35,0
+Sarawak,2014,36,0
+Sarawak,2014,37,0
+Sarawak,2014,38,0
+Sarawak,2014,39,2
+Sarawak,2014,40,2
+Sarawak,2014,41,0
+Sarawak,2014,42,0
+Sarawak,2014,43,2
+Sarawak,2014,44,1
+Sarawak,2014,45,0
+Sarawak,2014,46,1
+Sarawak,2014,47,1
+Sarawak,2014,48,0
+Sarawak,2014,49,0
+Sarawak,2014,50,1
+Sarawak,2014,51,1
+Sarawak,2014,52,1
+Sarawak,2014,53,0
+Sarawak,2015,1,1
+Sarawak,2015,2,1
+Sarawak,2015,3,0
+Sarawak,2015,4,0
+Sarawak,2015,5,0
+Sarawak,2015,6,0
+Sarawak,2015,7,0
+Sarawak,2015,8,1
+Sarawak,2015,9,0
+Sarawak,2015,10,0
+Sarawak,2015,11,1
+Sarawak,2015,12,1
+Sarawak,2015,13,0
+Sarawak,2015,14,0
+Sarawak,2015,15,0
+Sarawak,2015,16,0
+Sarawak,2015,17,0
+Sarawak,2015,18,0
+Sarawak,2015,19,0
+Sarawak,2015,20,0
+Sarawak,2015,21,0
+Sarawak,2015,22,0
+Sarawak,2015,23,0
+Sarawak,2015,24,1
+Sarawak,2015,25,0
+Sarawak,2015,26,1
+Sarawak,2015,27,0
+Sarawak,2015,28,0
+Sarawak,2015,29,1
+Sarawak,2015,30,0
+Sarawak,2015,31,0
+Sarawak,2015,32,0
+Sarawak,2015,33,0
+Sarawak,2015,34,1
+Sarawak,2015,35,0
+Sarawak,2015,36,0
+Sarawak,2015,37,0
+Sarawak,2015,38,0
+Sarawak,2015,39,0
+Sarawak,2015,40,0
+Sarawak,2015,41,0
+Sarawak,2015,42,0
+Sarawak,2015,43,0
+Sarawak,2015,44,0
+Sarawak,2015,45,0
+Sarawak,2015,46,0
+Sarawak,2015,47,0
+Sarawak,2015,48,0
+Sarawak,2015,49,0
+Sarawak,2015,50,0
+Sarawak,2015,51,1
+Sarawak,2015,52,0
+Sarawak,2016,1,0
+Sarawak,2016,2,0
+Sarawak,2016,3,1
+Sarawak,2016,4,1
+Sarawak,2016,5,0
+Sarawak,2016,6,0
+Sarawak,2016,7,2
+Sarawak,2016,8,0
+Sarawak,2016,9,0
+Sarawak,2016,10,0
+Sarawak,2016,11,0
+Sarawak,2016,12,0
+Sarawak,2016,13,0
+Sarawak,2016,14,0
+Sarawak,2016,15,1
+Sarawak,2016,16,0
+Sarawak,2016,17,0
+Sarawak,2016,18,1
+Sarawak,2016,19,0
+Sarawak,2016,20,0
+Sarawak,2016,21,0
+Sarawak,2016,22,0
+Sarawak,2016,23,0
+Sarawak,2016,24,0
+Sarawak,2016,25,0
+Sarawak,2016,26,0
+Sarawak,2016,27,0
+Sarawak,2016,28,0
+Sarawak,2016,29,1
+Sarawak,2016,30,0
+Sarawak,2016,31,0
+Sarawak,2016,32,0
+Sarawak,2016,33,1
+Sarawak,2016,34,0
+Sarawak,2016,35,0
+Sarawak,2016,36,0
+Sarawak,2016,37,0
+Sarawak,2016,38,0
+Sarawak,2016,39,0
+Sarawak,2016,40,0
+Sarawak,2016,41,0
+Sarawak,2016,42,0
+Sarawak,2016,43,0
+Sarawak,2016,44,1
+Sarawak,2016,45,0
+Sarawak,2016,46,1
+Sarawak,2016,47,0
+Sarawak,2016,48,0
+Sarawak,2016,49,0
+Sarawak,2016,50,0
+Sarawak,2016,51,0
+Sarawak,2016,52,0
+Sarawak,2017,1,0
+Sarawak,2017,2,0
+Sarawak,2017,3,0
+Sarawak,2017,4,0
+Sarawak,2017,5,0
+Sarawak,2017,6,0
+Sarawak,2017,7,2
+Sarawak,2017,8,0
+Sarawak,2017,9,0
+Sarawak,2017,10,0
+Sarawak,2017,11,0
+Sarawak,2017,12,1
+Sarawak,2017,13,0
+Sarawak,2017,14,0
+Sarawak,2017,15,1
+Sarawak,2017,16,0
+Sarawak,2017,17,1
+Sarawak,2017,18,0
+Sarawak,2017,19,0
+Sarawak,2017,20,0
+Sarawak,2017,21,0
+Sarawak,2017,22,0
+Sarawak,2017,23,0
+Sarawak,2017,24,0
+Sarawak,2017,25,0
+Sarawak,2017,26,0
+Sarawak,2017,27,0
+Sarawak,2017,28,0
+Sarawak,2017,29,0
+Sarawak,2017,30,0
+Sarawak,2017,31,1
+Sarawak,2017,32,0
+Sarawak,2017,33,0
+Sarawak,2017,34,0
+Sarawak,2017,35,0
+Sarawak,2017,36,0
+Sarawak,2017,37,0
+Sarawak,2017,38,0
+Sarawak,2017,39,0
+Sarawak,2017,40,0
+Sarawak,2017,41,0
+Sarawak,2017,42,0
+Sarawak,2017,43,0
+Sarawak,2017,44,0
+Sarawak,2017,45,0
+Sarawak,2017,46,0
+Sarawak,2017,47,0
+Sarawak,2017,48,0
+Sarawak,2017,49,0
+Sarawak,2017,50,0
+Sarawak,2017,51,0
+Sarawak,2017,52,0
+Selangor,2010,1,37
+Selangor,2010,2,45
+Selangor,2010,3,53
+Selangor,2010,4,30
+Selangor,2010,5,37
+Selangor,2010,6,46
+Selangor,2010,7,29
+Selangor,2010,8,48
+Selangor,2010,9,52
+Selangor,2010,10,56
+Selangor,2010,11,58
+Selangor,2010,12,45
+Selangor,2010,13,56
+Selangor,2010,14,68
+Selangor,2010,15,45
+Selangor,2010,16,48
+Selangor,2010,17,37
+Selangor,2010,18,56
+Selangor,2010,19,32
+Selangor,2010,20,49
+Selangor,2010,21,39
+Selangor,2010,22,42
+Selangor,2010,23,45
+Selangor,2010,24,57
+Selangor,2010,25,67
+Selangor,2010,26,70
+Selangor,2010,27,46
+Selangor,2010,28,52
+Selangor,2010,29,51
+Selangor,2010,30,44
+Selangor,2010,31,38
+Selangor,2010,32,29
+Selangor,2010,33,32
+Selangor,2010,34,33
+Selangor,2010,35,31
+Selangor,2010,36,14
+Selangor,2010,37,13
+Selangor,2010,38,27
+Selangor,2010,39,24
+Selangor,2010,40,22
+Selangor,2010,41,27
+Selangor,2010,42,28
+Selangor,2010,43,26
+Selangor,2010,44,29
+Selangor,2010,45,26
+Selangor,2010,46,17
+Selangor,2010,47,16
+Selangor,2010,48,16
+Selangor,2010,49,19
+Selangor,2010,50,17
+Selangor,2010,51,11
+Selangor,2010,52,20
+Selangor,2011,1,19
+Selangor,2011,2,18
+Selangor,2011,3,17
+Selangor,2011,4,23
+Selangor,2011,5,19
+Selangor,2011,6,13
+Selangor,2011,7,12
+Selangor,2011,8,15
+Selangor,2011,9,16
+Selangor,2011,10,7
+Selangor,2011,11,7
+Selangor,2011,12,6
+Selangor,2011,13,10
+Selangor,2011,14,12
+Selangor,2011,15,18
+Selangor,2011,16,21
+Selangor,2011,17,6
+Selangor,2011,18,12
+Selangor,2011,19,15
+Selangor,2011,20,20
+Selangor,2011,21,13
+Selangor,2011,22,20
+Selangor,2011,23,11
+Selangor,2011,24,15
+Selangor,2011,25,28
+Selangor,2011,26,15
+Selangor,2011,27,16
+Selangor,2011,28,17
+Selangor,2011,29,9
+Selangor,2011,30,11
+Selangor,2011,31,13
+Selangor,2011,32,7
+Selangor,2011,33,13
+Selangor,2011,34,5
+Selangor,2011,35,9
+Selangor,2011,36,8
+Selangor,2011,37,7
+Selangor,2011,38,10
+Selangor,2011,39,12
+Selangor,2011,40,2
+Selangor,2011,41,13
+Selangor,2011,42,17
+Selangor,2011,43,5
+Selangor,2011,44,7
+Selangor,2011,45,11
+Selangor,2011,46,13
+Selangor,2011,47,12
+Selangor,2011,48,10
+Selangor,2011,49,10
+Selangor,2011,50,11
+Selangor,2011,51,12
+Selangor,2011,52,19
+Selangor,2012,1,7
+Selangor,2012,2,12
+Selangor,2012,3,6
+Selangor,2012,4,9
+Selangor,2012,5,11
+Selangor,2012,6,12
+Selangor,2012,7,13
+Selangor,2012,8,19
+Selangor,2012,9,12
+Selangor,2012,10,19
+Selangor,2012,11,11
+Selangor,2012,12,13
+Selangor,2012,13,9
+Selangor,2012,14,10
+Selangor,2012,15,8
+Selangor,2012,16,11
+Selangor,2012,17,9
+Selangor,2012,18,4
+Selangor,2012,19,9
+Selangor,2012,20,9
+Selangor,2012,21,15
+Selangor,2012,22,5
+Selangor,2012,23,12
+Selangor,2012,24,5
+Selangor,2012,25,9
+Selangor,2012,26,7
+Selangor,2012,27,10
+Selangor,2012,28,7
+Selangor,2012,29,10
+Selangor,2012,30,10
+Selangor,2012,31,3
+Selangor,2012,32,4
+Selangor,2012,33,2
+Selangor,2012,34,3
+Selangor,2012,35,2
+Selangor,2012,36,7
+Selangor,2012,37,3
+Selangor,2012,38,1
+Selangor,2012,39,3
+Selangor,2012,40,0
+Selangor,2012,41,1
+Selangor,2012,42,4
+Selangor,2012,43,3
+Selangor,2012,44,2
+Selangor,2012,45,5
+Selangor,2012,46,3
+Selangor,2012,47,4
+Selangor,2012,48,5
+Selangor,2012,49,3
+Selangor,2012,50,2
+Selangor,2012,51,4
+Selangor,2012,52,4
+Selangor,2013,1,3
+Selangor,2013,2,4
+Selangor,2013,3,9
+Selangor,2013,4,3
+Selangor,2013,5,6
+Selangor,2013,6,7
+Selangor,2013,7,4
+Selangor,2013,8,8
+Selangor,2013,9,9
+Selangor,2013,10,0
+Selangor,2013,11,3
+Selangor,2013,12,4
+Selangor,2013,13,12
+Selangor,2013,14,10
+Selangor,2013,15,6
+Selangor,2013,16,2
+Selangor,2013,17,0
+Selangor,2013,18,5
+Selangor,2013,19,13
+Selangor,2013,20,10
+Selangor,2013,21,3
+Selangor,2013,22,4
+Selangor,2013,23,6
+Selangor,2013,24,8
+Selangor,2013,25,14
+Selangor,2013,26,4
+Selangor,2013,27,1
+Selangor,2013,28,13
+Selangor,2013,29,4
+Selangor,2013,30,5
+Selangor,2013,31,8
+Selangor,2013,32,5
+Selangor,2013,33,6
+Selangor,2013,34,7
+Selangor,2013,35,9
+Selangor,2013,36,5
+Selangor,2013,37,5
+Selangor,2013,38,2
+Selangor,2013,39,9
+Selangor,2013,40,6
+Selangor,2013,41,6
+Selangor,2013,42,8
+Selangor,2013,43,9
+Selangor,2013,44,6
+Selangor,2013,45,5
+Selangor,2013,46,6
+Selangor,2013,47,10
+Selangor,2013,48,6
+Selangor,2013,49,14
+Selangor,2013,50,7
+Selangor,2013,51,7
+Selangor,2013,52,14
+Selangor,2014,1,8
+Selangor,2014,2,5
+Selangor,2014,3,8
+Selangor,2014,4,8
+Selangor,2014,5,5
+Selangor,2014,6,18
+Selangor,2014,7,11
+Selangor,2014,8,12
+Selangor,2014,9,5
+Selangor,2014,10,4
+Selangor,2014,11,7
+Selangor,2014,12,8
+Selangor,2014,13,10
+Selangor,2014,14,11
+Selangor,2014,15,9
+Selangor,2014,16,14
+Selangor,2014,17,7
+Selangor,2014,18,7
+Selangor,2014,19,11
+Selangor,2014,20,6
+Selangor,2014,21,16
+Selangor,2014,22,16
+Selangor,2014,23,10
+Selangor,2014,24,16
+Selangor,2014,25,21
+Selangor,2014,26,24
+Selangor,2014,27,16
+Selangor,2014,28,18
+Selangor,2014,29,22
+Selangor,2014,30,12
+Selangor,2014,31,15
+Selangor,2014,32,14
+Selangor,2014,33,8
+Selangor,2014,34,10
+Selangor,2014,35,17
+Selangor,2014,36,8
+Selangor,2014,37,4
+Selangor,2014,38,7
+Selangor,2014,39,12
+Selangor,2014,40,10
+Selangor,2014,41,15
+Selangor,2014,42,8
+Selangor,2014,43,11
+Selangor,2014,44,11
+Selangor,2014,45,21
+Selangor,2014,46,8
+Selangor,2014,47,23
+Selangor,2014,48,12
+Selangor,2014,49,8
+Selangor,2014,50,7
+Selangor,2014,51,12
+Selangor,2014,52,14
+Selangor,2014,53,8
+Selangor,2015,1,9
+Selangor,2015,2,6
+Selangor,2015,3,11
+Selangor,2015,4,10
+Selangor,2015,5,14
+Selangor,2015,6,16
+Selangor,2015,7,17
+Selangor,2015,8,5
+Selangor,2015,9,11
+Selangor,2015,10,10
+Selangor,2015,11,9
+Selangor,2015,12,6
+Selangor,2015,13,2
+Selangor,2015,14,4
+Selangor,2015,15,9
+Selangor,2015,16,4
+Selangor,2015,17,4
+Selangor,2015,18,2
+Selangor,2015,19,8
+Selangor,2015,20,5
+Selangor,2015,21,5
+Selangor,2015,22,12
+Selangor,2015,23,7
+Selangor,2015,24,11
+Selangor,2015,25,15
+Selangor,2015,26,13
+Selangor,2015,27,20
+Selangor,2015,28,12
+Selangor,2015,29,17
+Selangor,2015,30,8
+Selangor,2015,31,7
+Selangor,2015,32,14
+Selangor,2015,33,12
+Selangor,2015,34,7
+Selangor,2015,35,8
+Selangor,2015,36,11
+Selangor,2015,37,6
+Selangor,2015,38,17
+Selangor,2015,39,20
+Selangor,2015,40,10
+Selangor,2015,41,16
+Selangor,2015,42,25
+Selangor,2015,43,19
+Selangor,2015,44,17
+Selangor,2015,45,12
+Selangor,2015,46,16
+Selangor,2015,47,21
+Selangor,2015,48,15
+Selangor,2015,49,12
+Selangor,2015,50,5
+Selangor,2015,51,15
+Selangor,2015,52,17
+Selangor,2016,1,15
+Selangor,2016,2,14
+Selangor,2016,3,15
+Selangor,2016,4,29
+Selangor,2016,5,18
+Selangor,2016,6,19
+Selangor,2016,7,6
+Selangor,2016,8,8
+Selangor,2016,9,16
+Selangor,2016,10,14
+Selangor,2016,11,14
+Selangor,2016,12,3
+Selangor,2016,13,10
+Selangor,2016,14,9
+Selangor,2016,15,9
+Selangor,2016,16,8
+Selangor,2016,17,10
+Selangor,2016,18,9
+Selangor,2016,19,4
+Selangor,2016,20,4
+Selangor,2016,21,3
+Selangor,2016,22,4
+Selangor,2016,23,2
+Selangor,2016,24,12
+Selangor,2016,25,4
+Selangor,2016,26,5
+Selangor,2016,27,6
+Selangor,2016,28,6
+Selangor,2016,29,5
+Selangor,2016,30,4
+Selangor,2016,31,2
+Selangor,2016,32,4
+Selangor,2016,33,3
+Selangor,2016,34,5
+Selangor,2016,35,5
+Selangor,2016,36,5
+Selangor,2016,37,7
+Selangor,2016,38,2
+Selangor,2016,39,4
+Selangor,2016,40,5
+Selangor,2016,41,5
+Selangor,2016,42,3
+Selangor,2016,43,2
+Selangor,2016,44,2
+Selangor,2016,45,2
+Selangor,2016,46,2
+Selangor,2016,47,3
+Selangor,2016,48,3
+Selangor,2016,49,2
+Selangor,2016,50,3
+Selangor,2016,51,1
+Selangor,2016,52,4
+Selangor,2017,1,2
+Selangor,2017,2,2
+Selangor,2017,3,8
+Selangor,2017,4,4
+Selangor,2017,5,5
+Selangor,2017,6,5
+Selangor,2017,7,5
+Selangor,2017,8,5
+Selangor,2017,9,5
+Selangor,2017,10,4
+Selangor,2017,11,3
+Selangor,2017,12,3
+Selangor,2017,13,2
+Selangor,2017,14,6
+Selangor,2017,15,1
+Selangor,2017,16,3
+Selangor,2017,17,3
+Selangor,2017,18,5
+Selangor,2017,19,2
+Selangor,2017,20,5
+Selangor,2017,21,4
+Selangor,2017,22,10
+Selangor,2017,23,4
+Selangor,2017,24,4
+Selangor,2017,25,5
+Selangor,2017,26,1
+Selangor,2017,27,4
+Selangor,2017,28,9
+Selangor,2017,29,4
+Selangor,2017,30,4
+Selangor,2017,31,2
+Selangor,2017,32,5
+Selangor,2017,33,6
+Selangor,2017,34,3
+Selangor,2017,35,5
+Selangor,2017,36,4
+Selangor,2017,37,5
+Selangor,2017,38,2
+Selangor,2017,39,6
+Selangor,2017,40,5
+Selangor,2017,41,1
+Selangor,2017,42,6
+Selangor,2017,43,7
+Selangor,2017,44,3
+Selangor,2017,45,3
+Selangor,2017,46,3
+Selangor,2017,47,1
+Selangor,2017,48,2
+Selangor,2017,49,1
+Selangor,2017,50,2
+Selangor,2017,51,1
+Selangor,2017,52,3
+Terengganu,2010,1,1
+Terengganu,2010,2,2
+Terengganu,2010,3,1
+Terengganu,2010,4,2
+Terengganu,2010,5,1
+Terengganu,2010,6,0
+Terengganu,2010,7,0
+Terengganu,2010,8,1
+Terengganu,2010,9,0
+Terengganu,2010,10,1
+Terengganu,2010,11,0
+Terengganu,2010,12,0
+Terengganu,2010,13,0
+Terengganu,2010,14,0
+Terengganu,2010,15,2
+Terengganu,2010,16,1
+Terengganu,2010,17,2
+Terengganu,2010,18,0
+Terengganu,2010,19,0
+Terengganu,2010,20,0
+Terengganu,2010,21,3
+Terengganu,2010,22,0
+Terengganu,2010,23,0
+Terengganu,2010,24,1
+Terengganu,2010,25,0
+Terengganu,2010,26,0
+Terengganu,2010,27,0
+Terengganu,2010,28,2
+Terengganu,2010,29,2
+Terengganu,2010,30,5
+Terengganu,2010,31,2
+Terengganu,2010,32,0
+Terengganu,2010,33,2
+Terengganu,2010,34,2
+Terengganu,2010,35,4
+Terengganu,2010,36,5
+Terengganu,2010,37,0
+Terengganu,2010,38,0
+Terengganu,2010,39,2
+Terengganu,2010,40,2
+Terengganu,2010,41,5
+Terengganu,2010,42,6
+Terengganu,2010,43,3
+Terengganu,2010,44,2
+Terengganu,2010,45,4
+Terengganu,2010,46,0
+Terengganu,2010,47,1
+Terengganu,2010,48,5
+Terengganu,2010,49,5
+Terengganu,2010,50,0
+Terengganu,2010,51,2
+Terengganu,2010,52,4
+Terengganu,2011,1,3
+Terengganu,2011,2,9
+Terengganu,2011,3,16
+Terengganu,2011,4,6
+Terengganu,2011,5,2
+Terengganu,2011,6,2
+Terengganu,2011,7,6
+Terengganu,2011,8,2
+Terengganu,2011,9,4
+Terengganu,2011,10,7
+Terengganu,2011,11,0
+Terengganu,2011,12,5
+Terengganu,2011,13,4
+Terengganu,2011,14,0
+Terengganu,2011,15,2
+Terengganu,2011,16,0
+Terengganu,2011,17,2
+Terengganu,2011,18,1
+Terengganu,2011,19,4
+Terengganu,2011,20,3
+Terengganu,2011,21,0
+Terengganu,2011,22,0
+Terengganu,2011,23,1
+Terengganu,2011,24,0
+Terengganu,2011,25,1
+Terengganu,2011,26,2
+Terengganu,2011,27,1
+Terengganu,2011,28,1
+Terengganu,2011,29,2
+Terengganu,2011,30,0
+Terengganu,2011,31,0
+Terengganu,2011,32,0
+Terengganu,2011,33,1
+Terengganu,2011,34,1
+Terengganu,2011,35,1
+Terengganu,2011,36,4
+Terengganu,2011,37,1
+Terengganu,2011,38,0
+Terengganu,2011,39,0
+Terengganu,2011,40,0
+Terengganu,2011,41,0
+Terengganu,2011,42,3
+Terengganu,2011,43,0
+Terengganu,2011,44,2
+Terengganu,2011,45,1
+Terengganu,2011,46,3
+Terengganu,2011,47,0
+Terengganu,2011,48,1
+Terengganu,2011,49,0
+Terengganu,2011,50,1
+Terengganu,2011,51,1
+Terengganu,2011,52,0
+Terengganu,2012,1,1
+Terengganu,2012,2,0
+Terengganu,2012,3,1
+Terengganu,2012,4,1
+Terengganu,2012,5,0
+Terengganu,2012,6,9
+Terengganu,2012,7,2
+Terengganu,2012,8,1
+Terengganu,2012,9,2
+Terengganu,2012,10,0
+Terengganu,2012,11,4
+Terengganu,2012,12,2
+Terengganu,2012,13,1
+Terengganu,2012,14,1
+Terengganu,2012,15,0
+Terengganu,2012,16,0
+Terengganu,2012,17,2
+Terengganu,2012,18,1
+Terengganu,2012,19,1
+Terengganu,2012,20,0
+Terengganu,2012,21,1
+Terengganu,2012,22,0
+Terengganu,2012,23,2
+Terengganu,2012,24,1
+Terengganu,2012,25,0
+Terengganu,2012,26,1
+Terengganu,2012,27,1
+Terengganu,2012,28,1
+Terengganu,2012,29,1
+Terengganu,2012,30,1
+Terengganu,2012,31,0
+Terengganu,2012,32,0
+Terengganu,2012,33,0
+Terengganu,2012,34,1
+Terengganu,2012,35,1
+Terengganu,2012,36,0
+Terengganu,2012,37,1
+Terengganu,2012,38,0
+Terengganu,2012,39,1
+Terengganu,2012,40,2
+Terengganu,2012,41,0
+Terengganu,2012,42,0
+Terengganu,2012,43,0
+Terengganu,2012,44,1
+Terengganu,2012,45,1
+Terengganu,2012,46,0
+Terengganu,2012,47,0
+Terengganu,2012,48,0
+Terengganu,2012,49,1
+Terengganu,2012,50,0
+Terengganu,2012,51,0
+Terengganu,2012,52,0
+Terengganu,2013,1,0
+Terengganu,2013,2,0
+Terengganu,2013,3,2
+Terengganu,2013,4,1
+Terengganu,2013,5,0
+Terengganu,2013,6,1
+Terengganu,2013,7,0
+Terengganu,2013,8,0
+Terengganu,2013,9,0
+Terengganu,2013,10,0
+Terengganu,2013,11,0
+Terengganu,2013,12,0
+Terengganu,2013,13,1
+Terengganu,2013,14,1
+Terengganu,2013,15,0
+Terengganu,2013,16,0
+Terengganu,2013,17,1
+Terengganu,2013,18,0
+Terengganu,2013,19,0
+Terengganu,2013,20,1
+Terengganu,2013,21,3
+Terengganu,2013,22,1
+Terengganu,2013,23,0
+Terengganu,2013,24,0
+Terengganu,2013,25,3
+Terengganu,2013,26,0
+Terengganu,2013,27,1
+Terengganu,2013,28,0
+Terengganu,2013,29,0
+Terengganu,2013,30,1
+Terengganu,2013,31,1
+Terengganu,2013,32,2
+Terengganu,2013,33,5
+Terengganu,2013,34,4
+Terengganu,2013,35,2
+Terengganu,2013,36,3
+Terengganu,2013,37,1
+Terengganu,2013,38,2
+Terengganu,2013,39,0
+Terengganu,2013,40,1
+Terengganu,2013,41,1
+Terengganu,2013,42,2
+Terengganu,2013,43,1
+Terengganu,2013,44,0
+Terengganu,2013,45,0
+Terengganu,2013,46,0
+Terengganu,2013,47,1
+Terengganu,2013,48,1
+Terengganu,2013,49,3
+Terengganu,2013,50,3
+Terengganu,2013,51,2
+Terengganu,2013,52,2
+Terengganu,2014,1,3
+Terengganu,2014,2,4
+Terengganu,2014,3,0
+Terengganu,2014,4,2
+Terengganu,2014,5,2
+Terengganu,2014,6,0
+Terengganu,2014,7,3
+Terengganu,2014,8,1
+Terengganu,2014,9,1
+Terengganu,2014,10,1
+Terengganu,2014,11,2
+Terengganu,2014,12,1
+Terengganu,2014,13,3
+Terengganu,2014,14,1
+Terengganu,2014,15,1
+Terengganu,2014,16,0
+Terengganu,2014,17,0
+Terengganu,2014,18,2
+Terengganu,2014,19,2
+Terengganu,2014,20,1
+Terengganu,2014,21,1
+Terengganu,2014,22,2
+Terengganu,2014,23,2
+Terengganu,2014,24,0
+Terengganu,2014,25,2
+Terengganu,2014,26,0
+Terengganu,2014,27,0
+Terengganu,2014,28,1
+Terengganu,2014,29,0
+Terengganu,2014,30,1
+Terengganu,2014,31,0
+Terengganu,2014,32,3
+Terengganu,2014,33,4
+Terengganu,2014,34,1
+Terengganu,2014,35,2
+Terengganu,2014,36,1
+Terengganu,2014,37,2
+Terengganu,2014,38,1
+Terengganu,2014,39,0
+Terengganu,2014,40,1
+Terengganu,2014,41,2
+Terengganu,2014,42,2
+Terengganu,2014,43,0
+Terengganu,2014,44,3
+Terengganu,2014,45,1
+Terengganu,2014,46,1
+Terengganu,2014,47,0
+Terengganu,2014,48,1
+Terengganu,2014,49,0
+Terengganu,2014,50,3
+Terengganu,2014,51,1
+Terengganu,2014,52,2
+Terengganu,2014,53,0
+Terengganu,2015,1,1
+Terengganu,2015,2,0
+Terengganu,2015,3,1
+Terengganu,2015,4,4
+Terengganu,2015,5,0
+Terengganu,2015,6,1
+Terengganu,2015,7,1
+Terengganu,2015,8,0
+Terengganu,2015,9,0
+Terengganu,2015,10,1
+Terengganu,2015,11,0
+Terengganu,2015,12,0
+Terengganu,2015,13,0
+Terengganu,2015,14,0
+Terengganu,2015,15,0
+Terengganu,2015,16,0
+Terengganu,2015,17,0
+Terengganu,2015,18,0
+Terengganu,2015,19,0
+Terengganu,2015,20,0
+Terengganu,2015,21,0
+Terengganu,2015,22,0
+Terengganu,2015,23,0
+Terengganu,2015,24,0
+Terengganu,2015,25,0
+Terengganu,2015,26,0
+Terengganu,2015,27,1
+Terengganu,2015,28,1
+Terengganu,2015,29,0
+Terengganu,2015,30,0
+Terengganu,2015,31,1
+Terengganu,2015,32,0
+Terengganu,2015,33,0
+Terengganu,2015,34,1
+Terengganu,2015,35,0
+Terengganu,2015,36,0
+Terengganu,2015,37,2
+Terengganu,2015,38,1
+Terengganu,2015,39,0
+Terengganu,2015,40,1
+Terengganu,2015,41,1
+Terengganu,2015,42,0
+Terengganu,2015,43,0
+Terengganu,2015,44,0
+Terengganu,2015,45,0
+Terengganu,2015,46,2
+Terengganu,2015,47,0
+Terengganu,2015,48,0
+Terengganu,2015,49,1
+Terengganu,2015,50,1
+Terengganu,2015,51,2
+Terengganu,2015,52,2
+Terengganu,2016,1,1
+Terengganu,2016,2,2
+Terengganu,2016,3,2
+Terengganu,2016,4,0
+Terengganu,2016,5,1
+Terengganu,2016,6,0
+Terengganu,2016,7,1
+Terengganu,2016,8,1
+Terengganu,2016,9,2
+Terengganu,2016,10,0
+Terengganu,2016,11,0
+Terengganu,2016,12,0
+Terengganu,2016,13,0
+Terengganu,2016,14,1
+Terengganu,2016,15,0
+Terengganu,2016,16,0
+Terengganu,2016,17,0
+Terengganu,2016,18,1
+Terengganu,2016,19,0
+Terengganu,2016,20,0
+Terengganu,2016,21,0
+Terengganu,2016,22,0
+Terengganu,2016,23,0
+Terengganu,2016,24,0
+Terengganu,2016,25,0
+Terengganu,2016,26,0
+Terengganu,2016,27,0
+Terengganu,2016,28,0
+Terengganu,2016,29,0
+Terengganu,2016,30,0
+Terengganu,2016,31,0
+Terengganu,2016,32,0
+Terengganu,2016,33,1
+Terengganu,2016,34,0
+Terengganu,2016,35,1
+Terengganu,2016,36,0
+Terengganu,2016,37,0
+Terengganu,2016,38,0
+Terengganu,2016,39,0
+Terengganu,2016,40,0
+Terengganu,2016,41,1
+Terengganu,2016,42,2
+Terengganu,2016,43,1
+Terengganu,2016,44,0
+Terengganu,2016,45,1
+Terengganu,2016,46,0
+Terengganu,2016,47,0
+Terengganu,2016,48,0
+Terengganu,2016,49,1
+Terengganu,2016,50,0
+Terengganu,2016,51,0
+Terengganu,2016,52,0
+Terengganu,2017,1,0
+Terengganu,2017,2,0
+Terengganu,2017,3,0
+Terengganu,2017,4,0
+Terengganu,2017,5,0
+Terengganu,2017,6,0
+Terengganu,2017,7,0
+Terengganu,2017,8,0
+Terengganu,2017,9,0
+Terengganu,2017,10,0
+Terengganu,2017,11,0
+Terengganu,2017,12,0
+Terengganu,2017,13,0
+Terengganu,2017,14,0
+Terengganu,2017,15,0
+Terengganu,2017,16,0
+Terengganu,2017,17,0
+Terengganu,2017,18,0
+Terengganu,2017,19,0
+Terengganu,2017,20,0
+Terengganu,2017,21,0
+Terengganu,2017,22,1
+Terengganu,2017,23,0
+Terengganu,2017,24,0
+Terengganu,2017,25,0
+Terengganu,2017,26,0
+Terengganu,2017,27,0
+Terengganu,2017,28,0
+Terengganu,2017,29,0
+Terengganu,2017,30,0
+Terengganu,2017,31,0
+Terengganu,2017,32,0
+Terengganu,2017,33,0
+Terengganu,2017,34,0
+Terengganu,2017,35,0
+Terengganu,2017,36,0
+Terengganu,2017,37,0
+Terengganu,2017,38,0
+Terengganu,2017,39,0
+Terengganu,2017,40,0
+Terengganu,2017,41,0
+Terengganu,2017,42,0
+Terengganu,2017,43,0
+Terengganu,2017,44,0
+Terengganu,2017,45,0
+Terengganu,2017,46,0
+Terengganu,2017,47,0
+Terengganu,2017,48,0
+Terengganu,2017,49,0
+Terengganu,2017,50,0
+Terengganu,2017,51,0
+Terengganu,2017,52,0
