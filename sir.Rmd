@@ -244,7 +244,7 @@ Use some of the above code to write a `sir_1()` function that takes
 as inputs and run the SIR model and returns a data frame of time series as an
 output as below:
 
-```{r include = FALSE}
+```{r include = TRUE}
 sir_1 <- function(beta, gamma, S0, I0, R0, times) {
   require(deSolve) # for the "ode" function
   
