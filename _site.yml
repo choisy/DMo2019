@@ -11,3 +11,5 @@ navbar:
       href: sir.html
     - text: "Mdel calibration"
       href: calibration.html
+    - text: "Presentations"
+      href: presentations.html
