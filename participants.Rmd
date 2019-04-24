@@ -1,5 +1,5 @@
 ---
-title: "Models calibration"
+title: "Participants"
 output:
   html_document:
     theme: cosmo
@@ -54,13 +54,13 @@ rm(list = ls())
 
 Name | email | affiliation
 ---- | ----- | -----------
-Dr Marc Choisy | marc.choisy@ird.fr | [IRD](http://marcchoisy.free.fr) / [OUCRU](http://www.oucru.org)
-Dr Balvinder Singh Gill | drbsgill@imr.gov.my | Institute of Medical Resources Center
-Assoc Prof Dr Jane Labadin | ljane@unimas.my | FCSIT, UNIMAS
+[Dr Marc Choisy](http://marcchoisy.free.fr) | marc.choisy@ird.fr | [IRD](http://marcchoisy.free.fr) / [OUCRU](http://www.oucru.org)
+[Dr Balvinder Singh Gill](https://www.researchgate.net/profile/Balvinder_Gill2) | drbsgill@imr.gov.my | [Institute of Medical Resources](https://www.imr.gov.my)
+[Assoc Prof Dr Jane Labadin](http://www.isiti.unimas.my/research/14-research/120-researcher-4) | ljane@unimas.my | [FCSIT](http://www.fcsit.unimas.my), [UNIMAS](http://www.unimas.my)
 
 ## Attendees
 
-### Hand-foot-and-month group
+### Hand-foot-and-mouth group
 
 Name | email | affiliation
 ---- | ----- | -----------
