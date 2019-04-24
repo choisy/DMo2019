@@ -13,5 +13,7 @@ navbar:
       href: sir.html
     - text: "Model calibration"
       href: calibration.html
+    - text: "Data preprocessing"
+      href: data.html
     - text: "Presentations"
       href: presentations.html

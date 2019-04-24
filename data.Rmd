@@ -1,0 +1,157 @@
+---
+title: "Data"
+output:
+  html_document:
+    theme: cosmo
+    toc: yes
+  pdf_document:
+    toc: yes
+editor_options: 
+  chunk_output_type: console
+---
+
+<!--
+IMAGES:
+Insert them with: ![alt text](image.png)
+You can also resize them if needed: convert image.png -resize 50% image.png
+If you want to center the image, go through HTML code:
+<div style="text-align:center"><img src ="image.png"/></div>
+
+REFERENCES:
+For references: Put all the bibTeX references in the file "references.bib"
+in the current folder and cite the references as @key or [@key] in the text.
+Uncomment the bibliography field in the above header and put a "References"
+title wherever you want to display the reference list.
+-->
+
+```{r general_options, include = FALSE}
+knitr::knit_hooks$set(margin = function(before, options, envir) {
+  if (before) par(mgp = c(1.5, .5, 0), bty = "n", plt = c(.105, .97, .13, .97))
+  else NULL
+})
+
+knitr::opts_chunk$set(margin = TRUE, prompt = FALSE, comment = "##",
+                      collapse = FALSE, cache = FALSE, autodep = TRUE,
+                      dev.args = list(pointsize = 11), fig.height = 3.5,
+                      fig.width = 4.24725, fig.retina = 2, fig.align = "center")
+
+l <- "en_US.UTF-8"
+Sys.setenv(LANGAGE = l)
+Sys.setlocale(locale = l)
+Sys.setlocale("LC_MESSAGES", l)
+
+# cleaning the packages space:
+search_path <- search()
+pkgs <- c("stats", "graphics", "grDevices", "utils", "datasets", "methods", "base")
+tdet <- grep("package", search_path[!(search_path %in% paste0("package:", pkgs))],
+             value = TRUE)
+for(i in tdet) detach(i, unload = TRUE, character.only = TRUE)
+
+rm(list = ls())
+```
+
+Here we explain how you can quickly, efficiently and reproducibly download the
+incidence data you need from the [www.data.gov.my](http://www.data.gov.my)
+national data server. For that, you will need the following packages: `dplyr`,
+`magrittr`, `readr`, `stringr` and `tidyr`. Make sure that there are installed:
+
+```{r}
+to_install <- setdiff(c("dplyr", "magrittr", "readr", "stringr", "tidyr"),
+                      rownames(installed.packages()))
+if (length(to_install) > 0) install.packages(to_install)
+```
+
+Below we define a function that download weekly incidence data per state for a
+given week from [www.data.gov.my](http://www.data.gov.my), clean them a bit and
+rearrange them into a long format sorted by state, year and week:
+
+```{r}
+datagovmy <- function(disease, hash, years) {
+  require(magrittr)
+  urls <- paste0("http://www.data.gov.my/data/ms_MY/dataset/", hash,
+                 "/resource/", years, "/download/", names(years),
+                 "bilangan-kes-penyakit-", disease, "-mingguan-mengikut-negeri.xlsx")
+  tempfiles <- replicate(length(urls), tempfile(fileext = ".xlsx"))
+  Map(download.file, urls, tempfiles)
+  tempfiles %>%
+    lapply(readxl::read_excel, skip = 2) %>% 
+    setNames(names(years)) %>% 
+    dplyr::bind_rows(.id = "year") %>% 
+    dplyr::rename(week  = `MINGGU EPID`) %>% 
+    dplyr::filter(week != "Grand Total") %>% 
+    dplyr::select(-MALAYSIA) %>% 
+    dplyr::mutate_all(as.integer) %>% 
+    tidyr::gather("state", "incidence", -year, -week) %>% 
+    dplyr::select(state, year, week, incidence) %>% 
+    dplyr::mutate(state = stringr::str_to_title(sub("WP ", "", state))) %>% 
+    dplyr::arrange(state, year, week)
+}
+```
+
+Let's now define the key for each year of dengue data:
+
+```{r}
+dengue_years <- setNames(c("1dda5107-a25d-4529-8fa3-75d219b17298",
+                           "e2ee5f21-0480-4af1-a236-ea94ed620e09",
+                           "d96c67da-4e4b-439b-b4be-5611ead9d8e8",
+                           "854288d8-d7a9-4ba4-892d-5f6d37a767e4",
+                           "6af451f1-b80b-40c5-be98-0a1c8d55bda1",
+                           "c8610944-44d3-4c65-abc3-36dbb9f23a0d",
+                           "d8bcd5de-9934-4d4d-a2d7-586e76e64310",
+                           "07257dc1-c39a-4d35-8f72-bad7fdd96bbb"), 2010:2017)
+```
+
+Same for tuberculosis:
+
+```{r}
+tb_years <- setNames(c("c201ccf5-a4de-4806-bfa7-e7cb03079773",
+                       "4955717e-f5d7-4203-b2a3-420751d4261d",
+                       "e0a7812f-049a-462b-8036-0d40cc261d8c",
+                       "f5444304-17bf-480b-a678-1332fcaf979e"), 2014:2017)
+```
+
+And for hand-foot-and-mouth disease:
+
+```{r}
+hfmd_years <- setNames(c("33b20c42-8877-4016-987f-683707b7137a",
+                         "0a53857a-d209-4ef0-a3ab-539be6720905",
+                         "ff8d5c7c-267a-4c5d-88c0-43b15eb1084b",
+                         "afe50193-ec76-4ea2-a05a-ba8324bde64b",
+                         "3baee861-9f6f-4859-bb84-b56fbc4c66b5",
+                         "ace3504a-6f17-4f9c-9386-8e47806dc9ea",
+                         "a86a99fe-e8a7-45fc-9431-a416f17f009b",
+                         "15d45312-6318-4b22-b7c3-d4a684a15f08"), 2010:2017)
+```
+
+With these above information, we can use our `datagovmy()` function to download
+the incidence data we want:
+
+```{r message = FALSE}
+dengue <- datagovmy("dengue-haemorrhagic-fever", "0e34a58f-909e-4ec2-85ab-8633830be91c", dengue_years)
+tb <- datagovmy("tuberculosis", "fbb1dd02-65c4-4383-aa41-344980001a88", tb_years)
+hfmd <- datagovmy("hfmd", "e3edfbb1-2dba-4e0e-9c02-d6a213f58221", hfmd_years)
+```
+
+The outputs are in the forms of neat data frames:
+
+```{r}
+dengue
+tb
+hfmd
+```
+
+```{r include = FALSE, eval = FALSE}
+write.csv(dengue, "data/dengue.csv", quote = FALSE, row.names = FALSE)
+write.csv(tb, "data/tb.csv", quote = FALSE, row.names = FALSE)
+write.csv(hfmd, "data/hfmd.csv", quote = FALSE, row.names = FALSE)
+```
+
+If you prefer, you can download the preprocessed data in the form of CSV files,
+that have made directly available for you here:
+
+```{r eval = FALSE}
+dengue <- readr::read_csv("https://raw.githubusercontent.com/choisy/DMo2019/master/data/dengue.csv")
+tb <- readr::read_csv("https://raw.githubusercontent.com/choisy/DMo2019/master/data/tb.csv")
+hfmd <- readr::read_csv("https://raw.githubusercontent.com/choisy/DMo2019/master/data/hfmd.csv")
+```
+
