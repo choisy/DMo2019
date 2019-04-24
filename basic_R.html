@@ -308,12 +308,18 @@ $(document).ready(function () {
 
 <div id="TOC">
 <ul>
+<li><a href="#before-we-start">Before we start</a></li>
 <li><a href="#r-as-a-calculator">R as a calculator</a></li>
 <li><a href="#variables">Variables</a><ul>
 <li><a href="#vectors">Vectors</a></li>
 <li><a href="#data-frames">Data frames</a></li>
 <li><a href="#lists">Lists</a></li>
 </ul></li>
+<li><a href="#functions">Functions</a></li>
+<li><a href="#graphs">Graphs</a><ul>
+<li><a href="#primary-and-secondary-funtions">Primary and secondary funtions</a></li>
+</ul></li>
+<li><a href="#packages">Packages</a></li>
 <li><a href="#scripts">Scripts</a></li>
 </ul>
 </div>
@@ -331,6 +337,18 @@ in the current folder and cite the references as @key or [@key] in the text.
 Uncomment the bibliography field in the above header and put a "References"
 title wherever you want to display the reference list.
 -->
+<div id="before-we-start" class="section level2">
+<h2>Before we start</h2>
+<p>Memory / disk</p>
+<p>Use the R help with the <code>?</code></p>
+<p>Use <a href="https://www.google.com">Google</a>! or <a href="https://stackoverflow.com/questions/tagged/r">StackOverflow</a> with the <code>[r]</code> keyword</p>
+<p>Command history (use arrows!)</p>
+<p>Use <a href="https://www.rstudio.com">RStudio</a></p>
+<p>Organize you work in projects in RStudio</p>
+<p>Use keyboard <a href="https://support.rstudio.com/hc/en-us/articles/200711853-Keyboard-Shortcuts">shortcuts</a> in RStudio, in particular for the assingment operator</p>
+<p>Refer to the <a href="https://cran.r-project.org">CRAN website</a></p>
+<p>Make sure that your system (R, RStudio and packages) is up to date. There is a new R release every 6 months, even more often than that for RStudio. Type <code>update.packages()</code> at the command line to update the packages</p>
+</div>
 <div id="r-as-a-calculator" class="section level2">
 <h2>R as a calculator</h2>
 <pre class="r"><code>1 + 2</code></pre>
@@ -536,6 +554,74 @@ my_list</code></pre>
 </div>
 </div>
 </div>
+<div id="functions" class="section level2">
+<h2>Functions</h2>
+<p>In R there are 2 categories of objects: the <strong>variables</strong> that we just saw and which contains data and the <strong>functions</strong> that contains code (i.e. instruction). Think of functions as a machine that takes inputs (potentially many) and returns an output (sometimes nothing, but never more than one single output). To define a function, we still make use of the assignment operator <code>&lt;-</code> but here the key word is <code>funtion(){}</code></p>
+<pre class="r"><code>my_fct &lt;- function(a, b, c) {a + b +c}</code></pre>
+<p>To see the content of a function, as for any object in R, just type the name of the function:</p>
+<pre class="r"><code>my_fct</code></pre>
+<pre><code>## function(a, b, c) {a + b +c}</code></pre>
+<p>If, on the other hand, you want to excecute (or run) the function, you will have to add the round brackets to the name, possibly with some values for the arguments, if needed:</p>
+<pre class="r"><code>my_fct(1, 2, 3)</code></pre>
+<pre><code>## [1] 6</code></pre>
+<p>Note also that you can specify the values of these arguemnts, either by position, as done above, or by name:</p>
+<pre class="r"><code>my_fct(b = 2, a = 1, c = 3)</code></pre>
+<pre><code>## [1] 6</code></pre>
+<p>In which case, you can put the argument in any order, not necessarily the order of the function’s definition.</p>
+<p>Note that the key word <code>function</code> has 2 parts: * the round brackets <code>()</code> that contains the names of the arguments (i.e. input). This is call the <strong>user-interface</strong> of the function since it is what the user has to defined in order to use the function. * the curly brackets <code>{}</code> that contains the instructions to perform (using the arguments). This is call the <strong>body</strong> of the function.</p>
+<p>Note that the output of the function is always the last line (instruction) of what is in between the curly brackets. Indeed, remember that in R there is always one instruction per line. The body of the function can contain many lines:</p>
+<pre class="r"><code>my_fct &lt;- function(a, b, c) {
+  numerator &lt;- a + b
+  denominator &lt;- b * c
+  numerator / denominator
+}</code></pre>
+</div>
+<div id="graphs" class="section level2">
+<h2>Graphs</h2>
+<pre class="r"><code>x &lt;- rnorm(10)
+y &lt;- rnorm(10)</code></pre>
+<p>To do a scatterplot of the x-y coordinate, two options:</p>
+<pre class="r"><code>plot(x, y)</code></pre>
+<p><img src="basic_R_files/figure-html/unnamed-chunk-34-1.png" width="407.736" style="display: block; margin: auto;" /></p>
+<p>or</p>
+<pre class="r"><code>plot(y ~ x)</code></pre>
+<p><img src="basic_R_files/figure-html/unnamed-chunk-35-1.png" width="407.736" style="display: block; margin: auto;" /></p>
+<p>You can add many arguments to tune your graphs:</p>
+<pre class="r"><code>plot(x, y, col = &quot;red&quot;)</code></pre>
+<p><img src="basic_R_files/figure-html/unnamed-chunk-36-1.png" width="407.736" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>plot(x, y, col = &quot;red&quot;, pch = 19)</code></pre>
+<p><img src="basic_R_files/figure-html/unnamed-chunk-36-2.png" width="407.736" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>plot(x, y, col = &quot;red&quot;, pch = 19, cex = 3)</code></pre>
+<p><img src="basic_R_files/figure-html/unnamed-chunk-36-3.png" width="407.736" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>plot(x, y, col = &quot;red&quot;, pch = 19, cex = 3, xlab = &quot;x axis&quot;, ylab = &quot;y axis&quot;)</code></pre>
+<p><img src="basic_R_files/figure-html/unnamed-chunk-36-4.png" width="407.736" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>plot(x, y, col = &quot;red&quot;, pch = 19, cex = 3, xlab = &quot;x axis&quot;, ylab = &quot;y axis&quot;, 
+     main = &quot;title&quot;)</code></pre>
+<p><img src="basic_R_files/figure-html/unnamed-chunk-36-5.png" width="407.736" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>plot(x, y, col = &quot;red&quot;, pch = 19, cex = 3, xlab = &quot;x axis&quot;, ylab = &quot;y axis&quot;, 
+     main = &quot;title&quot;, xlim = c(-10, 10), ylim = c(-5, 5))</code></pre>
+<p><img src="basic_R_files/figure-html/unnamed-chunk-36-6.png" width="407.736" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>plot(x, y, col = &quot;red&quot;, pch = 19, xlab = &quot;x axis&quot;, ylab = &quot;y axis&quot;, 
+     main = &quot;title&quot;, xlim = c(-10, 10), ylim = c(-5, 5), type = &quot;l&quot;)</code></pre>
+<p><img src="basic_R_files/figure-html/unnamed-chunk-36-7.png" width="407.736" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>plot(x, y, col = &quot;red&quot;, pch = 19, xlab = &quot;x axis&quot;, ylab = &quot;y axis&quot;, 
+     main = &quot;title&quot;, xlim = c(-10, 10), ylim = c(-5, 5), type = &quot;l&quot;, lwd = 3)</code></pre>
+<p><img src="basic_R_files/figure-html/unnamed-chunk-36-8.png" width="407.736" style="display: block; margin: auto;" /></p>
+<p>The possibilities are endless. Look on the internet for more options.</p>
+<div id="primary-and-secondary-funtions" class="section level3">
+<h3>Primary and secondary funtions</h3>
+<p>There are 2 categories of function to draw graphs. The first category, called ** primary functions** always erase whatever graph that already exists and create a new one. This is the case of the <code>plot()</code> that we saw above. The other category, <strong>secondary functions</strong> always add elements to an already existing graph. If no graph is already created then these secondary functions won’t work.</p>
+<p>Among the primary functions commonly used are <code>plot()</code>, <code>barplot()</code>, <code>hist()</code>, plus an endless list of other functions (do your research on the internet). Among the common secondary functions are <code>line()</code>, <code>abline()</code>, <code>points()</code>, <code>legend()</code>, <code>axis()</code>, <code>title()</code>, <code>legend()</code>, plus many others. Again, do you research on the internet. Here is an example of the use of a primary and a secondary functions:</p>
+<pre class="r"><code># primary
+plot(x, y, col = &quot;red&quot;, pch = 19)
+abline(0, 1, col = &quot;blue&quot;, lwd = 2, lty = 2)</code></pre>
+<p><img src="basic_R_files/figure-html/unnamed-chunk-37-1.png" width="407.736" style="display: block; margin: auto;" /></p>
+</div>
+</div>
+<div id="packages" class="section level2">
+<h2>Packages</h2>
+<p>Any instruction in R is done by a function. We’ve seen quite some of them so far. These functions are organized in thematic <strong>packages</strong> and there is about 30 such packages that come with the R base installation. For example, the <code>ls()</code>, <code>rm()</code>, <code>c()</code>, <code>list()</code>, <code>data.frame()</code>, <code>with()</code>, <code>length()</code> functions are in the <strong>base</strong> package. The <code>head()</code> and <code>tail()</code> functions are in the <strong>utils</strong> package, the <code>nrorm()</code> function is in the <strong>stats</strong> package, and the graphs functions that we used above <code>plot()</code>, <code>barplot()</code>, <code>hist()</code>, <code>points()</code>, <code>abline()</code>, <code>legend()</code> are, unsurprisingly, in the <strong>graphics</strong> package. A cool thing about R is that it’s open source. A consequence of this is that any one can write his/her own package. Another great feature of R is that these user-developped package can be published on the official <a href="https://cran.r-project.org">R website</a> for others to use, and that there one and only one repository for these package (so it’s easy to find one’s way). As of 2019, there are more than 13,000 such packages, a list of which you can see <a href="https://cran.r-project.org">here</a>. You can do you research here by key word, then click on the link to the package’s website, read more detail information, check for the presence of Vignette, etc… Once you’ve identify a package that you’d like to use, you need to install and load it. Installation means writing the package to disk, this generally comes from the internet and thus requires and download. Once your package is installed you have the possibility to use it. To use an installed package, you have to load it from you local disk library. These two operations can be done either at the command line with the functions <code>install.packages()</code> (from package <strong>utils</strong>) and <code>library()</code> (from package <strong>base</strong>) respectively, or using the packages manager in RStudio. For example, above, we’ve been using the function <code>read_excel()</code> from the package <a href="https://cran.r-project.org/web/packages/readxl"><strong>readxl</strong></a> that needed to be installed and, once installed, loaded. In the SIR modeling, we will use the package <a href="https://cran.r-project.org/web/packages/deSolve"><strong>deSolve</strong></a> and for the model calibration we will use the package <a href="https://cran.r-project.org/web/packages/bbmle"><strong>bbmle</strong></a>.</p>
+</div>
 <div id="scripts" class="section level2">
 <h2>Scripts</h2>
 <p>Open a new script file and write:</p>
@@ -548,6 +634,7 @@ myvar &lt;- myvar[-(6:15)]
 
 # step 3: replace the third value by 3:
 myvar[3] &lt;- 3</code></pre>
+<p>Note that any line starting with the <code>#</code> character will be ignored by R. It’s the comment character.</p>
 <p>Save the script in <code>vector selection.R</code> and source it:</p>
 <pre class="r"><code>source(&#39;vector selection.R&#39;)</code></pre>
 </div>

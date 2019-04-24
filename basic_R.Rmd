@@ -50,6 +50,30 @@ for(i in tdet) detach(i, unload = TRUE, character.only = TRUE)
 rm(list = ls())
 ```
 
+## Before we start
+
+Memory / disk
+
+Use the R help with the `?`
+
+Use [Google](https://www.google.com)! or 
+[StackOverflow](https://stackoverflow.com/questions/tagged/r) with the `[r]`
+keyword
+
+Command history (use arrows!)
+
+Use [RStudio](https://www.rstudio.com)
+
+Organize you work in projects in RStudio
+
+Use keyboard [shortcuts](https://support.rstudio.com/hc/en-us/articles/200711853-Keyboard-Shortcuts) in RStudio, in particular for the assingment operator
+
+Refer to the [CRAN website](https://cran.r-project.org)
+
+Make sure that your system (R, RStudio and packages) is up to date. There is a 
+new R release every 6 months, even more often than that for RStudio. Type
+`update.packages()` at the command line to update the packages
+
 ## R as a calculator
 
 ```{r}
@@ -287,6 +311,157 @@ mydf$gender
 ```
 
 
+## Functions
+
+In R there are 2 categories of objects: the **variables** that we just saw and
+which contains data and the **functions** that contains code (i.e. instruction).
+Think of functions as a machine that takes inputs (potentially many) and returns
+an output (sometimes nothing, but never more than one single output). To define
+a function, we still make use of the assignment operator `<-` but here the key
+word is `funtion(){}`
+
+```{r}
+my_fct <- function(a, b, c) {a + b +c}
+```
+
+To see the content of a function, as for any object in R, just type the name of
+the function:
+
+```{r}
+my_fct
+```
+
+If, on the other hand, you want to excecute (or run) the function, you will have
+to add the round brackets to the name, possibly with some values for the 
+arguments, if needed:
+
+```{r}
+my_fct(1, 2, 3)
+```
+
+Note also that you can specify the values of these arguemnts, either by 
+position, as done above, or by name:
+
+```{r}
+my_fct(b = 2, a = 1, c = 3)
+```
+
+In which case, you can put the argument in any order, not necessarily the order
+of the function's definition.
+
+Note that the key word `function` has 2 parts:
+* the round brackets `()` that contains the names of the arguments (i.e. input).
+This is call the **user-interface** of the function since it is what the user
+has to defined in order to use the function.
+* the curly brackets `{}` that contains the instructions to perform (using the
+arguments). This is call the **body** of the function.
+
+Note that the output of the function is always the last line (instruction)
+of what is in between the curly brackets. Indeed, remember that in R there is
+always one instruction per line. The body of the function can contain many 
+lines:
+
+```{r}
+my_fct <- function(a, b, c) {
+  numerator <- a + b
+  denominator <- b * c
+  numerator / denominator
+}
+```
+
+
+## Graphs
+
+```{r}
+x <- rnorm(10)
+y <- rnorm(10)
+```
+
+To do a scatterplot of the x-y coordinate, two options:
+
+```{r}
+plot(x, y)
+```
+
+or 
+
+```{r}
+plot(y ~ x)
+```
+
+You can add many arguments to tune your graphs:
+
+```{r}
+plot(x, y, col = "red")
+plot(x, y, col = "red", pch = 19)
+plot(x, y, col = "red", pch = 19, cex = 3)
+plot(x, y, col = "red", pch = 19, cex = 3, xlab = "x axis", ylab = "y axis")
+plot(x, y, col = "red", pch = 19, cex = 3, xlab = "x axis", ylab = "y axis", 
+     main = "title")
+plot(x, y, col = "red", pch = 19, cex = 3, xlab = "x axis", ylab = "y axis", 
+     main = "title", xlim = c(-10, 10), ylim = c(-5, 5))
+plot(x, y, col = "red", pch = 19, xlab = "x axis", ylab = "y axis", 
+     main = "title", xlim = c(-10, 10), ylim = c(-5, 5), type = "l")
+plot(x, y, col = "red", pch = 19, xlab = "x axis", ylab = "y axis", 
+     main = "title", xlim = c(-10, 10), ylim = c(-5, 5), type = "l", lwd = 3)
+```
+
+The possibilities are endless. Look on the internet for more options.
+
+### Primary and secondary funtions
+
+There are 2 categories of function to draw graphs. The first category, called
+** primary functions** always erase whatever graph that already exists and 
+create a new one. This is the case of the `plot()` that we saw above. The other
+category, **secondary functions** always add elements to an already existing
+graph. If no graph is already created then these secondary functions won't work.
+
+Among the primary functions commonly used are `plot()`, `barplot()`, `hist()`,
+plus an endless list of other functions (do your research on the internet).
+Among the common secondary functions are `line()`, `abline()`, `points()`,
+`legend()`, `axis()`, `title()`, `legend()`, plus many others. Again, do you
+research on the internet. Here is an example of the use of a primary and a
+secondary functions:
+
+```{r}
+# primary
+plot(x, y, col = "red", pch = 19)
+abline(0, 1, col = "blue", lwd = 2, lty = 2)
+```
+
+## Packages
+
+Any instruction in R is done by a function. We've seen quite some of them so
+far. These functions are organized in thematic **packages** and there is about
+30 such packages that come with the R base installation. For example, the 
+`ls()`, `rm()`, `c()`, `list()`, `data.frame()`, `with()`, `length()` functions
+are in the **base** package. The `head()` and `tail()` functions are in the
+**utils** package, the `nrorm()` function is in the **stats** package, and the
+graphs functions that we used above `plot()`, `barplot()`, `hist()`, `points()`,
+`abline()`, `legend()` are, unsurprisingly, in the **graphics** package. A cool
+thing about R is that it's open source. A consequence of this is that any one
+can write his/her own package. Another great feature of R is that these 
+user-developped package can be published on the official
+[R website](https://cran.r-project.org) for others to use, and that there one
+and only one repository for these package (so it's easy to find one's way). As
+of 2019, there are more than 13,000 such packages, a list of which you can see
+[here](https://cran.r-project.org). You can do you research here by key word,
+then click on the link to the package's website, read more detail information,
+check for the presence of Vignette, etc... Once you've identify a package that
+you'd like to use, you need to install and load it. Installation means writing
+the package to disk, this generally comes from the internet and thus requires
+and download. Once your package is installed you have the possibility to use it.
+To use an installed package, you have to load it from you local disk library.
+These two operations can be done either at the command line with the functions
+`install.packages()` (from package **utils**) and `library()` (from package
+**base**) respectively, or using the packages manager in RStudio. For example,
+above, we've been using the function `read_excel()` from the package 
+[**readxl**](https://cran.r-project.org/web/packages/readxl) that needed to be
+installed and, once installed, loaded. In the SIR modeling, we will use the
+package [**deSolve**](https://cran.r-project.org/web/packages/deSolve) and for
+the model calibration we will use the package
+[**bbmle**](https://cran.r-project.org/web/packages/bbmle).
+
 ## Scripts
 
 Open a new script file and write:
@@ -302,6 +477,9 @@ myvar <- myvar[-(6:15)]
 # step 3: replace the third value by 3:
 myvar[3] <- 3
 ```
+
+Note that any line starting with the `#` character will be ignored by R. It's
+the comment character.
 
 Save the script in `vector selection.R` and source it:
 
