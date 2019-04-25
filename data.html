@@ -315,6 +315,12 @@ $(document).ready(function () {
 
 </div>
 
+<div id="TOC">
+<ul>
+<li><a href="#incidence-data">Incidence data</a></li>
+<li><a href="#climatic-data">Climatic data</a></li>
+</ul>
+</div>
 
 <!--
 IMAGES:
@@ -329,10 +335,12 @@ in the current folder and cite the references as @key or [@key] in the text.
 Uncomment the bibliography field in the above header and put a "References"
 title wherever you want to display the reference list.
 -->
-<p>Here we explain how you can quickly, efficiently and reproducibly download the incidence data you need from the <a href="http://www.data.gov.my">www.data.gov.my</a> national data server. For that, you will need the following packages: <code>dplyr</code>, <code>magrittr</code>, <code>readr</code>, <code>stringr</code> and <code>tidyr</code>. Make sure that there are installed:</p>
-<pre class="r"><code>to_install &lt;- setdiff(c(&quot;dplyr&quot;, &quot;magrittr&quot;, &quot;readr&quot;, &quot;stringr&quot;, &quot;tidyr&quot;),
+<p>Here we explain how you can quickly, efficiently and reproducibly download the incidence data you need from the <a href="http://www.data.gov.my">www.data.gov.my</a> national data server and the climatic data from the <a href="https://en.tutiempo.net">TuTiempo.net</a> platform. For that, you will need the following packages: <code>dplyr</code>, <code>magrittr</code>, <code>readr</code>, <code>stringr</code> and <code>tidyr</code>. Make sure that there are installed:</p>
+<pre class="r"><code>to_install &lt;- setdiff(c(&quot;dplyr&quot;, &quot;magrittr&quot;, &quot;purrr&quot;, &quot;readr&quot;, &quot;rvest&quot;, &quot;stringr&quot;, &quot;tidyr&quot;, &quot;xml2&quot;, &quot;zeallot&quot;),
                       rownames(installed.packages()))
 if (length(to_install) &gt; 0) install.packages(to_install)</code></pre>
+<div id="incidence-data" class="section level2">
+<h2>Incidence data</h2>
 <p>Below we define a function that download weekly incidence data per state for a given week from <a href="http://www.data.gov.my">www.data.gov.my</a>, clean them a bit and rearrange them into a long format sorted by state, year and week:</p>
 <pre class="r"><code>datagovmy &lt;- function(disease, hash, years) {
   require(magrittr)
@@ -431,6 +439,150 @@ hfmd &lt;- datagovmy(&quot;hfmd&quot;, &quot;e3edfbb1-2dba-4e0e-9c02-d6a213f5822
 <pre class="r"><code>dengue &lt;- readr::read_csv(&quot;https://raw.githubusercontent.com/choisy/DMo2019/master/data/dengue.csv&quot;)
 tb &lt;- readr::read_csv(&quot;https://raw.githubusercontent.com/choisy/DMo2019/master/data/tb.csv&quot;)
 hfmd &lt;- readr::read_csv(&quot;https://raw.githubusercontent.com/choisy/DMo2019/master/data/hfmd.csv&quot;)</code></pre>
+</div>
+<div id="climatic-data" class="section level2">
+<h2>Climatic data</h2>
+<p>The website <a href="https://en.tutiempo.net">TuTiempo.net</a> contains meteorological and climatic data from many climatic stations around the world. For example, climatic data for Malaysia are <a href="https://en.tutiempo.net/climate/malaysia.html">here</a>. Here we show how to download all the <strong>daily</strong> data from 28 climatic stations of Malaysia from 2010. For that we need a number of utilitary functions that we start by defining.</p>
+<p>The following function removes the last 2 lines of a matrix <code>m</code>:</p>
+<pre class="r"><code>rm_summaries &lt;- function(m) {
+  n &lt;- nrow(m)
+  m[-((n - 1):n), ]
+}</code></pre>
+<p>The following function coerces a matrix <code>m</code> to a data frame using the first line for the variable names:</p>
+<pre class="r"><code>as.data.frame2 &lt;- function(m) {
+  setNames(as.data.frame(m, as.is = TRUE), m[1, ])[-1, ]
+}</code></pre>
+<p>The following function ownloads data from the URL <code>url</code> and organizes it into a data frame:</p>
+<pre class="r"><code>get_page &lt;- function(url) {
+  require(magrittr) # for the &quot; %&gt;% &quot; operator
+  print(url)
+  url %&gt;%
+    xml2::read_html() %&gt;%
+    rvest::html_nodes(&quot;.mensuales td , th&quot;) %&gt;%
+    rvest::html_text() %&gt;%
+    matrix(ncol = 15, byrow = TRUE) %&gt;%
+    rm_summaries() %&gt;%
+    as.data.frame2()
+}</code></pre>
+<p>A safe version of the <code>get_page()</code> function, trying the URL again and again if internet is interrupted and handling specific errors (e.g. 404):</p>
+<pre class="r"><code>safe_get_page &lt;- function(..., error) {
+  repeat {
+    out &lt;- purrr::safely(get_page)(...)
+    if(is.null(out$error) || grepl(error, out$error)) return(out)
+  }
+}</code></pre>
+<p>The following function pads 1-digit numbers to 2-digit ones with zeros on the left:</p>
+<pre class="r"><code>pad &lt;- function(x) {
+  stringr::str_pad(as.character(x), 2, pad = &quot;0&quot;)
+}</code></pre>
+<p>The following function builds an URL from a year, a month and a station:</p>
+<pre class="r"><code>make_url &lt;- function(year, month, station) {
+  paste0(&quot;http://en.tutiempo.net/climate/&quot;,
+         pad(month), &quot;-&quot;, year, &quot;/ws-&quot;, station, &quot;.html&quot;)
+}</code></pre>
+<p>Here is the main function that downloads the data for the station station:</p>
+<pre class="r"><code>download_data &lt;- function(station, years, months = 1:12, error = &quot;HTTP error 404&quot;) {
+  require(magrittr) # for the &quot; %&gt;% &quot; operator
+  require(zeallot) # for the &quot; %&lt;-% &quot; operator
+  c(months, years) %&lt;-% expand.grid(months, years)
+  out &lt;- purrr::map2(years, months, make_url, station = station) %&gt;%
+    purrr::map(safe_get_page, error = error) %&gt;%
+    purrr::transpose()
+  out &lt;- out$result %&gt;%
+    setNames(paste(years, pad(months), sep = &quot;-&quot;)) %&gt;%
+    `[`(sapply(out$error, is.null)) %&gt;%
+    dplyr::bind_rows(.id = &quot;ym&quot;) %&gt;%
+    dplyr::mutate(day = lubridate::ymd(paste(ym, pad(Day), sep = &quot;-&quot;))) %&gt;%
+    dplyr::select(-ym, -Day) %&gt;%
+    dplyr::select(day, dplyr::everything()) %&gt;%
+    dplyr::mutate_if(is.factor, as.character) %&gt;%
+    dplyr::mutate_at(dplyr::vars(T, TM, Tm, SLP, PP, VV, V, VM, VG), as.numeric) %&gt;%
+    dplyr::mutate_at(dplyr::vars(H), as.integer) %&gt;%
+    dplyr::mutate_at(dplyr::vars(RA, SN, TS, FG), function(x) x == &quot;o&quot;)
+  names(out) %&lt;&gt;%
+    sub(&quot;^T$&quot;, &quot;ta&quot;, .) %&gt;%
+    sub(&quot;TM&quot;, &quot;tx&quot;, .) %&gt;%
+    sub(&quot;Tm&quot;, &quot;tn&quot;, .) %&gt;%
+    tolower()
+  out
+}</code></pre>
+<p>Now, we want to modify sligthly the above function so that it downloads the data only over the range of year that we have in the incidence data:</p>
+<pre class="r"><code>diseases_years &lt;- c(dengue$year, hfmd$year, tb$year)
+max_year &lt;- max(diseases_years)
+min_year &lt;- min(diseases_years)
+download_data2 &lt;- function(station, year) {
+  download_data(station, year:max_year)
+}</code></pre>
+<p>A list of the 28 Malaysian climatic stations that have data in <a href="https://en.tutiempo.net">TuTiempo.net</a> can be downloaded from this <a href="https://raw.githubusercontent.com/choisy/DMo2019/master/data/climatic%20stations.csv">CSV file</a>:</p>
+<pre class="r"><code>stations &lt;- readr::read_csv(&quot;https://raw.githubusercontent.com/choisy/DMo2019/master/data/climatic%20stations.csv&quot;)</code></pre>
+<pre><code>## Parsed with column specification:
+## cols(
+##   location = col_character(),
+##   station = col_integer(),
+##   longitude = col_double(),
+##   latitude = col_double(),
+##   elevation = col_integer(),
+##   from = col_integer()
+## )</code></pre>
+<p>which gives:</p>
+<pre class="r"><code>stations</code></pre>
+<pre><code>## # A tibble: 28 x 6
+##    location           station longitude latitude elevation  from
+##    &lt;chr&gt;                &lt;int&gt;     &lt;dbl&gt;    &lt;dbl&gt;     &lt;int&gt; &lt;int&gt;
+##  1 Alor Star           486030      100.     6.2          5  1959
+##  2 Bintulu             964410      113.     3.2          2  1955
+##  3 Butterworth         486020      100.     5.46         4  1962
+##  4 Cameron Highlands   486320      101.     4.46      1545  2015
+##  5 Ipoh                486250      101.     4.56        40  1959
+##  6 Johore Bharu/Senai  486790      104.     1.63        37  1999
+##  7 Kota Bharu          486150      102.     6.16         5  1954
+##  8 Kota Kinabalu       964710      116.     5.93         3  1955
+##  9 Kuantan             486570      103.     3.78        18  1954
+## 10 Kuching             964130      110.     1.48        27  1955
+## # … with 18 more rows</code></pre>
+<p>Now, everything is ready to be downloaded! (It’ll take about 2 hours).</p>
+<pre class="r"><code>climate &lt;- stations %$%
+  purrr::map2(station, sapply(from, max, min_year), download_data2) %&gt;%
+  setNames(stations$station) %&gt;%
+  dplyr::bind_rows(.id = &quot;station&quot;) %&gt;% 
+  dplyr::mutate_if(is.character, as.integer)</code></pre>
+<p>which gives:</p>
+<pre class="r"><code>climate</code></pre>
+<pre><code>## # A tibble: 73,392 x 16
+##    station day           ta    tx    tn   slp     h    pp    vv     v    vm
+##      &lt;int&gt; &lt;date&gt;     &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+##  1  486030 2015-10-01    NA    NA    NA    NA    NA    NA    NA    NA    NA
+##  2  486030 2015-10-02    NA    NA    NA    NA    NA    NA    NA    NA    NA
+##  3  486030 2015-10-03    NA    NA    NA    NA    NA    NA    NA    NA    NA
+##  4  486030 2015-10-04    NA    NA    NA    NA    NA    NA    NA    NA    NA
+##  5  486030 2015-10-05    NA    NA    NA    NA    NA    NA    NA    NA    NA
+##  6  486030 2015-10-06    NA    NA    NA    NA    NA    NA    NA    NA    NA
+##  7  486030 2015-10-07    NA    NA    NA    NA    NA    NA    NA    NA    NA
+##  8  486030 2015-10-08    NA    NA    NA    NA    NA    NA    NA    NA    NA
+##  9  486030 2015-10-09    NA    NA    NA    NA    NA    NA    NA    NA    NA
+## 10  486030 2015-10-10    NA    NA    NA    NA    NA    NA    NA    NA    NA
+## # … with 73,382 more rows, and 5 more variables: vg &lt;dbl&gt;, ra &lt;lgl&gt;,
+## #   sn &lt;lgl&gt;, ts &lt;lgl&gt;, fg &lt;lgl&gt;</code></pre>
+<p>If you don’t want to spend the 2 hours downloading the data from <a href="https://en.tutiempo.net">TuTiempo.net</a>, you can downlaod them in CSV form, directly from <a href="https://raw.githubusercontent.com/choisy/DMo2019/master/data/climate.csv">here</a>:</p>
+<pre class="r"><code>climate &lt;- readr::read_csv(&quot;https://raw.githubusercontent.com/choisy/DMo2019/master/data/climate.csv&quot;)</code></pre>
+<p>Which gives the same thing:</p>
+<pre class="r"><code>climate</code></pre>
+<pre><code>## # A tibble: 73,392 x 16
+##    station day           ta    tx    tn   slp     h    pp    vv     v    vm
+##      &lt;int&gt; &lt;date&gt;     &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+##  1  486030 2015-10-01    NA    NA    NA    NA    NA    NA    NA    NA    NA
+##  2  486030 2015-10-02    NA    NA    NA    NA    NA    NA    NA    NA    NA
+##  3  486030 2015-10-03    NA    NA    NA    NA    NA    NA    NA    NA    NA
+##  4  486030 2015-10-04    NA    NA    NA    NA    NA    NA    NA    NA    NA
+##  5  486030 2015-10-05    NA    NA    NA    NA    NA    NA    NA    NA    NA
+##  6  486030 2015-10-06    NA    NA    NA    NA    NA    NA    NA    NA    NA
+##  7  486030 2015-10-07    NA    NA    NA    NA    NA    NA    NA    NA    NA
+##  8  486030 2015-10-08    NA    NA    NA    NA    NA    NA    NA    NA    NA
+##  9  486030 2015-10-09    NA    NA    NA    NA    NA    NA    NA    NA    NA
+## 10  486030 2015-10-10    NA    NA    NA    NA    NA    NA    NA    NA    NA
+## # … with 73,382 more rows, and 5 more variables: vg &lt;dbl&gt;, ra &lt;lgl&gt;,
+## #   sn &lt;lgl&gt;, ts &lt;lgl&gt;, fg &lt;lgl&gt;</code></pre>
+</div>
 
 
 

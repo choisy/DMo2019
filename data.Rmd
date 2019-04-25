@@ -52,14 +52,18 @@ rm(list = ls())
 
 Here we explain how you can quickly, efficiently and reproducibly download the
 incidence data you need from the [www.data.gov.my](http://www.data.gov.my)
-national data server. For that, you will need the following packages: `dplyr`,
-`magrittr`, `readr`, `stringr` and `tidyr`. Make sure that there are installed:
+national data server and the climatic data from the
+[TuTiempo.net](https://en.tutiempo.net) platform. For that, you will need the
+following packages: `dplyr`, `magrittr`, `readr`, `stringr` and `tidyr`. Make
+sure that there are installed:
 
 ```{r}
-to_install <- setdiff(c("dplyr", "magrittr", "readr", "stringr", "tidyr"),
+to_install <- setdiff(c("dplyr", "magrittr", "purrr", "readr", "rvest", "stringr", "tidyr", "xml2", "zeallot"),
                       rownames(installed.packages()))
 if (length(to_install) > 0) install.packages(to_install)
 ```
+
+## Incidence data
 
 Below we define a function that download weekly incidence data per state for a
 given week from [www.data.gov.my](http://www.data.gov.my), clean them a bit and
@@ -153,5 +157,174 @@ that have made directly available for you here:
 dengue <- readr::read_csv("https://raw.githubusercontent.com/choisy/DMo2019/master/data/dengue.csv")
 tb <- readr::read_csv("https://raw.githubusercontent.com/choisy/DMo2019/master/data/tb.csv")
 hfmd <- readr::read_csv("https://raw.githubusercontent.com/choisy/DMo2019/master/data/hfmd.csv")
+```
+
+## Climatic data
+
+The website [TuTiempo.net](https://en.tutiempo.net) contains meteorological and
+climatic data from many climatic stations around the world. For example,
+climatic data for Malaysia are
+[here](https://en.tutiempo.net/climate/malaysia.html). Here we show how to
+download all the **daily** data from 28 climatic stations of Malaysia from 2010.
+For that we need a number of utilitary functions that we start by defining.
+
+The following function removes the last 2 lines of a matrix `m`:
+
+```{r}
+rm_summaries <- function(m) {
+  n <- nrow(m)
+  m[-((n - 1):n), ]
+}
+```
+
+The following function coerces a matrix `m` to a data frame using the first line
+for the variable names:
+
+```{r}
+as.data.frame2 <- function(m) {
+  setNames(as.data.frame(m, as.is = TRUE), m[1, ])[-1, ]
+}
+```
+
+The following function ownloads data from the URL `url` and organizes it into a
+data frame:
+
+```{r}
+get_page <- function(url) {
+  require(magrittr) # for the " %>% " operator
+  print(url)
+  url %>%
+    xml2::read_html() %>%
+    rvest::html_nodes(".mensuales td , th") %>%
+    rvest::html_text() %>%
+    matrix(ncol = 15, byrow = TRUE) %>%
+    rm_summaries() %>%
+    as.data.frame2()
+}
+```
+
+A safe version of the `get_page()` function, trying the URL again and again if
+internet is interrupted and handling specific errors (e.g. 404):
+
+```{r}
+safe_get_page <- function(..., error) {
+  repeat {
+    out <- purrr::safely(get_page)(...)
+    if(is.null(out$error) || grepl(error, out$error)) return(out)
+  }
+}
+```
+
+The following function pads 1-digit numbers to 2-digit ones with zeros on the
+left:
+
+```{r}
+pad <- function(x) {
+  stringr::str_pad(as.character(x), 2, pad = "0")
+}
+```
+
+The following function builds an URL from a year, a month and a station:
+
+```{r}
+make_url <- function(year, month, station) {
+  paste0("http://en.tutiempo.net/climate/",
+         pad(month), "-", year, "/ws-", station, ".html")
+}
+```
+
+Here is the main function that downloads the data for the station station:
+
+```{r}
+download_data <- function(station, years, months = 1:12, error = "HTTP error 404") {
+  require(magrittr) # for the " %>% " operator
+  require(zeallot) # for the " %<-% " operator
+  c(months, years) %<-% expand.grid(months, years)
+  out <- purrr::map2(years, months, make_url, station = station) %>%
+    purrr::map(safe_get_page, error = error) %>%
+    purrr::transpose()
+  out <- out$result %>%
+    setNames(paste(years, pad(months), sep = "-")) %>%
+    `[`(sapply(out$error, is.null)) %>%
+    dplyr::bind_rows(.id = "ym") %>%
+    dplyr::mutate(day = lubridate::ymd(paste(ym, pad(Day), sep = "-"))) %>%
+    dplyr::select(-ym, -Day) %>%
+    dplyr::select(day, dplyr::everything()) %>%
+    dplyr::mutate_if(is.factor, as.character) %>%
+    dplyr::mutate_at(dplyr::vars(T, TM, Tm, SLP, PP, VV, V, VM, VG), as.numeric) %>%
+    dplyr::mutate_at(dplyr::vars(H), as.integer) %>%
+    dplyr::mutate_at(dplyr::vars(RA, SN, TS, FG), function(x) x == "o")
+  names(out) %<>%
+    sub("^T$", "ta", .) %>%
+    sub("TM", "tx", .) %>%
+    sub("Tm", "tn", .) %>%
+    tolower()
+  out
+}
+```
+
+Now, we want to modify sligthly the above function so that it downloads the data
+only over the range of year that we have in the incidence data:
+
+```{r}
+diseases_years <- c(dengue$year, hfmd$year, tb$year)
+max_year <- max(diseases_years)
+min_year <- min(diseases_years)
+download_data2 <- function(station, year) {
+  download_data(station, year:max_year)
+}
+```
+
+A list of the 28 Malaysian climatic stations that have data in
+[TuTiempo.net](https://en.tutiempo.net) can be downloaded from this
+[CSV file](https://raw.githubusercontent.com/choisy/DMo2019/master/data/climatic%20stations.csv):
+
+```{r}
+stations <- readr::read_csv("https://raw.githubusercontent.com/choisy/DMo2019/master/data/climatic%20stations.csv")
+```
+
+which gives:
+
+```{r}
+stations
+```
+
+Now, everything is ready to be downloaded! (It'll take about 2 hours).
+
+```{r eval = FALSE}
+climate <- stations %$%
+  purrr::map2(station, sapply(from, max, min_year), download_data2) %>%
+  setNames(stations$station) %>%
+  dplyr::bind_rows(.id = "station") %>% 
+  dplyr::mutate_if(is.character, as.integer)
+```
+
+which gives:
+
+```{r include = FALSE}
+climate <- readr::read_csv("https://raw.githubusercontent.com/choisy/DMo2019/master/data/climate.csv")
+```
+
+```{r}
+climate
+```
+
+If you don't want to spend the 2 hours downloading the data from
+[TuTiempo.net](https://en.tutiempo.net), you can downlaod them in CSV form,
+directly from
+[here](https://raw.githubusercontent.com/choisy/DMo2019/master/data/climate.csv):
+
+```{r eval = FALSE, include = FALSE}
+write.csv(climate, "data/climate.csv", quote = FALSE, row.names = FALSE)
+```
+
+```{r eval = FALSE}
+climate <- readr::read_csv("https://raw.githubusercontent.com/choisy/DMo2019/master/data/climate.csv")
+```
+
+Which gives the same thing:
+
+```{r}
+climate
 ```
 
