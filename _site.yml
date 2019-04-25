@@ -15,5 +15,7 @@ navbar:
       href: calibration.html
     - text: "Data preprocessing"
       href: data.html
+    - text: "Data exploration"
+      href: data_exploration.html
     - text: "Presentations"
       href: presentations.html
