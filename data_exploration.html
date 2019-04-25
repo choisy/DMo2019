@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Data exploration</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">DMo2019 workshop</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Overview</a>
+</li>
+<li>
+  <a href="participants.html">Participants</a>
+</li>
+<li>
+  <a href="basic_R.html">Basic R</a>
+</li>
+<li>
+  <a href="sir.html">SIR models</a>
+</li>
+<li>
+  <a href="calibration.html">Model calibration</a>
+</li>
+<li>
+  <a href="data.html">Data preprocessing</a>
+</li>
+<li>
+  <a href="data_exploration.html">Data exploration</a>
+</li>
+<li>
+  <a href="presentations.html">Presentations</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Data exploration</h1>
+
+</div>
+
+<div id="TOC">
+<ul>
+<li><a href="#incidence-data">Incidence data</a></li>
+<li><a href="#geographic-data">Geographic data</a></li>
+<li><a href="#climatic-data">Climatic data</a></li>
+</ul>
+</div>
+
+<!--
+IMAGES:
+Insert them with: ![alt text](image.png)
+You can also resize them if needed: convert image.png -resize 50% image.png
+If you want to center the image, go through HTML code:
+<div style="text-align:center"><img src ="image.png"/></div>
+
+REFERENCES:
+For references: Put all the bibTeX references in the file "references.bib"
+in the current folder and cite the references as @key or [@key] in the text.
+Uncomment the bibliography field in the above header and put a "References"
+title wherever you want to display the reference list.
+-->
+<div id="incidence-data" class="section level2">
+<h2>Incidence data</h2>
+<pre class="r"><code>library(magrittr)</code></pre>
+<p>Let’s get the dengue data:</p>
+<pre class="r"><code>dengue &lt;- readr::read_csv(&quot;https://raw.githubusercontent.com/choisy/DMo2019/master/data/dengue.csv&quot;)</code></pre>
+<pre><code>## Parsed with column specification:
+## cols(
+##   state = col_character(),
+##   year = col_integer(),
+##   week = col_integer(),
+##   incidence = col_integer()
+## )</code></pre>
+<p>You can split the data frame of incidences into a list of data frames, with one data frame per state as so:</p>
+<pre class="r"><code>dengue_by_state &lt;- split(dengue, dengue$state)</code></pre>
+<p>From which list you can extract whatever state you want:</p>
+<pre class="r"><code>dengue_data &lt;- dengue_by_state$Terengganu</code></pre>
+<p>Let’s define some coordinates to customize the <span class="math inline">\(x\)</span>-axis:</p>
+<pre class="r"><code>ats &lt;- dengue_data %&gt;%
+  dplyr::group_by(year) %&gt;%
+  dplyr::summarise(at = mean(week)) %&gt;%
+  dplyr::ungroup() %$%
+  setNames(at, year) </code></pre>
+<p>and</p>
+<pre class="r"><code>first_weeks &lt;- which(dengue_data$week == 1) - .5</code></pre>
+<p>The following function plots a chronologically-order vector of incidence from the list <code>dengue_by_state</code>:</p>
+<pre class="r"><code>plot_incidence &lt;- function(x, ...) {
+  barplot(x, space = 0, axes = FALSE, xlab = NA, ylab = &quot;incidence&quot;, ...)
+  axis(1, first_weeks, FALSE)
+  axis(1, ats + first_weeks, names(ats), tick = FALSE)
+  axis(2)
+  abline(v = first_weeks, lty = 2, col = &quot;grey&quot;)
+}</code></pre>
+<p>Let’s use this function to plot the time series of incidence for all the states:</p>
+<pre class="r"><code>par(mfrow = c(15, 1))
+for (state in unique(dengue$state)) {
+  plot_incidence(dengue_by_state[[state]]$incidence)
+  mtext(state, line = -1)
+}</code></pre>
+<p><img src="data_exploration_files/figure-html/unnamed-chunk-8-1.png" width="407.736" style="display: block; margin: auto;" /></p>
+<p>The same, but this time with the same range of values on the <span class="math inline">\(y\)</span>-axis:</p>
+<pre class="r"><code>par(mfrow = c(15, 1))
+for (state in unique(dengue$state)) {
+  plot_incidence(dengue_by_state[[state]]$incidence,
+                 ylim = c(0, max(dengue$incidence)))
+  mtext(state, line = -1)
+}</code></pre>
+<p><img src="data_exploration_files/figure-html/unnamed-chunk-9-1.png" width="407.736" style="display: block; margin: auto;" /></p>
+</div>
+<div id="geographic-data" class="section level2">
+<h2>Geographic data</h2>
+<p>We can download maps of any country directly from the <a href="https://gadm.org">GADM</a> website:</p>
+<pre class="r"><code>malaysia &lt;- readRDS(url(&quot;https://biogeo.ucdavis.edu/data/gadm3.6/Rsf/gadm36_MYS_1_sf.rds&quot;)) %&gt;% 
+  sf::st_simplify(TRUE, .05) %&gt;% 
+  sf::st_geometry()</code></pre>
+<pre><code>## Warning in st_simplify.sfc(st_geometry(x), preserveTopology, dTolerance):
+## st_simplify does not correctly simplify longitude/latitude data, dTolerance
+## needs to be in decimal degrees</code></pre>
+<p>Here, we also simplified a bit the maps, and extract the geometries only.</p>
+</div>
+<div id="climatic-data" class="section level2">
+<h2>Climatic data</h2>
+<p>Downloading the climatic stations:</p>
+<pre class="r"><code>stations &lt;- readr::read_csv(&quot;https://raw.githubusercontent.com/choisy/DMo2019/master/data/climatic%20stations.csv&quot;)</code></pre>
+<pre><code>## Parsed with column specification:
+## cols(
+##   location = col_character(),
+##   station = col_integer(),
+##   longitude = col_double(),
+##   latitude = col_double(),
+##   elevation = col_integer(),
+##   from = col_integer()
+## )</code></pre>
+<p>Plotting the locations of the climatic stations:</p>
+<pre class="r"><code>library(sf) # for the &quot;plot&quot; method</code></pre>
+<pre><code>## Linking to GEOS 3.6.1, GDAL 2.1.3, PROJ 4.9.3</code></pre>
+<pre class="r"><code>plot(malaysia, col = &quot;lightgrey&quot;)
+plot(sf::st_as_sf(stations,
+                  coords = c(&quot;longitude&quot;, &quot;latitude&quot;),
+                  crs = &quot;+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0&quot;),
+     add = TRUE, pch = 3, col = &quot;red&quot;)</code></pre>
+<pre><code>## Warning in plot.sf(sf::st_as_sf(stations, coords = c(&quot;longitude&quot;,
+## &quot;latitude&quot;), : ignoring all but the first attribute</code></pre>
+<p><img src="data_exploration_files/figure-html/unnamed-chunk-12-1.png" width="407.736" style="display: block; margin: auto;" /></p>
+<p>Let’s now download the climatic data:</p>
+<pre class="r"><code>climate &lt;- readr::read_csv(&quot;https://raw.githubusercontent.com/choisy/DMo2019/master/data/climate.csv&quot;)</code></pre>
+<pre><code>## Parsed with column specification:
+## cols(
+##   station = col_integer(),
+##   day = col_date(format = &quot;&quot;),
+##   ta = col_double(),
+##   tx = col_double(),
+##   tn = col_double(),
+##   slp = col_double(),
+##   h = col_integer(),
+##   pp = col_double(),
+##   vv = col_double(),
+##   v = col_double(),
+##   vm = col_double(),
+##   vg = col_double(),
+##   ra = col_logical(),
+##   sn = col_logical(),
+##   ts = col_logical(),
+##   fg = col_logical()
+## )</code></pre>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

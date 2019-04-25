@@ -50,3 +50,116 @@ for(i in tdet) detach(i, unload = TRUE, character.only = TRUE)
 rm(list = ls())
 ```
 
+## Incidence data
+
+```{r}
+library(magrittr)
+```
+
+Let's get the dengue data:
+
+```{r}
+dengue <- readr::read_csv("https://raw.githubusercontent.com/choisy/DMo2019/master/data/dengue.csv")
+```
+
+You can split the data frame of incidences into a list of data frames, with one
+data frame per state as so:
+
+```{r}
+dengue_by_state <- split(dengue, dengue$state)
+```
+
+From which list you can extract whatever state you want:
+
+```{r}
+dengue_data <- dengue_by_state$Terengganu
+```
+
+Let's define some coordinates to customize the $x$-axis:
+
+```{r}
+ats <- dengue_data %>%
+  dplyr::group_by(year) %>%
+  dplyr::summarise(at = mean(week)) %>%
+  dplyr::ungroup() %$%
+  setNames(at, year) 
+```
+
+and
+
+```{r}
+first_weeks <- which(dengue_data$week == 1) - .5
+```
+
+The following function plots a chronologically-order vector of incidence from
+the list `dengue_by_state`:
+
+```{r}
+plot_incidence <- function(x, ...) {
+  barplot(x, space = 0, axes = FALSE, xlab = NA, ylab = "incidence", ...)
+  axis(1, first_weeks, FALSE)
+  axis(1, ats + first_weeks, names(ats), tick = FALSE)
+  axis(2)
+  abline(v = first_weeks, lty = 2, col = "grey")
+}
+```
+
+Let's use this function to plot the time series of incidence for all the states:
+
+```{r fig.height = 8 * 3.5}
+par(mfrow = c(15, 1))
+for (state in unique(dengue$state)) {
+  plot_incidence(dengue_by_state[[state]]$incidence)
+  mtext(state, line = -1)
+}
+```
+
+The same, but this time with the same range of values on the $y$-axis:
+
+```{r fig.height = 8 * 3.5}
+par(mfrow = c(15, 1))
+for (state in unique(dengue$state)) {
+  plot_incidence(dengue_by_state[[state]]$incidence,
+                 ylim = c(0, max(dengue$incidence)))
+  mtext(state, line = -1)
+}
+```
+
+## Geographic data
+
+We can download maps of any country directly from the [GADM](https://gadm.org)
+website:
+
+```{r}
+malaysia <- readRDS(url("https://biogeo.ucdavis.edu/data/gadm3.6/Rsf/gadm36_MYS_1_sf.rds")) %>% 
+  sf::st_simplify(TRUE, .05) %>% 
+  sf::st_geometry()
+```
+
+Here, we also simplified a bit the maps, and extract the geometries only.
+
+## Climatic data
+
+Downloading the climatic stations:
+
+```{r}
+stations <- readr::read_csv("https://raw.githubusercontent.com/choisy/DMo2019/master/data/climatic%20stations.csv")
+```
+
+Plotting the locations of the climatic stations:
+
+```{r}
+library(sf) # for the "plot" method
+plot(malaysia, col = "lightgrey")
+plot(sf::st_as_sf(stations,
+                  coords = c("longitude", "latitude"),
+                  crs = "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"),
+     add = TRUE, pch = 3, col = "red")
+```
+
+Let's now download the climatic data:
+
+```{r}
+climate <- readr::read_csv("https://raw.githubusercontent.com/choisy/DMo2019/master/data/climate.csv")
+```
+
