@@ -563,25 +563,27 @@ download_data2 &lt;- function(station, year) {
 ## 10  486030 2015-10-10    NA    NA    NA    NA    NA    NA    NA    NA    NA
 ## # … with 73,382 more rows, and 5 more variables: vg &lt;dbl&gt;, ra &lt;lgl&gt;,
 ## #   sn &lt;lgl&gt;, ts &lt;lgl&gt;, fg &lt;lgl&gt;</code></pre>
+<p>Where the variables’ meaning are</p>
+<ul>
+<li><strong>station</strong>: climatic station ID</li>
+<li><strong>day</strong>: date of data colletion</li>
+<li><strong>ta</strong>: average temperature (°C)</li>
+<li><strong>tx</strong>: maximum temperature (°C)</li>
+<li><strong>tn</strong>: minimum temperature (°C)</li>
+<li><strong>slp</strong>: atmospheric pressure at sea level (hPa)</li>
+<li><strong>h</strong>: average relative humidity (%)</li>
+<li><strong>pp</strong>: total rainfall and / or snowmelt (mm)</li>
+<li><strong>vv</strong>: average visibility (km)</li>
+<li><strong>v</strong>: average wind speed (km / h)</li>
+<li><strong>vm</strong>: maximum sustained wind speed (km / h)</li>
+<li><strong>vg</strong>: maximum speed of wind (km / h)</li>
+<li><strong>ra</strong>: boolean indicating whether there was rain or drizzle</li>
+<li><strong>sn</strong>: boolean indicating whether it snowed</li>
+<li><strong>ts</strong>: boolean indicating whether there were storm</li>
+<li><strong>fg</strong>: boolean indicating whether there was flood</li>
+</ul>
 <p>If you don’t want to spend the 2 hours downloading the data from <a href="https://en.tutiempo.net">TuTiempo.net</a>, you can downlaod them in CSV form, directly from <a href="https://raw.githubusercontent.com/choisy/DMo2019/master/data/climate.csv">here</a>:</p>
 <pre class="r"><code>climate &lt;- readr::read_csv(&quot;https://raw.githubusercontent.com/choisy/DMo2019/master/data/climate.csv&quot;)</code></pre>
-<p>Which gives the same thing:</p>
-<pre class="r"><code>climate</code></pre>
-<pre><code>## # A tibble: 73,392 x 16
-##    station day           ta    tx    tn   slp     h    pp    vv     v    vm
-##      &lt;int&gt; &lt;date&gt;     &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
-##  1  486030 2015-10-01    NA    NA    NA    NA    NA    NA    NA    NA    NA
-##  2  486030 2015-10-02    NA    NA    NA    NA    NA    NA    NA    NA    NA
-##  3  486030 2015-10-03    NA    NA    NA    NA    NA    NA    NA    NA    NA
-##  4  486030 2015-10-04    NA    NA    NA    NA    NA    NA    NA    NA    NA
-##  5  486030 2015-10-05    NA    NA    NA    NA    NA    NA    NA    NA    NA
-##  6  486030 2015-10-06    NA    NA    NA    NA    NA    NA    NA    NA    NA
-##  7  486030 2015-10-07    NA    NA    NA    NA    NA    NA    NA    NA    NA
-##  8  486030 2015-10-08    NA    NA    NA    NA    NA    NA    NA    NA    NA
-##  9  486030 2015-10-09    NA    NA    NA    NA    NA    NA    NA    NA    NA
-## 10  486030 2015-10-10    NA    NA    NA    NA    NA    NA    NA    NA    NA
-## # … with 73,382 more rows, and 5 more variables: vg &lt;dbl&gt;, ra &lt;lgl&gt;,
-## #   sn &lt;lgl&gt;, ts &lt;lgl&gt;, fg &lt;lgl&gt;</code></pre>
 </div>
 
 

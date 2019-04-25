@@ -309,6 +309,25 @@ climate <- readr::read_csv("https://raw.githubusercontent.com/choisy/DMo2019/mas
 climate
 ```
 
+Where the variables' meaning are
+
+* **station**: climatic station ID
+* **day**: date of data colletion
+* **ta**: average temperature (°C)
+* **tx**: maximum temperature (°C)
+* **tn**: minimum temperature (°C)
+* **slp**: atmospheric pressure at sea level (hPa)
+* **h**: average relative humidity (%)
+* **pp**: total rainfall and / or snowmelt (mm)
+* **vv**: average visibility (km)
+* **v**: average wind speed (km / h)
+* **vm**: maximum sustained wind speed (km / h)
+* **vg**: maximum speed of wind (km / h)
+* **ra**: boolean indicating whether there was rain or drizzle
+* **sn**: boolean indicating whether it snowed
+* **ts**: boolean indicating whether there were storm
+* **fg**: boolean indicating whether there was flood
+
 If you don't want to spend the 2 hours downloading the data from
 [TuTiempo.net](https://en.tutiempo.net), you can downlaod them in CSV form,
 directly from
@@ -320,11 +339,5 @@ write.csv(climate, "data/climate.csv", quote = FALSE, row.names = FALSE)
 
 ```{r eval = FALSE}
 climate <- readr::read_csv("https://raw.githubusercontent.com/choisy/DMo2019/master/data/climate.csv")
-```
-
-Which gives the same thing:
-
-```{r}
-climate
 ```
 
