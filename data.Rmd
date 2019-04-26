@@ -60,7 +60,7 @@ sure that there are installed:
 ```{r}
 to_install <- setdiff(c("dplyr", "magrittr", "purrr", "readr", "rvest", "stringr", "tidyr", "xml2", "zeallot"),
                       rownames(installed.packages()))
-if (length(to_install) > 0) install.packages(to_install)
+if (length(to_install)) install.packages(to_install)
 ```
 
 ## Incidence data

@@ -341,7 +341,7 @@ title wherever you want to display the reference list.
 <p>Here we explain how you can quickly, efficiently and reproducibly download the incidence data you need from the <a href="http://www.data.gov.my">www.data.gov.my</a> national data server and the climatic data from the <a href="https://en.tutiempo.net">TuTiempo.net</a> platform. For that, you will need the following packages: <code>dplyr</code>, <code>magrittr</code>, <code>readr</code>, <code>stringr</code> and <code>tidyr</code>. Make sure that there are installed:</p>
 <pre class="r"><code>to_install &lt;- setdiff(c(&quot;dplyr&quot;, &quot;magrittr&quot;, &quot;purrr&quot;, &quot;readr&quot;, &quot;rvest&quot;, &quot;stringr&quot;, &quot;tidyr&quot;, &quot;xml2&quot;, &quot;zeallot&quot;),
                       rownames(installed.packages()))
-if (length(to_install) &gt; 0) install.packages(to_install)</code></pre>
+if (length(to_install)) install.packages(to_install)</code></pre>
 <div id="incidence-data" class="section level2">
 <h2>Incidence data</h2>
 <p>Below we define a function that download weekly incidence data per state for a given week from <a href="http://www.data.gov.my">www.data.gov.my</a>, clean them a bit and rearrange them into a long format sorted by state, year and week:</p>
