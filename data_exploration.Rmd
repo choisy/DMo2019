@@ -56,11 +56,24 @@ for(i in tdet) detach(i, unload = TRUE, character.only = TRUE)
 rm(list = ls())
 ```
 
-## Incidence data
+Here we show how you to manipulate and visualize the incidence and climatic
+data that we [previously](https://choisy.github.io/DMo2019/data.html) created.
+Before starting, let's make sure that the required packages are installed:
 
 ```{r}
-library(magrittr)
+to_install <- setdiff(c("dplyr", "magrittr", "readr", "sf"),
+                      rownames(installed.packages()))
+if (length(to_install) > 0) install.packages(to_install)
 ```
+
+Loading the require packages for direct interaction:
+
+```{r}
+library(magrittr) # for the pipe operator
+library(sf) # for the geographic objects methods
+```
+
+## Incidence data
 
 Let's get the dengue data:
 
@@ -159,7 +172,6 @@ stations_geo <- sf::st_as_sf(stations,
 
 
 ```{r warning = FALSE}
-library(sf) # for the "plot" method
 malaysia %>%
   sf::st_simplify(TRUE, .05) %>% 
   sf::st_geometry() %>% 
