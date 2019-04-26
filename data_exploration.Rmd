@@ -61,8 +61,7 @@ data that we [previously](https://choisy.github.io/DMo2019/data.html) created.
 Before starting, let's make sure that the required packages are installed:
 
 ```{r}
-to_install <- setdiff(c("dplyr", "magrittr", "readr", "sf"),
-                      rownames(installed.packages()))
+to_install <- setdiff(c("dplyr", "magrittr", "readr", "sf"), rownames(installed.packages()))
 if (length(to_install) > 0) install.packages(to_install)
 ```
 
@@ -138,8 +137,7 @@ The same, but this time with the same range of values on the $y$-axis:
 ```{r fig.height = 8 * 3.5}
 par(mfrow = c(15, 1))
 for (state in unique(dengue$state)) {
-  plot_incidence(dengue_by_state[[state]]$incidence,
-                 ylim = c(0, max(dengue$incidence)))
+  plot_incidence(dengue_by_state[[state]]$incidence, ylim = c(0, max(dengue$incidence)))
   mtext(state, line = -1)
 }
 ```
@@ -221,7 +219,7 @@ plot(selangor_station, add = TRUE, col = "blue")
 Now we can compare incidence with for example average temperature for the state
 of Selangor:
 
-```{r margin1 = FALSE, margin2 = TRUE}
+```{r margin1 = FALSE, margin2 = TRUE, fig.width = 2 * 4.24725}
 plot_incidence(dengue_by_state$Selangor$incidence)
 par(new = TRUE)
 climate_week %>%

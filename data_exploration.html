@@ -341,8 +341,7 @@ Uncomment the bibliography field in the above header and put a "References"
 title wherever you want to display the reference list.
 -->
 <p>Here we show how you to manipulate and visualize the incidence and climatic data that we <a href="https://choisy.github.io/DMo2019/data.html">previously</a> created. Before starting, let’s make sure that the required packages are installed:</p>
-<pre class="r"><code>to_install &lt;- setdiff(c(&quot;dplyr&quot;, &quot;magrittr&quot;, &quot;readr&quot;, &quot;sf&quot;),
-                      rownames(installed.packages()))
+<pre class="r"><code>to_install &lt;- setdiff(c(&quot;dplyr&quot;, &quot;magrittr&quot;, &quot;readr&quot;, &quot;sf&quot;), rownames(installed.packages()))
 if (length(to_install) &gt; 0) install.packages(to_install)</code></pre>
 <p>Loading the require packages for direct interaction:</p>
 <pre class="r"><code>library(magrittr) # for the pipe operator
@@ -381,8 +380,7 @@ for (state in unique(dengue$state)) {
 <p>The same, but this time with the same range of values on the <span class="math inline">\(y\)</span>-axis:</p>
 <pre class="r"><code>par(mfrow = c(15, 1))
 for (state in unique(dengue$state)) {
-  plot_incidence(dengue_by_state[[state]]$incidence,
-                 ylim = c(0, max(dengue$incidence)))
+  plot_incidence(dengue_by_state[[state]]$incidence, ylim = c(0, max(dengue$incidence)))
   mtext(state, line = -1)
 }</code></pre>
 <p><img src="data_exploration_files/figure-html/unnamed-chunk-10-1.png" width="407.736" style="display: block; margin: auto;" /></p>
@@ -438,7 +436,7 @@ climate_week %&gt;%
   plot(ta, type = &quot;l&quot;, col = &quot;red&quot;, axes = FALSE, ann = FALSE)
 axis(4, col = &quot;red&quot;, col.axis = &quot;red&quot;)
 mtext(&quot;average temperature (°C)&quot;, 4, 1.5, col = &quot;red&quot;)</code></pre>
-<p><img src="data_exploration_files/figure-html/unnamed-chunk-19-1.png" width="407.736" style="display: block; margin: auto;" /></p>
+<p><img src="data_exploration_files/figure-html/unnamed-chunk-19-1.png" width="815.472" style="display: block; margin: auto;" /></p>
 </div>
 
 
