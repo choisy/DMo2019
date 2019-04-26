@@ -25,12 +25,18 @@ title wherever you want to display the reference list.
 -->
 
 ```{r general_options, include = FALSE}
-knitr::knit_hooks$set(margin = function(before, options, envir) {
-  if (before) par(mgp = c(1.5, .5, 0), bty = "n", plt = c(.105, .97, .13, .97))
-  else NULL
-})
+knitr::knit_hooks$set(
+  margin1 = function(before, options, envir) {
+    if (before) par(mgp = c(1.5, .5, 0), bty = "n", plt = c(.105, .97, .13, .97))
+    else NULL
+  },
+  margin2 = function(before, options, envir) {
+    if (before) par(mgp = c(1.5, .5, 0), bty = "n", plt = c(.105, .9, .13, .97))
+    else NULL
+  }
+)
 
-knitr::opts_chunk$set(margin = TRUE, prompt = FALSE, comment = "##",
+knitr::opts_chunk$set(margin1 = TRUE, margin2 = FALSE, prompt = FALSE, comment = "##",
                       collapse = FALSE, cache = FALSE, autodep = TRUE,
                       dev.args = list(pointsize = 11), fig.height = 3.5,
                       fig.width = 4.24725, fig.retina = 2, fig.align = "center")
@@ -58,7 +64,7 @@ library(magrittr)
 
 Let's get the dengue data:
 
-```{r}
+```{r message = FALSE}
 dengue <- readr::read_csv("https://raw.githubusercontent.com/choisy/DMo2019/master/data/dengue.csv")
 ```
 
@@ -130,36 +136,87 @@ for (state in unique(dengue$state)) {
 We can download maps of any country directly from the [GADM](https://gadm.org)
 website:
 
-```{r}
-malaysia <- readRDS(url("https://biogeo.ucdavis.edu/data/gadm3.6/Rsf/gadm36_MYS_1_sf.rds")) %>% 
-  sf::st_simplify(TRUE, .05) %>% 
-  sf::st_geometry()
+```{r warning = FALSE}
+malaysia <- readRDS(url("https://biogeo.ucdavis.edu/data/gadm3.6/Rsf/gadm36_MYS_1_sf.rds"))
 ```
-
-Here, we also simplified a bit the maps, and extract the geometries only.
 
 ## Climatic data
 
 Downloading the climatic stations:
 
-```{r}
+```{r message = FALSE}
 stations <- readr::read_csv("https://raw.githubusercontent.com/choisy/DMo2019/master/data/climatic%20stations.csv")
 ```
 
-Plotting the locations of the climatic stations:
+Plotting the locations of the climatic stations. First we need to transform the
+stations as a geographic object:
 
 ```{r}
+stations_geo <- sf::st_as_sf(stations,
+                             coords = c("longitude", "latitude"),
+                             crs = "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0")
+```
+
+
+```{r warning = FALSE}
 library(sf) # for the "plot" method
-plot(malaysia, col = "lightgrey")
-plot(sf::st_as_sf(stations,
-                  coords = c("longitude", "latitude"),
-                  crs = "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"),
-     add = TRUE, pch = 3, col = "red")
+malaysia %>%
+  sf::st_simplify(TRUE, .05) %>% 
+  sf::st_geometry() %>% 
+  plot(col = "lightgrey")
+plot(stations_geo, add = TRUE, pch = 3, col = "red")
 ```
 
 Let's now download the climatic data:
 
-```{r}
+```{r message = FALSE}
 climate <- readr::read_csv("https://raw.githubusercontent.com/choisy/DMo2019/master/data/climate.csv")
+```
+
+Let's now aggregate these data by epi week so that we can compare more easily
+with the incidence data that are also defined by epi week:
+
+```{r}
+climate_week <- climate %>%
+  dplyr::mutate(year = lubridate::year(day),
+                week = lubridate::epiweek(day)) %>% 
+  dplyr::select(-day) %>% 
+  dplyr::group_by(station, year, week) %>%
+  dplyr::summarise_all(mean, na.rm = TRUE) %>% 
+  dplyr::ungroup() %>% 
+  dplyr::mutate_at(dplyr::vars(ra, sn, ts, fg), list(~ . > 0)) %>% 
+  dplyr::mutate_all(. %>% ifelse(is.nan(.), NA, .))
+```
+
+## Relating climatic data to incidence data
+
+Let's say that we want to focus on the state of Selangor and we want to identify
+the climatic stations that are in this state:
+
+```{r message = FALSE}
+selangor <- dplyr::filter(malaysia, NAME_1 == "Selangor")
+selangor_station <- stations_geo[as.integer(sf::st_contains(selangor, stations_geo)), ]
+```
+
+Let's see that on the map:
+
+```{r warning = FALSE}
+plot(sf::st_geometry(selangor), col = "lightgrey")
+plot(stations_geo, add = TRUE, pch = 3, col = "red")
+plot(selangor_station, add = TRUE, col = "blue")
+```
+
+Now we can compare incidence with for example average temperature for the state
+of Selangor:
+
+```{r margin1 = FALSE, margin2 = TRUE}
+plot_incidence(dengue_by_state$Selangor$incidence)
+par(new = TRUE)
+climate_week %>%
+  dplyr::filter(station == selangor_station$station) %>%
+  dplyr::arrange(year, week) %$%
+  plot(ta, type = "l", col = "red", axes = FALSE, ann = FALSE)
+axis(4, col = "red", col.axis = "red")
+mtext("average temperature (°C)", 4, 1.5, col = "red")
 ```
 

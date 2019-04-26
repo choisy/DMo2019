@@ -323,6 +323,7 @@ $(document).ready(function () {
 <li><a href="#incidence-data">Incidence data</a></li>
 <li><a href="#geographic-data">Geographic data</a></li>
 <li><a href="#climatic-data">Climatic data</a></li>
+<li><a href="#relating-climatic-data-to-incidence-data">Relating climatic data to incidence data</a></li>
 </ul>
 </div>
 
@@ -344,13 +345,6 @@ title wherever you want to display the reference list.
 <pre class="r"><code>library(magrittr)</code></pre>
 <p>Let’s get the dengue data:</p>
 <pre class="r"><code>dengue &lt;- readr::read_csv(&quot;https://raw.githubusercontent.com/choisy/DMo2019/master/data/dengue.csv&quot;)</code></pre>
-<pre><code>## Parsed with column specification:
-## cols(
-##   state = col_character(),
-##   year = col_integer(),
-##   week = col_integer(),
-##   incidence = col_integer()
-## )</code></pre>
 <p>You can split the data frame of incidences into a list of data frames, with one data frame per state as so:</p>
 <pre class="r"><code>dengue_by_state &lt;- split(dengue, dengue$state)</code></pre>
 <p>From which list you can extract whatever state you want:</p>
@@ -390,59 +384,57 @@ for (state in unique(dengue$state)) {
 <div id="geographic-data" class="section level2">
 <h2>Geographic data</h2>
 <p>We can download maps of any country directly from the <a href="https://gadm.org">GADM</a> website:</p>
-<pre class="r"><code>malaysia &lt;- readRDS(url(&quot;https://biogeo.ucdavis.edu/data/gadm3.6/Rsf/gadm36_MYS_1_sf.rds&quot;)) %&gt;% 
-  sf::st_simplify(TRUE, .05) %&gt;% 
-  sf::st_geometry()</code></pre>
-<pre><code>## Warning in st_simplify.sfc(st_geometry(x), preserveTopology, dTolerance):
-## st_simplify does not correctly simplify longitude/latitude data, dTolerance
-## needs to be in decimal degrees</code></pre>
-<p>Here, we also simplified a bit the maps, and extract the geometries only.</p>
+<pre class="r"><code>malaysia &lt;- readRDS(url(&quot;https://biogeo.ucdavis.edu/data/gadm3.6/Rsf/gadm36_MYS_1_sf.rds&quot;))</code></pre>
 </div>
 <div id="climatic-data" class="section level2">
 <h2>Climatic data</h2>
 <p>Downloading the climatic stations:</p>
 <pre class="r"><code>stations &lt;- readr::read_csv(&quot;https://raw.githubusercontent.com/choisy/DMo2019/master/data/climatic%20stations.csv&quot;)</code></pre>
-<pre><code>## Parsed with column specification:
-## cols(
-##   location = col_character(),
-##   station = col_integer(),
-##   longitude = col_double(),
-##   latitude = col_double(),
-##   elevation = col_integer(),
-##   from = col_integer()
-## )</code></pre>
-<p>Plotting the locations of the climatic stations:</p>
+<p>Plotting the locations of the climatic stations. First we need to transform the stations as a geographic object:</p>
+<pre class="r"><code>stations_geo &lt;- sf::st_as_sf(stations,
+                             coords = c(&quot;longitude&quot;, &quot;latitude&quot;),
+                             crs = &quot;+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0&quot;)</code></pre>
 <pre class="r"><code>library(sf) # for the &quot;plot&quot; method</code></pre>
 <pre><code>## Linking to GEOS 3.6.1, GDAL 2.1.3, PROJ 4.9.3</code></pre>
-<pre class="r"><code>plot(malaysia, col = &quot;lightgrey&quot;)
-plot(sf::st_as_sf(stations,
-                  coords = c(&quot;longitude&quot;, &quot;latitude&quot;),
-                  crs = &quot;+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0&quot;),
-     add = TRUE, pch = 3, col = &quot;red&quot;)</code></pre>
-<pre><code>## Warning in plot.sf(sf::st_as_sf(stations, coords = c(&quot;longitude&quot;,
-## &quot;latitude&quot;), : ignoring all but the first attribute</code></pre>
-<p><img src="data_exploration_files/figure-html/unnamed-chunk-12-1.png" width="407.736" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>malaysia %&gt;%
+  sf::st_simplify(TRUE, .05) %&gt;% 
+  sf::st_geometry() %&gt;% 
+  plot(col = &quot;lightgrey&quot;)
+plot(stations_geo, add = TRUE, pch = 3, col = &quot;red&quot;)</code></pre>
+<p><img src="data_exploration_files/figure-html/unnamed-chunk-13-1.png" width="407.736" style="display: block; margin: auto;" /></p>
 <p>Let’s now download the climatic data:</p>
 <pre class="r"><code>climate &lt;- readr::read_csv(&quot;https://raw.githubusercontent.com/choisy/DMo2019/master/data/climate.csv&quot;)</code></pre>
-<pre><code>## Parsed with column specification:
-## cols(
-##   station = col_integer(),
-##   day = col_date(format = &quot;&quot;),
-##   ta = col_double(),
-##   tx = col_double(),
-##   tn = col_double(),
-##   slp = col_double(),
-##   h = col_integer(),
-##   pp = col_double(),
-##   vv = col_double(),
-##   v = col_double(),
-##   vm = col_double(),
-##   vg = col_double(),
-##   ra = col_logical(),
-##   sn = col_logical(),
-##   ts = col_logical(),
-##   fg = col_logical()
-## )</code></pre>
+<p>Let’s now aggregate these data by epi week so that we can compare more easily with the incidence data that are also defined by epi week:</p>
+<pre class="r"><code>climate_week &lt;- climate %&gt;%
+  dplyr::mutate(year = lubridate::year(day),
+                week = lubridate::epiweek(day)) %&gt;% 
+  dplyr::select(-day) %&gt;% 
+  dplyr::group_by(station, year, week) %&gt;%
+  dplyr::summarise_all(mean, na.rm = TRUE) %&gt;% 
+  dplyr::ungroup() %&gt;% 
+  dplyr::mutate_at(dplyr::vars(ra, sn, ts, fg), list(~ . &gt; 0)) %&gt;% 
+  dplyr::mutate_all(. %&gt;% ifelse(is.nan(.), NA, .))</code></pre>
+</div>
+<div id="relating-climatic-data-to-incidence-data" class="section level2">
+<h2>Relating climatic data to incidence data</h2>
+<p>Let’s say that we want to focus on the state of Selangor and we want to identify the climatic stations that are in this state:</p>
+<pre class="r"><code>selangor &lt;- dplyr::filter(malaysia, NAME_1 == &quot;Selangor&quot;)
+selangor_station &lt;- stations_geo[as.integer(sf::st_contains(selangor, stations_geo)), ]</code></pre>
+<p>Let’s see that on the map:</p>
+<pre class="r"><code>plot(sf::st_geometry(selangor), col = &quot;lightgrey&quot;)
+plot(stations_geo, add = TRUE, pch = 3, col = &quot;red&quot;)
+plot(selangor_station, add = TRUE, col = &quot;blue&quot;)</code></pre>
+<p><img src="data_exploration_files/figure-html/unnamed-chunk-17-1.png" width="407.736" style="display: block; margin: auto;" /></p>
+<p>Now we can compare incidence with for example average temperature for the state of Selangor:</p>
+<pre class="r"><code>plot_incidence(dengue_by_state$Selangor$incidence)
+par(new = TRUE)
+climate_week %&gt;%
+  dplyr::filter(station == selangor_station$station) %&gt;%
+  dplyr::arrange(year, week) %$%
+  plot(ta, type = &quot;l&quot;, col = &quot;red&quot;, axes = FALSE, ann = FALSE)
+axis(4, col = &quot;red&quot;, col.axis = &quot;red&quot;)
+mtext(&quot;average temperature (°C)&quot;, 4, 1.5, col = &quot;red&quot;)</code></pre>
+<p><img src="data_exploration_files/figure-html/unnamed-chunk-18-1.png" width="407.736" style="display: block; margin: auto;" /></p>
 </div>
 
 
