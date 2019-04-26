@@ -68,7 +68,7 @@ if (length(to_install) > 0) install.packages(to_install)
 
 Loading the require packages for direct interaction:
 
-```{r}
+```{r message = FALSE}
 library(magrittr) # for the pipe operator
 library(sf) # for the geographic objects methods
 ```
